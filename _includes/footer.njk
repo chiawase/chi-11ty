@@ -1,0 +1,15 @@
+<footer>
+    <p><em>All Rights Reserved &copy; {% year %}</em></p>
+    
+    <nav>
+        <h2 class="visually-hidden">Bottom level navigation menu</h2>
+        <ul class="nav nav-footer">
+        {%- for entry in collections.all | eleventyNavigation %}
+            <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+        {%- endfor %}
+        </ul>
+    </nav>
+
+    {# Eleventy link #}
+    <p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
+</footer>

@@ -3,11 +3,16 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-
+import eleventyPluginInterlinker from "@photogabble/eleventy-plugin-interlinker";
 import pluginFilters from "./_config/filters.js";
+import { EleventyRenderPlugin } from "@11ty/eleventy";
+
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
+	// Eleventy Render Plugin from https://www.11ty.dev/docs/plugins/render/
+	eleventyConfig.addPlugin(EleventyRenderPlugin);
+	
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if (data.draft) {
@@ -25,7 +30,8 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy({
 			"./public/": "/"
 		})
-		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
+		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
+		.addPassthroughCopy({ "img/favicon.png": "/favicon.png" });
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -76,11 +82,11 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
-			base: "https://example.com/",
+			title: "Chi Señires",
+			subtitle: "Chi's space for thoughts and ideas on her side of the internet",
+			base: "https://chisenires.design/",
 			author: {
-				name: "Your Name"
+				name: "Chi Señires"
 			}
 		}
 	});
@@ -125,7 +131,27 @@ export default async function(eleventyConfig) {
 	// to emulate the file copy on the dev server. Learn more:
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
-	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
+	// Interlinker
+	eleventyConfig.addPlugin(eleventyPluginInterlinker, {
+			defaultLayout: 'layouts/embed.liquid'
+		}
+	);
+
+	// YouTube Embedder Shortcode
+	eleventyConfig.addShortcode("youtube", (videoURL, title) => {
+		const url = new URL(videoURL);
+		const id = url.searchParams.get("v");
+		return `
+	<iframe class="yt-shortcode" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player${
+		  title ? ` for ${title}` : ""
+		}" frameborder="0" allowfullscreen></iframe>
+	`;
+	  });
+
+	// Year Shortcode
+	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 };
 
 export const config = {

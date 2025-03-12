@@ -47,6 +47,7 @@
 		"zod-validation-error": "^3.5.2"
 	},
 	"dependencies": {
+		"@photogabble/eleventy-plugin-interlinker": "^1.1.0",
 		"@zachleat/heading-anchors": "^1.0.5"
 	}
 }

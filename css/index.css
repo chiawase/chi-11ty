@@ -10,12 +10,12 @@
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
 
-	--background-color: #fff;
+	--background-color: #f3f3f3;
 
 	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+	--text-color-link: #a00d0d;
+	--text-color-link-active: #f769a4;
+	--text-color-link-visited: #f8a6c1;
 
 	--syntax-tab-size: 2;
 }
@@ -27,11 +27,11 @@
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+		--text-color-link: #a00d0d;
+		--text-color-link-active: #9f69f7;
+		--text-color-link-visited: #c5a6f8;
 
-		--background-color: #15202b;
+		--background-color: #202122;
 	}
 }
 
@@ -57,7 +57,7 @@ html {
 	overflow-y: scroll;
 }
 body {
-	max-width: 40em;
+	max-width: 50em;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -124,6 +124,10 @@ main :first-child {
 
 header {
 	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+footer {
+	text-align: center;
 }
 
 #skip-link {
@@ -227,6 +231,11 @@ header {
 	text-decoration: underline;
 }
 
+/* Nav in footer */
+.nav-footer {
+	justify-content: center;
+}
+
 /* Posts list */
 .postlist {
 	counter-reset: start-from var(--postlist-index);
@@ -293,6 +302,31 @@ header {
 	margin: 0;
 }
 .post-metadata time {
-	margin-right: 1em;
+	margin-right: 0.5em;
 }
 
+.post-metadata li:first-child:after {
+	content: "\2022";
+}
+
+/* YouTube iFrame */
+iframe.yt-shortcode {
+	height: 50vw;
+	margin: 1rem 0;
+	max-height: 25rem;
+	width: 100%;
+}
+
+blockquote {
+	border-left: 2px solid var(--text-color-link);
+	margin-left: 0;
+	padding: 1em;
+	color: var(--color-gray-90);
+	background: rgba(61, 57, 57, 0.8);
+}
+
+section.intro {
+	font-size: 1.35rem;
+	background-color: rgba(43, 43, 43, 0.8);
+	padding: 1em;
+}
