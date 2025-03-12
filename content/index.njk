@@ -4,11 +4,24 @@ const eleventyNavigation = {
 	order: 1
 };
 
-const numberOfLatestPostsToShow = 3;
+const numberOfLatestPostsToShow = 5;
 ---
+
+{# Introduction Section #}
+<section class="intro">
+	{% renderFile "./content/intro.md" %}
+	<p>
+		I share thoughts about a lot of stuff, with posts covering various topics, like: 
+		{% for tag in collections | getKeys | filterTagList | sortAlphabetically %}
+		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+		{% if loop.last == true %} and {% endif %}<a href="{{ tagUrl }}" class="post-tag">{{ tag | lower }}</a>{% if loop.last != true %}, {% endif %}
+		{% endfor %}
+	</p>
+</section>
+
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h1>Latest {{ latestPostsCount }} post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
@@ -18,12 +31,3 @@ const numberOfLatestPostsToShow = 3;
 {% if morePosts > 0 %}
 <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
 {% endif %}
-
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
