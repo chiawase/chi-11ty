@@ -1,5 +1,5 @@
 ---
-title: day blue mbapr
+title: "📷 Day 22: blue #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 22: blue #mbApr
-
 Taken last 24 June 2022. Second to the last gig I got to attend of [Banna Harbera](https://open.spotify.com/artist/53EF6PS4UcQwjNrpaE0968?si=JMWk_U6LRf6uJH9QffNWcQ) performing. They stopped putting new music out later that year too, but I was thankful I still got to attend some of the gigs when they were still playing. 🥹
 
-<img src="uploads/2024/94351e23f1.jpg" width="549" height="600" alt="Banna Harbera performing at the 2022 Fête de la Musique Philippines. Both the main vocalist and lead guitar and vocalist are lit in a cool blue hue. Both of them are focused on singing the song, as shown in their expressions.">
+<img src="/img/uploads/2024/94351e23f1.jpg" width="549" height="600" alt="Banna Harbera performing at the 2022 Fête de la Musique Philippines. Both the main vocalist and lead guitar and vocalist are lit in a cool blue hue. Both of them are focused on singing the song, as shown in their expressions.">

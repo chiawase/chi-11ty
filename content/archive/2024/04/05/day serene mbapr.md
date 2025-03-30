@@ -1,5 +1,5 @@
 ---
-title: day serene mbapr
+title: "📷 Day 5: serene #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 5: serene #mbApr
-
 Took photos while walking along the riverside during my visit to Austria last February. I wanna go back soon. Things were peaceful then.
 
-<img src="uploads/2024/c3b4c2ffa9.jpg" width="450" height="600" alt="Chi looking toward the distance in front of the Salzach. The sun is shining from the upper right corner of the photo, and in the distance the University of Salzburg is in full view.">
+<img src="/img/uploads/2024/c3b4c2ffa9.jpg" width="450" height="600" alt="Chi looking toward the distance in front of the Salzach. The sun is shining from the upper right corner of the photo, and in the distance the University of Salzburg is in full view.">

@@ -1,5 +1,5 @@
 ---
-title: day workout mbsept
+title: "📷 day 28: workout #mbsept"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -25,8 +25,6 @@ photos_with_metadata:
 url: /2023/09/28/day-workout-mbsept.html
 ---
 
-📷 day 28: workout #mbsept
-
 this was a rowing machine at the Manila Boat Club that I got to try! They recommend you practice here first before trying to row in a canoe along Pasig River 😁 I got some assumptions on rowing debunked as I used this 😆
 
-<img src="uploads/2023/7ca2cd9fa0cb4294a8d10a277d6d6c0e.jpg" width="450" height="600" alt="">
+<img src="/img/uploads/2023/7ca2cd9fa0cb4294a8d10a277d6d6c0e.jpg" width="450" height="600" alt="">

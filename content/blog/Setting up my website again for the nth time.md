@@ -16,7 +16,7 @@ I've moved websites a lot in the past few years, from `chisenires.ph` to now `ch
 
 And after seeing [kepano's article on how they set up Obsidian for their use-case](https://stephango.com/vault), I figured I could try and emulate it. I also liked this post on calling [personal notes an ecosystem rather than a garden](https://www.threads.net/@kepano/post/DGwL0V_SBYw?xmt=AQGzmdhjbouy52clNn70ksBw4NftIi6kae0GCCyqKZv-UQ) and what survives is what sticks. I think that works best for me at the moment, given how fickle I can be in my motivation to write, or type, stuff down. But I am a yapper online regardless, I just... need a place to do so, and I want to make this place a bit more within my control rather than elsewhere (like [Twitter](https://twitter.com/ChiSenires) or other social media sites haha)
 
-> These words are now written during the time I'm gonna publish this blog post for real. Which is... when this post was published. Whenever that is 😝
+> These words are now written during the time I initially planned to publish this site. It was originally supposed to be on March 12, but... life got in the way 😝
 
 I initially fiddled with setting this up with Jekyll, but I eventually just tried 11ty. I'm not too familiar with Nunjucks yet and `node_modules` and all that jazz, but... I guess this is a good long term setup + I'm also more familiar with JS than Go (e.g. for Hugo?).
 

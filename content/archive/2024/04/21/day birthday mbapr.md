@@ -1,5 +1,5 @@
 ---
-title: day birthday mbapr
+title: "📷 Day 19: birthday #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 19: birthday #mbApr
-
 My birthday's coming up soon. Throwback to this gift the WeWork staff where I used to co-work at gave me 😁🍷
 
-<img src="uploads/2024/165d08000a.jpg" width="450" height="600" alt="A wine bottle is on a marbled countertop with a greeting card in front of it. The text reads, &quot;A note from our community team: Chi! Happy birthday Daryl, Paul, Hazel, & Sumana&quot;">
+<img src="/img/uploads/2024/165d08000a.jpg" width="450" height="600" alt="A wine bottle is on a marbled countertop with a greeting card in front of it. The text reads, &quot;A note from our community team: Chi! Happy birthday Daryl, Paul, Hazel, & Sumana&quot;">

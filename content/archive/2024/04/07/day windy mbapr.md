@@ -1,5 +1,5 @@
 ---
-title: day windy mbapr
+title: "📷 Day 6: windy #mbApr"
 summary: ""
 tags: ["cycling", "Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 6: windy #mbApr
-
 I realize I don't have any (recent?) photo showing any wind (or photos of windy places for that matter) so here's a selfie I took last year while riding around Taiwan on a bike. There would be super windy days that I learned to just put on more layers if I'm biking around 😆
 
-<img src="uploads/2024/72b1537d29.jpg" width="450" height="600" alt="">
+<img src="/img/uploads/2024/72b1537d29.jpg" width="450" height="600" alt="">

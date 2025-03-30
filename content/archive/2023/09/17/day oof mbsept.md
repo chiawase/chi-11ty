@@ -1,5 +1,5 @@
 ---
-title: day oof mbsept
+title: "📷 Day 16: oof! #mbsept"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -25,8 +25,6 @@ photos_with_metadata:
 url: /2023/09/17/day-oof-mbsept.html
 ---
 
-📷 Day 16: oof! #mbsept
-
 This is a ramp at the mall near my place. It has been "under maintenance" for like 2 months already, with no visible damage.
 
-<img src="uploads/2023/e8b122988cc04b5393fe60ea97c3f3fb.jpg" width="337" height="600" alt="A ramp meant to make the entrance more accessible to PWDs, but is cordoned off with a sign on it that reads, &quot;Sorry for the inconvenience / Maintenance in progress to serve you better&quot; by SM Light Mall.">
+<img src="/img/uploads/2023/e8b122988cc04b5393fe60ea97c3f3fb.jpg" width="337" height="600" alt="A ramp meant to make the entrance more accessible to PWDs, but is cordoned off with a sign on it that reads, &quot;Sorry for the inconvenience / Maintenance in progress to serve you better&quot; by SM Light Mall.">

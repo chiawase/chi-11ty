@@ -1,5 +1,5 @@
 ---
-title: say card mbapr
+title: "📷 Day 3: Card #MBApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Say 3: Card #MBApr
-
 I took a photo of this credit card reader on the remote for in-flight entertainment during my flight to Europe last February. I was amused seeing this in an era where cashless is getting more popular 😆 I guess before you could buy stuff with you card while on thr plane 😄
 
-<img src="uploads/2024/db6fd96553.jpg" width="450" height="600" alt="A credit card reader seen on the side of the remote available for in-flight entertainment in an airplane. The text above the card slot reads: &quot;Pull to Stow | Stow and Latch for taxi, takeoff and landing&quot;">
+<img src="/img/uploads/2024/db6fd96553.jpg" width="450" height="600" alt="A credit card reader seen on the side of the remote available for in-flight entertainment in an airplane. The text above the card slot reads: &quot;Pull to Stow | Stow and Latch for taxi, takeoff and landing&quot;">

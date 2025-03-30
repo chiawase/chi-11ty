@@ -1,5 +1,5 @@
 ---
-title: day ice mbapr
+title: "📷 Day 20: ice #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 20: ice #mbApr
-
 I forgot what this drink was called 🤣 but it was a nice cocktail from [Hakid](https://www.instagram.com/hakid.mnl) 😁 
 
-<img src="uploads/2024/a61eb0756b.jpg" width="450" height="600" alt="A mixed orange cocktail in a tall glass with a dried orange as a garnish, with ice in the drink as well.">
+<img src="/img/uploads/2024/a61eb0756b.jpg" width="450" height="600" alt="A mixed orange cocktail in a tall glass with a dried orange as a garnish, with ice in the drink as well.">

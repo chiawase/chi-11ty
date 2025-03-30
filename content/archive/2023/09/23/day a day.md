@@ -1,5 +1,5 @@
 ---
-title: day a day
+title: "📷 day 23: a day in the life #mbsept"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -25,8 +25,6 @@ photos_with_metadata:
 url: /2023/09/23/day-a-day.html
 ---
 
-📷 day 23: a day in the life #mbsept
-
 took this earlier when I got back home. Those are some heavy rain clouds 😳 not to mention a bleak late morning given the smog 😷💨
 
-<img src="uploads/2023/d62093f2cd08495e910719517a49b434.jpg" width="450" height="600" alt="A peek out of Chi's window, where the rain clouds look lower than usual, obscuring the usual city skyline you'd see from the central business district where she lives.">
+<img src="/img/uploads/2023/d62093f2cd08495e910719517a49b434.jpg" width="450" height="600" alt="A peek out of Chi's window, where the rain clouds look lower than usual, obscuring the usual city skyline you'd see from the central business district where she lives.">

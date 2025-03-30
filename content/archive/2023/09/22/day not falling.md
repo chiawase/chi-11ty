@@ -1,5 +1,5 @@
 ---
-title: day not falling
+title: "📷 Day 21: (not) fall(ing) #mbsept 😆"
 summary: ""
 tags: ["cycling", "Photoblogging Challenges"]
 bluesky:
@@ -25,8 +25,6 @@ photos_with_metadata:
 url: /2023/09/22/day-not-falling.html
 ---
 
-📷 Day 21: (not) fall(ing) #mbsept 😆
-
 These bikes are not falling. As they are propped up each other. 😆
 
-<img src="uploads/2023/9be6b55d039f48acaa87cd24f666f193.jpg" width="600" height="450" alt="Two full bikes leaning against each other, making them both be balanced and not falling over.">
+<img src="/img/uploads/2023/9be6b55d039f48acaa87cd24f666f193.jpg" width="600" height="450" alt="Two full bikes leaning against each other, making them both be balanced and not falling over.">

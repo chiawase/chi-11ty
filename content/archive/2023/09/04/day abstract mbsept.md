@@ -1,5 +1,5 @@
 ---
-title: day abstract mbsept
+title: "📷 Day 1: abstract #mbsept"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -25,8 +25,6 @@ photos_with_metadata:
 url: /2023/09/04/day-abstract-mbsept.html
 ---
 
-📷 Day 1: abstract #mbsept
-
 Joining in the September photoblogging challenge 😁
 
-<img src="uploads/2023/aa4126ae74894323b81c4f382d1141de.jpg" width="450" height="600" alt="View outside of Chi's window. The rain is pouring, with a foggy outlook the farther you look out. The window pane is aligned to the middle of the picture as a way to frame the outside—seen to the left side portion of the photo—with the right side of the photo, which is the glass of the window pane. There are rain droplets seen on the glass.">
+<img src="/img/uploads/2023/aa4126ae74894323b81c4f382d1141de.jpg" width="450" height="600" alt="View outside of Chi's window. The rain is pouring, with a foggy outlook the farther you look out. The window pane is aligned to the middle of the picture as a way to frame the outside—seen to the left side portion of the photo—with the right side of the photo, which is the glass of the window pane. There are rain droplets seen on the glass.">

@@ -1,5 +1,5 @@
 ---
-title: day intense mbsept
+title: "📷 Day 17: intense #mbsept"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -25,8 +25,6 @@ photos_with_metadata:
 url: /2023/09/18/day-intense-mbsept.html
 ---
 
-📷 Day 17: intense #mbsept
-
 yep, that's 4 different kinds of drinks. 😅 there was a time I had no problems doing this one time. But now, I will pass. lolz
 
-<img src="uploads/2023/ce38b38e855946ad9c215bb0ce7d02fe.jpg" width="450" height="600" alt="4 different alcoholic drinks lined up, from top to bottom: a bottle of beer, a Jägerbomb, a Tequila shot, and a rum shot.">
+<img src="/img/uploads/2023/ce38b38e855946ad9c215bb0ce7d02fe.jpg" width="450" height="600" alt="4 different alcoholic drinks lined up, from top to bottom: a bottle of beer, a Jägerbomb, a Tequila shot, and a rum shot.">

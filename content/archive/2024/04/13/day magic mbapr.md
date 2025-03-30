@@ -1,5 +1,5 @@
 ---
-title: day magic mbapr
+title: "📷 Day 12: magic #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 12: magic #mbApr
-
 Saw these cool shiny playing cards yesterday while at my friend's cafe and lounge.
 
-<img src="uploads/2024/202cde523a.jpg" width="450" height="600" alt="Chi is holding a deck of cards partially fanned out in her right hand. The cards themselves have a sheen texture, with the faces or symbols of each of the playing cards just a darker black to make it obvious when light shines on the surface of the card.">
+<img src="/img/uploads/2024/202cde523a.jpg" width="450" height="600" alt="Chi is holding a deck of cards partially fanned out in her right hand. The cards themselves have a sheen texture, with the faces or symbols of each of the playing cards just a darker black to make it obvious when light shines on the surface of the card.">

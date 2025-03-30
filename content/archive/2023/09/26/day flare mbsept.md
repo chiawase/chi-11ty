@@ -1,5 +1,5 @@
 ---
-title: day flare mbsept
+title: "📷 day 25: flare #mbsept"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -25,8 +25,6 @@ photos_with_metadata:
 url: /2023/09/26/day-flare-mbsept.html
 ---
 
-📷 day 25: flare #mbsept
-
 Flare... flame? Fire? 😆😅
 
-<img src="uploads/2023/5a84536104f74eed8a4c818908b70006.jpg" width="600" height="600" alt="A Thai folk dancer holding onto 3 different lighted torches, 2 on their hands and one double-ended torch held by their right foot, dancing a traditional Thai dance. This performance was captured one evening in Chiang Mai, Thailand.">
+<img src="/img/uploads/2023/5a84536104f74eed8a4c818908b70006.jpg" width="600" height="600" alt="A Thai folk dancer holding onto 3 different lighted torches, 2 on their hands and one double-ended torch held by their right foot, dancing a traditional Thai dance. This performance was captured one evening in Chiang Mai, Thailand.">

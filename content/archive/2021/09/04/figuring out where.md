@@ -1,22 +1,16 @@
 ---
-title: figuring out where
-summary: ""
+title: "Figuring out where to go and listening to our inner selves"
+summary: "Some advice on what to do when feeling stuck and sharing some reflections on how I move forward"
 tags: ["cycling", "thoughts"]
 date: 2021-09-04T22:03:00+0800
 ---
-
-> This was originally posted on 4 September 2021.
-
-Some advice on what to do when feeling stuck and sharing some reflections on how I move forward
-
-//
 
 I’ve been in the industry for around 5 years now. I’m at the point where I’m thinking about the next phase of my career and wonder how I should grow. I have enough experience, yet I still doubt if I’ve done enough. Other people even look up to me already since I help organize knowledge sharing sessions and workshops in the local tech and design community.
 
 Despite having gone so far in my journey as a UX professional, I still feel stuck. So now I ask myself, what’s next? Where do I go from here?
 
 <figure>
-<img src="uploads/2023/photo-2023-07-05-21-55-15.jpg" width="600" height="1066" alt="Photo of Chi walking with her road bike on the sidewalk. The point-of-view is from her back.">
+<img src="/img/uploads/2023/photo-2023-07-05-21-55-15.jpg" width="600" height="1066" alt="Photo of Chi walking with her road bike on the sidewalk. The point-of-view is from her back.">
 <figcaption>Photo by <a href="https://richardparayno.com" target="_blank">Richard Parayno</a> via Dispo</figcaption>
 </figure>
 
@@ -25,7 +19,7 @@ Despite having gone so far in my journey as a UX professional, I still feel stuc
 This tweet from David Hoang struck a chord to me since its topic was timely:
 
 <figure>
-<img src="uploads/2023/image-2023-07-05-215806548.png" width="600" height="192" alt="Screenshot of a Tweet from David Hoang which reads, 'Don't feel the pressure of becoming a manager if you feel what you love and the biggest impact you can make is being an individual contributor, though make sure the career path has that headroom for your growth.'">
+<img src="/img/uploads/2023/image-2023-07-05-215806548.png" width="600" height="192" alt="Screenshot of a Tweet from David Hoang which reads, 'Don't feel the pressure of becoming a manager if you feel what you love and the biggest impact you can make is being an individual contributor, though make sure the career path has that headroom for your growth.'">
 <figcaption>Source: <a href="https://twitter.com/davidhoang/status/1390313390233423876" target="_blank">@davidhoang on Twitter</a></figcaption>
 </figure>
 

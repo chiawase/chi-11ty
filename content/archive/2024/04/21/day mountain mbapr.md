@@ -1,5 +1,5 @@
 ---
-title: day mountain mbapr
+title: "📷 Day 21: mountain #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 21: mountain #mbApr
-
 Took a photo of this mountain while riding a taxi with other tourists who were also figuring out how to get to Jioufen 😆 Taken last April 10, 2023!
 
-<img src="uploads/2024/26661cadaa.jpg" width="450" height="600" alt="A mountain covered with vegetation near Jioufen in Taiwan. A small thin cloud is seen on the tip of the mountain. A bus is seen on the right side of the photo because Chi took this as she was seated on the front passenger seat while going up the road.">
+<img src="/img/uploads/2024/26661cadaa.jpg" width="450" height="600" alt="A mountain covered with vegetation near Jioufen in Taiwan. A small thin cloud is seen on the tip of the mountain. A bus is seen on the right side of the photo because Chi took this as she was seated on the front passenger seat while going up the road.">

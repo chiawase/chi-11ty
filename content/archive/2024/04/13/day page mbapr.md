@@ -1,5 +1,5 @@
 ---
-title: day page mbapr
+title: "📷 Day 13: page #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,10 +24,8 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 13: page #mbApr
-
 Took a photo of this page spread from a book I was reading while going around Taiwan back in April 2023. I just thought it was intriguing.
 
 > “Whether instructed to stroke ten thousand cycles or even just a few hundred, the computer never complains. It always complies.”
 
-<img src="uploads/2024/861eebef01.jpg" width="450" height="600" alt="A page spread from a book where there is a drawing of an infinity loop repeatedly drawn to span both pages. The left page is colored black with white lines, while the right page—with is where the focus is—is white with black lines. There is text at the bottom right corner of the page which reads: &quot;Whether instructed to stroke ten thousand cycles or even just a few hundred, the computer never complains. It always complies.&quot;">
+<img src="/img/uploads/2024/861eebef01.jpg" width="450" height="600" alt="A page spread from a book where there is a drawing of an infinity loop repeatedly drawn to span both pages. The left page is colored black with white lines, while the right page—with is where the focus is—is white with black lines. There is text at the bottom right corner of the page which reads: &quot;Whether instructed to stroke ten thousand cycles or even just a few hundred, the computer never complains. It always complies.&quot;">

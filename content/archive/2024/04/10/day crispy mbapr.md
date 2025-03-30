@@ -1,5 +1,5 @@
 ---
-title: day crispy mbapr
+title: "📷 Day 9: crispy #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 9: crispy #mbApr
-
 Look at them crispy hibiscus popcorn and rice flakes on top of this poke bowl I ate somewhere around Salzburg 😁
 
-<img src="uploads/2024/b356d28ee4.jpg" width="450" height="600" alt="A poke bowl with hibiscus popcorn, rice flakes, corn, carrots, edamame, tomatoes, sesame seeds, and leafy greens all in a blue bowl.">
+<img src="/img/uploads/2024/b356d28ee4.jpg" width="450" height="600" alt="A poke bowl with hibiscus popcorn, rice flakes, corn, carrots, edamame, tomatoes, sesame seeds, and leafy greens all in a blue bowl.">

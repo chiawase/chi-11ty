@@ -27,4 +27,4 @@ Jollibee has nuggets now 😆 about time they did! 😛
 
 Tastes ok. Nuggets are nuggets 😁 I'm happy I can order this at Jollibee now hahaha
 
-<img src="uploads/2024/1f2596c9f4.jpg" width="450" height="600" alt="A promotional poster from Jollibee in front of their cashier registers sharing that Chicken Nuggets is now available.">
+<img src="/img/uploads/2024/1f2596c9f4.jpg" width="450" height="600" alt="A promotional poster from Jollibee in front of their cashier registers sharing that Chicken Nuggets is now available.">

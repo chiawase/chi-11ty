@@ -28,4 +28,4 @@ these were all just from today. My goodness. Who are all these numbers and why d
 
 Does this also happen to people in other countries? Is this just a PH thing? 😵‍💫
 
-<img src="uploads/2023/6607b0088b6d4ee29369dca2ead971db.jpg" width="277" height="600" alt="screenshot of Chi's Recent calls list, showing a slew of missed calls from unknown callers or numbers.">
+<img src="/img/uploads/2023/6607b0088b6d4ee29369dca2ead971db.jpg" width="277" height="600" alt="screenshot of Chi's Recent calls list, showing a slew of missed calls from unknown callers or numbers.">
