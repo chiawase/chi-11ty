@@ -8,16 +8,21 @@ Will be housed in [chisenires.design](https://chisenires.design).
 
 ## TODOs
 
-- clean up old posts in `archive/` since there's gonna be a lot of missing images there + missing titles
+- ~~clean up old posts in `archive/` since there's gonna be a lot of missing images there + missing titles~~ done
 - clean up the metadata? opengraph, etc.?
 - fix the tags or categories
 - add an option to switch between light mode and dark mode
 - fix the `index.njk` and `intro.md` to make it more fancy
 - make a distinction for the microblog posts and the ones that were formatted to be a proper blog post?
+- add `tracking.njk` to ignored files when building locally
 
 ## Changelog
 
 > not really sure if i'll maintain this, but I'll write it here for my visibility lol
+
+## 30 Mar 2025
+- deployed to `chisenires.design`
+- setup Google Analytics and Tinylytics
 
 ### 12 Mar 2025
 - pushed all these to github so it can be read by my server of choice
