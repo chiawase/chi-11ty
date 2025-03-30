@@ -27,4 +27,4 @@ url: /2023/07/04/sharing-my-outfit.html
 
 Sharing my outfit from yesterday when I went to the office. First time wearing pants after a long while! I used up all my skirt outfits recently so I figured I could change things up a bit for myself 😄 📷
 
-<img src="uploads/2023/image.jpg" width="450" height="600" alt="">
+<img src="/img/uploads/2023/image.jpg" width="450" height="600" alt="">

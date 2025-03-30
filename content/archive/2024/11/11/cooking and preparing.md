@@ -24,7 +24,7 @@ photos_with_metadata:
 
 My partner and I recently cooked a lot of food this weekend, and it got me to appreciate food and the ingredients that make sup the dishes we prepared. And I say this for both a dish I really loved as I grew up (sinigang) and another dish that I only recently started liking (curry rice). For this post I wanted to talk more about how cooking sinigang got me to appreciate it more as one of my favorite Filipino dishes.
 
-<img src="uploads/2024/photo-2024-11-11-23-28-47.jpg" width="600" height="800" alt="Sinigang na baboy in a pot and placed on a dining table. A bowl of rice is seen behind the pot, as well as some utensils and a placemat. Pieces of labanos and kangkong are floating on the top of the sabaw, and the sinigang looks like its signature orangey color.">
+<img src="/img/uploads/2024/photo-2024-11-11-23-28-47.jpg" width="600" height="800" alt="Sinigang na baboy in a pot and placed on a dining table. A bowl of rice is seen behind the pot, as well as some utensils and a placemat. Pieces of labanos and kangkong are floating on the top of the sabaw, and the sinigang looks like its signature orangey color.">
 
 <!--more-->
 

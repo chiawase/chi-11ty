@@ -6,6 +6,11 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import eleventyPluginInterlinker from "@photogabble/eleventy-plugin-interlinker";
 import pluginFilters from "./_config/filters.js";
 import { EleventyRenderPlugin } from "@11ty/eleventy";
+import { DateTime } from "luxon";
+import externalLinks from "eleventy-plugin-external-links";
+
+// for timezone
+const TIME_ZONE = "UTC+8";
 
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
@@ -28,10 +33,10 @@ export default async function(eleventyConfig) {
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
 		.addPassthroughCopy({
-			"./public/": "/"
+			"./public/": "/",
+			"./content/img/": "img/"
 		})
-		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
-		.addPassthroughCopy({ "img/favicon.png": "/favicon.png" });
+		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -103,7 +108,7 @@ export default async function(eleventyConfig) {
 			imgAttributes: {
 				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
 				loading: "lazy",
-				decoding: "async",
+				decoding: "async"
 			}
 		},
 
@@ -131,7 +136,7 @@ export default async function(eleventyConfig) {
 	// to emulate the file copy on the dev server. Learn more:
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
-	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
 	// Interlinker
 	eleventyConfig.addPlugin(eleventyPluginInterlinker, {
@@ -152,6 +157,31 @@ export default async function(eleventyConfig) {
 
 	// Year Shortcode
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+	// Making all external links open in new window
+	eleventyConfig.addPlugin(externalLinks, {
+        // Plugin defaults:
+        name: 'external-links',         // Plugin name
+        regex: /^(([a-z]+:)(?!\/\/mastodon)|(\/\/))/i,  // Regex that test if href is external
+        target: "_blank",               // 'target' attribute for external links
+        rel: "noopener",                // 'rel' attribute for external links
+        extensions: [".html"],          // Extensions to apply transform to
+        includeDoctype: true,           // Default to include '<!DOCTYPE html>' at the beginning of the file
+    });
+
+	// Timezone
+	eleventyConfig.addDateParsing(function(dateValue) {
+		let localDate;
+		if(dateValue instanceof Date) { // and YAML
+			localDate = DateTime.fromJSDate(dateValue, { zone: "utc" }).setZone(TIME_ZONE, { keepLocalTime: true });
+		} else if(typeof dateValue === "string") {
+			localDate = DateTime.fromISO(dateValue, { zone: TIME_ZONE });
+		}
+		if (localDate?.isValid === false) {
+			throw new Error(`Invalid \`date\` value (${dateValue}) is invalid for ${this.page.inputPath}: ${localDate.invalidReason}`);
+		}
+		return localDate;
+	});
 };
 
 export const config = {
@@ -192,3 +222,4 @@ export const config = {
 
 	// pathPrefix: "/",
 };
+

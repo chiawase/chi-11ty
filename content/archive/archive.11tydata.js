@@ -2,5 +2,5 @@ export default {
 	tags: [
 		"posts"
 	],
-	"layout": "layouts/post.njk",
+	"layout": "layouts/post.njk"
 };

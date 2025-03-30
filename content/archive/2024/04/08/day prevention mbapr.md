@@ -1,5 +1,5 @@
 ---
-title: day prevention mbapr
+title: "📷 Day 8: prevention #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,10 +24,8 @@ photos_with_metadata:
   height: 450
 ---
 
-📷 Day 8: prevention #mbApr
-
 Food is apt for this prompt, I guess. Lately I've been (re)figuring out how I'd feed or sustain myself as I live alone. 
 
 On good days, I do cook myself something, but admittedly I just do simple fried dishes. Trying to explore other... more cost-effective ways soon.
 
-<img src="uploads/2024/8e2ba5e36b.jpg" width="600" height="450" alt="Chi's usual breakfast meal, which is a hot coffee with sugar and creamer and fried luncheon meat with a couple of scoops of rice. Her utensils are chopsticks, and her meal is placed in a bowl.">
+<img src="/img/uploads/2024/8e2ba5e36b.jpg" width="600" height="450" alt="Chi's usual breakfast meal, which is a hot coffee with sugar and creamer and fried luncheon meat with a couple of scoops of rice. Her utensils are chopsticks, and her meal is placed in a bowl.">

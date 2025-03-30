@@ -1,5 +1,5 @@
 ---
-title: day cactus mbapr
+title: "📷 Day 14: cactus #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 14: cactus #mbApr
-
 This is the only photo I have with a cactus in it 😆 Tried an iced coffee drink in the local mall a while back. It was OK. Nothing much to say about it 😝
 
-<img src="uploads/2024/24acadf501.jpg" width="450" height="600" alt="Chi is holding up an iced coffee beverage in a container with the label 19° on it. In the background, a neon sign that reads &quot;Sealed Freshness&quot; in cursive is surrounded by fake cacti plants on a white wall.">
+<img src="/img/uploads/2024/24acadf501.jpg" width="450" height="600" alt="Chi is holding up an iced coffee beverage in a container with the label 19° on it. In the background, a neon sign that reads &quot;Sealed Freshness&quot; in cursive is surrounded by fake cacti plants on a white wall.">

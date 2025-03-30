@@ -1,7 +1,7 @@
 {
-	"name": "eleventy-base-blog",
-	"version": "9.0.0",
-	"description": "A starter repository for a blog web site using the Eleventy site generator.",
+	"name": "chisenires.design",
+	"version": "1.0.0",
+	"description": "Chi's space for thoughts and ideas on her side of the internet",
 	"type": "module",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
@@ -18,9 +18,8 @@
 		"url": "git://github.com/11ty/eleventy-base-blog.git"
 	},
 	"author": {
-		"name": "Zach Leatherman",
-		"email": "zachleatherman@gmail.com",
-		"url": "https://zachleat.com/"
+		"name": "Chi Señires",
+		"url": "https://chisenires.design/"
 	},
 	"license": "MIT",
 	"engines": {
@@ -41,6 +40,7 @@
 		"@11ty/eleventy-plugin-rss": "^2.0.4",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
 		"cross-env": "^7.0.3",
+		"eleventy-plugin-external-links": "^1.1.2",
 		"luxon": "^3.6.1",
 		"prismjs": "^1.30.0",
 		"zod": "^3.25.67",

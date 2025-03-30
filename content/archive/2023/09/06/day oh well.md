@@ -1,5 +1,5 @@
 ---
-title: day oh well
+title: "📷 Day 6: (oh) well #mbsept"
 summary: ""
 tags: ["cycling", "Photoblogging Challenges"]
 bluesky:
@@ -25,10 +25,8 @@ photos_with_metadata:
 url: /2023/09/06/day-oh-well.html
 ---
 
-📷 Day 6: (oh) well #mbsept
-
 This was a moment that got me to go, "oh well, I'm drenched in the rain, but at least I'm near home." 😅
 
 (I tried to see if I took any photos of actual wells, and... I have photos of other things with water, but not wells 😆)
 
-<img src="uploads/2023/8c50e6d55830473d860174eb8b2ddebb.jpg" width="450" height="600" alt="Selfie of Chi in her rain gear for her bike commute, wearing her red Lumos helmet and a black rain poncho. Both the poncho and her helmet are visibly drenched or have rain drops on them, and Chi's making a dejected or kind of exhausted face.">
+<img src="/img/uploads/2023/8c50e6d55830473d860174eb8b2ddebb.jpg" width="450" height="600" alt="Selfie of Chi in her rain gear for her bike commute, wearing her red Lumos helmet and a black rain poncho. Both the poncho and her helmet are visibly drenched or have rain drops on them, and Chi's making a dejected or kind of exhausted face.">

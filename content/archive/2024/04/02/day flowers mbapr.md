@@ -1,5 +1,5 @@
 ---
-title: day flowers mbapr
+title: "📷 Day 2: Flowers #mbapr"
 summary: ""
 tags: ["cycling", "Photoblogging Challenges"]
 bluesky:
@@ -24,8 +24,6 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 2: Flowers #mbapr
-
 One year ago! Took a photo of the YouBike I rented while going around Taichung, Taiwan. There were some cherry blossoms along Tanya Shen bikeway which we were traversing through 😊🌸
 
-<img src="uploads/2024/20a3fca004.jpg" width="450" height="600" alt="A YouBike parked under a cherry blossom tree. In the background, the Tanya Shen bikeway is visible with a few cyclists passing by.">
+<img src="/img/uploads/2024/20a3fca004.jpg" width="450" height="600" alt="A YouBike parked under a cherry blossom tree. In the background, the Tanya Shen bikeway is visible with a few cyclists passing by.">

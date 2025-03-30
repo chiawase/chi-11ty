@@ -1,5 +1,5 @@
 ---
-title: day panorama mbsept
+title: "📷 Day 7: panorama #mbsept"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -25,8 +25,6 @@ photos_with_metadata:
 url: /2023/09/07/day-panorama-mbsept.html
 ---
 
-📷 Day 7: panorama #mbsept
-
 I rarely take actual panorama photos with my phone, but maybe this'll count? View of the clouds during my flight from the Philippines to Thailand ☁️🤩
 
-<img src="uploads/2023/1782ab2cb9294a08a35548bdf8728ce9.jpg" width="337" height="600" alt="View outside a flight en route to Thailand from the Philippines. The glare of the sun is out of the frame, but its light shines brightly on the fluffy sea of clouds, further defining their shape. The sky above the clouds is a calming type of blue, reinforcing how serene the heavens look.">
+<img src="/img/uploads/2023/1782ab2cb9294a08a35548bdf8728ce9.jpg" width="337" height="600" alt="View outside a flight en route to Thailand from the Philippines. The glare of the sun is out of the frame, but its light shines brightly on the fluffy sea of clouds, further defining their shape. The sky above the clouds is a calming type of blue, reinforcing how serene the heavens look.">

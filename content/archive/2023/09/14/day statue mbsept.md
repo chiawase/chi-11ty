@@ -1,5 +1,5 @@
 ---
-title: day statue mbsept
+title: "📷 Day 14: statue #mbsept"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -25,8 +25,6 @@ photos_with_metadata:
 url: /2023/09/14/day-statue-mbsept.html
 ---
 
-📷 Day 14: statue #mbsept
-
 Apparently there is another Hachiko statue in Chiang Mai, Thailand, in their very own Little Tokyo area!
 
-<img src="uploads/2023/f901012cb4804a1ca342750e77a6cd13.jpg" width="450" height="600" alt="A statue of Hachiko, similar to the one in Tokyo, but this one in particular was taken at Chiang Mai, Thailand. Some bird poop is seen on the top of the Hachiko statue.">
+<img src="/img/uploads/2023/f901012cb4804a1ca342750e77a6cd13.jpg" width="450" height="600" alt="A statue of Hachiko, similar to the one in Tokyo, but this one in particular was taken at Chiang Mai, Thailand. Some bird poop is seen on the top of the Hachiko statue.">

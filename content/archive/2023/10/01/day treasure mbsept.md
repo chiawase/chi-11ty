@@ -1,5 +1,5 @@
 ---
-title: day treasure mbsept
+title: "📷 day 30: treasure #mbsept"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -25,12 +25,10 @@ photos_with_metadata:
 url: /2023/10/01/day-treasure-mbsept.html
 ---
 
-📷 day 30: treasure #mbsept
-
 i gave this some thought, and figured one of my treasures are my hands. They allow me to do so many things. 😌
 
 This means a bit more to me as a chronic nailbiter. I'm a bit better at it now, but still gotta improve.
 
 (also an excuse to show off my new manicure 😝💅)
 
-<img src="uploads/2023/b3ea0508f41a474eaf4360df895f9ceb.jpg" width="600" height="600" alt="Chi's right hand resting on a pseudo wooden surface. Her nails are neatly trimmed and have a shimmery red gel polish on it.">
+<img src="/img/uploads/2023/b3ea0508f41a474eaf4360df895f9ceb.jpg" width="600" height="600" alt="Chi's right hand resting on a pseudo wooden surface. Her nails are neatly trimmed and have a shimmery red gel polish on it.">

@@ -1,5 +1,5 @@
 ---
-title: day small mbapr
+title: "📷 Day 15: small #mbApr"
 summary: ""
 tags: ["Photoblogging Challenges"]
 bluesky:
@@ -24,10 +24,8 @@ photos_with_metadata:
   height: 600
 ---
 
-📷 Day 15: small #mbApr
-
 > "Many small people who in many small places do many small things that can alter the face of the world." (African Wisdom / Afrikanische Weisheit)
 
 Took this photo while walking along the East Side Gallery in Berlin.
 
-<img src="uploads/2024/bb6ce4bf0b.jpg" width="450" height="600" alt="Urban art found on the East Side Gallery with text that reads, first in German: “Viele kleine Leute die in vielen kleinen Orten viele kleine Dinge tun, können das Gesicht der Welt verändern.” and then in English: “Many small people who in many small places do many small things that can alter the face of the world.” underneath the text block is the credits to &quot;Afrikanische Weisheit&quot;—African wisdom in english.">
+<img src="/img/uploads/2024/bb6ce4bf0b.jpg" width="450" height="600" alt="Urban art found on the East Side Gallery with text that reads, first in German: “Viele kleine Leute die in vielen kleinen Orten viele kleine Dinge tun, können das Gesicht der Welt verändern.” and then in English: “Many small people who in many small places do many small things that can alter the face of the world.” underneath the text block is the credits to &quot;Afrikanische Weisheit&quot;—African wisdom in english.">

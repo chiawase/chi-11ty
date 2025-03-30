@@ -301,11 +301,11 @@ header {
 	padding: 0;
 	margin: 0;
 }
-.post-metadata time {
+.post-metadata time, .postlist-item time, .postlist-item .postlist-separator, .post-metadata .post-metadata-separator {
 	margin-right: 0.5em;
 }
 
-.post-metadata li:first-child:after {
+.post-metadata .post-metadata-separator::before, .postlist-item time + .postlist-separator::before {
 	content: "\2022";
 }
 
