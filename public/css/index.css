@@ -1,6 +1,6 @@
 /* Defaults */
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family: "Inconsolata Variable", -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
@@ -13,9 +13,10 @@
 	--background-color: #f3f3f3;
 
 	--text-color: var(--color-gray-90);
-	--text-color-link: #a00d0d;
-	--text-color-link-active: #f769a4;
-	--text-color-link-visited: #f8a6c1;
+
+	--text-color-link: #FA554F;
+	--text-color-link-active: #FA554F;
+	--text-color-link-visited: #FFAF60;
 
 	--syntax-tab-size: 2;
 }
@@ -27,9 +28,9 @@
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #a00d0d;
-		--text-color-link-active: #9f69f7;
-		--text-color-link-visited: #c5a6f8;
+		--text-color-link: #FA554F;
+		--text-color-link-active: #FA554F;
+		--text-color-link-visited: #FFAF60;
 
 		--background-color: #202122;
 	}
@@ -58,6 +59,18 @@ html {
 }
 body {
 	max-width: 50em;
+	font-variation-settings:
+		"wdth" 100;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: var(--font-family);
+	font-style: normal;
+	font-weight: 700;
+	font-width: expanded;
+	font-stretch: expanded;
+	line-height: 100%;
+	font-variation-settings:
+    	"wdth" 112.5;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -112,6 +125,7 @@ a[href]:visited {
 a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
+	text-decoration: underline;
 }
 
 main,
