@@ -7,7 +7,7 @@ const eleventyNavigation = {
 
 Hello there! I'm **Chi Señires**. I'm a UX Designer from the Philippines.
 
-<img src="https://chisenires.design/uploads/2023/rgb-chi-0523-2.jpg" width="300" height="475" alt="" class="chi-image">
+<img src="/img/chi/chi-01.png" width="300" height="475" alt="" class="chi-image">
 
 ## Quick GTKM (get to know me)
 - I have a red trifold folding bike I've named **Candy**.
@@ -36,4 +36,4 @@ If you'd like to chat, you may contact me through the following public accounts!
 - [Threads](https://threads.net/@_chiawase)
 - _[Twitter](https://twitter.com/ChiSenires)_ - keeping this here as a reference, but I technically stopped using this after I had trouble crossposting photo sets I'd upload everywhere else.
 
-<section style="padding: 1rem; width: 100%; max-width: 380px; min-height: 350px;"><img alt="Impact swag image" class="" src="https://hcti.io/v1/image/751ef92a-e248-4c0b-a14c-24d42d194234" height="100%" width="100%" style="background-color: rgb(225, 49, 108); border-radius: 14px;"></section>
+<img src="/img/chi/chi-02.png" alt="" class="chi-image">
