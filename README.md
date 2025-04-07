@@ -15,10 +15,14 @@ Will be housed in [chisenires.design](https://chisenires.design).
 - fix the `index.njk` and `intro.md` to make it more fancy
 - make a distinction for the microblog posts and the ones that were formatted to be a proper blog post?
 - add `tracking.njk` to ignored files when building locally
+- add automation to add the URLs to post front matter once articles are "posted"
+- set up a better POSSE method xd
 
 ## Changelog
 
 > not really sure if i'll maintain this, but I'll write it here for my visibility lol
+## 7 Apr 2025
+- update site colors to make the red less... dark
 
 ## 30 Mar 2025
 - deployed to `chisenires.design`
