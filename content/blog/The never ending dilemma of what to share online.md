@@ -2,7 +2,7 @@
 title: "The never ending dilemma of what to share online"
 description: "I constantly find myself wondering how much I should share online and where to share it, mostly because part of me is scared of bad actors who might take advantage of what I put out there..."
 date: 2025-04-15T06:25:26+00:00
-date_updated: 2025-04-15T06:42:31+00:00
+date_updated: 2025-04-15T06:43:31+00:00
 tags: 
 - writing
 - thoughts
