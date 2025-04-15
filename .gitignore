@@ -2,5 +2,11 @@ _site/
 node_modules/
 .cache
 
-.obsidian/
 content/_templates/
+
+# to exclude Obsidian's settings (including plugin and hotkey configurations)
+.obsidian/
+
+# Add below lines to exclude OS settings and caches
+.trash/
+.DS_Store
