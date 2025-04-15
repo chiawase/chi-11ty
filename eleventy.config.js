@@ -37,6 +37,12 @@ export default async function(eleventyConfig) {
 			"./content/img/": "img/"
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
+	
+	// getting the Inconsolata font pulled from node_modules
+	eleventyConfig.addPassthroughCopy({
+		"./node_modules/@fontsource-variable/inconsolata/files/*.woff2": "fonts/inconsolata/"
+	});
+
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -45,6 +51,12 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("css/**/*.css");
 	// Watch images for the image pipeline.
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
+
+	// Watch changes to posts
+	eleventyConfig.addWatchTarget("content/**/*.{njk,md,liquid}");
+
+	// Watch changes to CSS files
+	eleventyConfig.addWatchTarget("public/css/*.css");
 
 	// Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
 	// Bundle <style> content and adds a {% css %} paired shortcode
