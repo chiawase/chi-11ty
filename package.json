@@ -21,7 +21,6 @@
 		"name": "Chi Señires",
 		"url": "https://chisenires.design/"
 	},
-	"license": "MIT",
 	"engines": {
 		"node": ">=18"
 	},
