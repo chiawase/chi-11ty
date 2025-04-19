@@ -28,14 +28,14 @@ Will be housed in [chisenires.design](https://chisenires.design).
 ## Changelog
 
 > not really sure if i'll maintain this, but I'll write it here for my visibility lol
-## 19 Apr 2025
+### 19 Apr 2025
 - realize i forgot to include some updates from early this week, but I updated the font to the Inconsolata Variable font and did it thru npm! wow
 - also updated color scheme setup and made sure light mode was accessible / readable, and dark mode is something that can be toggled on as well
 
-## 7 Apr 2025
+### 7 Apr 2025
 - update site colors to make the red less... dark
 
-## 30 Mar 2025
+### 30 Mar 2025
 - deployed to `chisenires.design`
 - setup Google Analytics and Tinylytics
 
