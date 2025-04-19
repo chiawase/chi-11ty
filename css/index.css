@@ -18,33 +18,53 @@
 
 /* Theme colors */
 :root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
+	--color-gray-20: #aaa;
+	--color-gray-50: #666;
 	--color-gray-90: #333;
 
 	--background-color: #f3f3f3;
+	--background-color-overlay: #F8E3E2cc;
 
 	--text-color: var(--color-gray-90);
 
-	--text-color-link: #FA554F;
-	--text-color-link-active: #FA554F;
-	--text-color-link-visited: #FFAF60;
+	--text-color-link: #C2302B;
+	--text-color-link-active: #C2302B;
+	--text-color-link-visited: #8B24DA;
+
+	color-scheme: var(--color-scheme, light);
 
 	--syntax-tab-size: 2;
+
+	body.dark {
+		--color-scheme: dark;
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #B0B0B0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #FF8984;
+		--text-color-link-active: #FF8984;
+		--text-color-link-visited: #C5A6F8;
+
+		--background-color: #202122;
+		--background-color-overlay: #2b2b2bcc;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
+		--color-scheme: dark;
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #C0C0C0;
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #FA554F;
-		--text-color-link-active: #FA554F;
-		--text-color-link-visited: #FFAF60;
+		--text-color-link: #FF8984;
+		--text-color-link-active: #FF8984;
+		--text-color-link-visited: #C5A6F8;
 
 		--background-color: #202122;
+		--background-color-overlay: #2b2b2bcc;
 	}
 }
 
@@ -295,7 +315,7 @@ header {
 .postlist-date,
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
-	color: var(--color-gray-90);
+	color: var(--color-gray-50);
 }
 .postlist-date {
 	word-spacing: -0.5px;
@@ -355,12 +375,15 @@ blockquote {
 	border-left: 2px solid var(--text-color-link);
 	margin-left: 0;
 	padding: 1em;
-	color: var(--color-gray-90);
-	background: rgba(61, 57, 57, 0.8);
+	color: var(--text-color);
+	background: var(--background-color-overlay);
 }
 
 section.intro {
 	font-size: 1.35rem;
-	background-color: rgba(43, 43, 43, 0.8);
+	background-color: var(--background-color-overlay);
 	padding: 1em;
 }
+
+/* setting the legend text to center */
+dark-mode-toggle::part(legend) { margin: 0 auto; }

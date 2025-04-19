@@ -1,8 +1,7 @@
----js
-const eleventyNavigation = {
-	key: "About",
-	order: 3
-};
+---
+eleventyNavigation:
+  key: "About"
+  order: 2
 ---
 
 Hello there! I'm **Chi Señires**. I'm a UX Designer from the Philippines.
@@ -18,7 +17,7 @@ Hello there! I'm **Chi Señires**. I'm a UX Designer from the Philippines.
 - I do my best to familiarize myself with accessibility, especially for online things.
 
 ## What am I up to now?
-My [/now](https://chisenires.design/now) page has a list of the things I'm doing and taking note of so far.
+My [/now](/now/) page has a list of the things I'm doing and taking note of so far.
 
 ---
 
