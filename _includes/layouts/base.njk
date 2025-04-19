@@ -34,14 +34,19 @@
 		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
 		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
-		<style>
+		{# <style>
 			{% getBundle "css" %}
-		</style>
+		</style> #}
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
-		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
+		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+
+		{# Add Dark/Light Mode Toggle to bundle (?) #}
+		{% js %}{% include "node_modules/dark-mode-toggle/src/dark-mode-toggle.mjs" %}{% endjs %}
+		{# Also include the toggle to track Dark/Light Mode switch events #}
+		{% js %}{% include "public/js/light-dark-switch.js" %}{% endjs %}
 
 		{% include "tracking.njk" %}
 

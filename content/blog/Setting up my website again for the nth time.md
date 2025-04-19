@@ -3,7 +3,9 @@ title: Setting up my website again for the nth time
 description: Testing how this would look like in metadata?
 tags:
 - writing
+- coding
 date: 2025-03-12T01:02:35+08:00
+date_updated: 2025-04-19T07:07:43+00:00
 ---
 
 > This was initially written on March 5, 2025. I then made this particular blog post as my "test post" to see how static site generators would render the stuff I wrote in Markdown and then some.
