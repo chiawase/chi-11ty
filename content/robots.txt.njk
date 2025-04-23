@@ -1,0 +1,14 @@
+---
+eleventyExcludeFromCollections: true
+permalink: /robots.txt
+layout: false
+---
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+Host: {{ metadata.url }}/
+
+Sitemap: {{ metadata.url }}/sitemap.xml
