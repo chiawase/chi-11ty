@@ -18,7 +18,7 @@
 
 /* Theme colors */
 :root {
-	--color-gray-20: #aaa;
+	--color-gray-20: #6a6a6a;
 	--color-gray-50: #666;
 	--color-gray-90: #333;
 
@@ -35,26 +35,13 @@
 
 	--syntax-tab-size: 2;
 
-	body.dark {
-		--color-scheme: dark;
-		--color-gray-20: #e0e0e0;
-		--color-gray-50: #B0B0B0;
-		--color-gray-90: #dad8d8;
-
-		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #FF8984;
-		--text-color-link-active: #FF8984;
-		--text-color-link-visited: #C5A6F8;
-
-		--background-color: #202122;
-		--background-color-overlay: #2b2b2bcc;
-	}
+	--size-body-text: 18px;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-scheme: dark;
-		--color-gray-20: #e0e0e0;
+		--color-gray-20: #acacac;
 		--color-gray-50: #C0C0C0;
 		--color-gray-90: #dad8d8;
 
@@ -83,6 +70,8 @@ body {
 	padding: 0;
 	margin: 0 auto;
 	font-family: var(--font-family);
+	font-synthesis: weight;
+	font-size: var(--size-body-text);
 	color: var(--text-color);
 	background-color: var(--background-color);
 }
@@ -90,14 +79,14 @@ html {
 	overflow-y: scroll;
 }
 body {
-	max-width: 50em;
+	max-width: 44em;
 	font-variation-settings:
 		"wdth" 100;
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: var(--font-family);
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 900;
 	font-width: expanded;
 	font-stretch: expanded;
 	line-height: 100%;
@@ -141,11 +130,26 @@ p:last-child {
 	margin-bottom: 0;
 }
 p {
-	line-height: 1.5;
+	line-height: 200%;
+}
+
+/* selects the paragraphs that come after a heading or at the end of the post */
+p:has(+ h2), 
+p:has(+ h3), 
+p:has(+ h4), 
+p:has(+ h5),
+p:has(+ h6),
+p:has(+ .links-nextprev) {
+	margin-bottom: 2.5rem;
 }
 
 li {
-	line-height: 1.5;
+	line-height: 200%;
+}
+
+/* add margin after the last item of every list, except for nav */
+li:not(ul.nav li):not(ul.post-metadata li):last-child {
+	margin-bottom: 1rem;
 }
 
 a[href] {
@@ -226,7 +230,7 @@ code {
 }
 pre:not([class*="language-"]) {
 	margin: .5em 0;
-	line-height: 1.375; /* 22px /16 */
+	line-height: 140%;
 	-moz-tab-size: var(--syntax-tab-size);
 	-o-tab-size: var(--syntax-tab-size);
 	tab-size: var(--syntax-tab-size);
@@ -244,6 +248,13 @@ code {
 	word-break: break-all;
 }
 
+em {
+	font-style: normal;
+	font-weight: 700;
+	font-variation-settings:
+    	"wdth" 112.5;
+}
+
 /* Header */
 header {
 	display: flex;
@@ -255,7 +266,7 @@ header {
 }
 .home-link {
 	flex-grow: 1;
-	font-size: 1em; /* 16px /16 */
+	font-size: 1em;
 	font-weight: 700;
 	font-width: expanded;
 	font-stretch: expanded;
@@ -312,7 +323,7 @@ header {
 	text-align: right;
 	margin-left: -1.5rem;
 }
-.postlist-date,
+
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
 	color: var(--color-gray-50);
@@ -320,18 +331,23 @@ header {
 .postlist-date {
 	word-spacing: -0.5px;
 }
-.postlist-link {
+.postlist-link.postlist-header {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
+	line-height: 100%;
 	flex-basis: calc(100% - 1.5rem);
-	padding-left: .25em;
-	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
 }
 .postlist-item-active .postlist-link {
 	font-weight: bold;
+}
+
+.postlist-header, .postlist-description {
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: 0.25em;
+	padding-right: 0.5em;
 }
 
 /* Tags */
@@ -348,6 +364,7 @@ header {
 
 /* Tags list */
 .post-metadata {
+	font-size: 0.8rem;
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: .5em;
@@ -355,11 +372,16 @@ header {
 	padding: 0;
 	margin: 0;
 }
+
+.post-metadata .label {
+	color: var(--color-gray-20);
+}
+
 .post-metadata time, .postlist-item time, .postlist-item .postlist-separator, .post-metadata .post-metadata-separator {
 	margin-right: 0.5em;
 }
 
-.post-metadata .post-metadata-separator::before, .postlist-item time + .postlist-separator::before {
+.post-metadata .post-metadata-separator::before, .postlist-separator::before {
 	content: "\2022";
 }
 
@@ -380,9 +402,12 @@ blockquote {
 }
 
 section.intro {
-	font-size: 1.35rem;
+	font-size: 1.2rem;
 	background-color: var(--background-color-overlay);
 	padding: 1em;
+}
+section.intro p {
+	line-height: 160%;
 }
 
 /* setting the legend text to center */
