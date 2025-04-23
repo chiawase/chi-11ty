@@ -5,7 +5,7 @@ eleventyNavigation:
   key: "Stuff I Use"
   order: 4
 date: 2025-04-23T11:31:21+00:00
-date_updated: 2025-04-23T03:37:41+00:00
+date_updated: 2025-04-23T03:56:13+00:00
 ---
 
 > Last updated on {{ date_updated | readableDate }}.
@@ -102,10 +102,14 @@ I eventually want to spiffy this up while getting some inspiration from these bl
 - [Coolify](https://www.coolify.io/)
 #### 🌐 Domains
 - [Porkbun](https://porkbun.com/)!
-#### 💻 Coding
+- For my OMG.LOL domain, account, etc.: [omg.lol](https://home.omg.lol/referred-by/chi/)
+#### 💻 Coding & Setup
 - Terminal: [Ghostty](https://ghostty.org/)
 - Code Editor: [Cursor](https://www.cursor.com/) (while sparingly using the AI functionality for now)
+- My main keyboard: [Lily58 Pro](https://nextkeyboard.club/product-tag/lily58-pro/) with NK Cream switches
 #### 📢Social Media Networks
 - see my [Contact](/contact/) page!
 #### ✈️ Flight Tracking
 - [Flighty](https://apps.apple.com/app/id1358823008) especially because it has that yearly passport thing!
+#### 📚 Reading
+- For reading manga: [MANGA Plus by SHUEISHA](https://mangaplus.shueisha.co.jp/)
