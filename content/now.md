@@ -2,8 +2,8 @@
 eleventyNavigation:
   key: "/now"
   order: 4
-date_updated: 2025-04-16T12:06:51+00:00
 date: 2025-03-30T12:48:25+00:00
+date_updated: 2025-04-23T09:44:25+00:00
 ---
 
 > What I'm currently up to.
