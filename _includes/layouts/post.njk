@@ -6,23 +6,40 @@ layout: layouts/base.njk
 <style>{% include "css/prism-diff.css" %}</style>
 <h1>{{ title }}</h1>
 
+{% if title %}
 <ul class="post-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}">{{ date_updated | readableDate }}</time></li>{% endif %}
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<li>{% if loop.first %}<span class="post-metadata-separator"></span>{% endif %}<a href="{{ tagUrl }}" class="post-tag">{{ tag | lower }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
+	{% if draft %}<li><span class="post-metadata-separator"></span>Draft</li>{% endif %}
 </ul>
 
 {{ content | safe }}
+
+{% else %}{# if no title #}
+{{ content | safe }}
+
+<ul class="post-metadata">
+	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}">{{ date_updated | readableDate }}</time></li>{% endif %}
+	{%- for tag in tags | filterTagList %}
+	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+	<li>{% if loop.first %}<span class="post-metadata-separator"></span>{% endif %}<a href="{{ tagUrl }}" class="post-tag">{{ tag | lower }}</a>{%- if not loop.last %}, {% endif %}</li>
+	{%- endfor %}
+	{% if draft %}<li><span class="post-metadata-separator"></span>Draft</li>{% endif %}
+</ul>
+{% endif %}
 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
 <ul class="links-nextprev">
-	{%- if previousPost %}<li class="links-nextprev-prev">← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-	{%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+	{%- if previousPost %}<li class="links-nextprev-prev"><a href="{{ previousPost.url }}">← Previous</a><br> {{ (previousPost.data.title or (previousPost.content | striptags | safe | truncate(10, false, "..."))) }}</li>{% endif %}
+	{%- if nextPost %}<li class="links-nextprev-next"><a href="{{ nextPost.url }}">Next →</a><br>{{ nextPost.data.title }}</li>{% endif %}
 </ul>
 {%- endif %}
 {%- endif %}
