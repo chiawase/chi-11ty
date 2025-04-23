@@ -25,6 +25,12 @@ export default async function(eleventyConfig) {
 		}
 	});
 
+	eleventyConfig.setFrontMatterParsingOptions({
+		excerpt: true,
+		excerpt_alias: "description",
+		excerpt_separator: "<!-- more -->"
+	});
+
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
@@ -46,10 +52,10 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
 
 	// Watch changes to posts
-	eleventyConfig.addWatchTarget("content/**/*.{njk,md,liquid}");
+	eleventyConfig.addWatchTarget("content/");
 
 	// Watch changes to CSS files
-	eleventyConfig.addWatchTarget("public/css/*.css");
+	eleventyConfig.addWatchTarget("public/css/");
 
 	// Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
 	// Adds the {% css %} paired shortcode
