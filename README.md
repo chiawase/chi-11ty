@@ -29,6 +29,10 @@ Will be housed in [chisenires.design](https://chisenires.design).
   - inspiration:
     - https://heydingus.net/
 - check what other pages in https://slashpages.net/ are things I'd like to have on my own site
+  - particularly: also write about my AI usage
+    - references:
+      - https://www.bydamo.la/p/ai-manifesto
+      - https://sive.rs/ai
 - include site in Webrings!
   - another related task to this: figure out how to set up a Tambayan 404 Webring
 
