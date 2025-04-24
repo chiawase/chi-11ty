@@ -5,7 +5,7 @@ eleventyNavigation:
   key: "Stuff I Use"
   order: 4
 date: 2025-04-23T11:31:21+00:00
-date_updated: 2025-04-23T03:56:13+00:00
+date_updated: 2025-04-24T02:17:40+00:00
 ---
 
 > Last updated on {{ date_updated | readableDate }}.
@@ -113,3 +113,6 @@ I eventually want to spiffy this up while getting some inspiration from these bl
 - [Flighty](https://apps.apple.com/app/id1358823008) especially because it has that yearly passport thing!
 #### 📚 Reading
 - For reading manga: [MANGA Plus by SHUEISHA](https://mangaplus.shueisha.co.jp/)
+#### ☁️ Weather
+- [Ventusky](https://www.ventusky.com/)
+- [Hello Weather](https://helloweather.com/) for the cute widgets on iOS
