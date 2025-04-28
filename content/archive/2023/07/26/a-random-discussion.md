@@ -1,5 +1,5 @@
 ---
-title: a-random-discussion
+title:
 summary: ""
 tags: ["cycling"]
 bluesky:

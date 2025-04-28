@@ -1,5 +1,5 @@
 ---
-title: i want to
+title:
 summary: ""
 bluesky:
   id: bafyreicjqnixmkeqeac5kwuekur6m42jifeiygmkrajtgez6jzgmaymvsu

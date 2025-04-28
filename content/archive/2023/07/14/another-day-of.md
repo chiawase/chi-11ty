@@ -1,5 +1,5 @@
 ---
-title: another-day-of
+title:
 summary: ""
 bluesky:
   id: bafyreibjfkr5rai7nytq7zju5fdodgnaqpcq26w2tkedfntsmznmsh6bwu

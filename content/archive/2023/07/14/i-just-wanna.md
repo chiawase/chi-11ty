@@ -1,5 +1,5 @@
 ---
-title: i-just-wanna
+title:
 summary: ""
 bluesky:
   id: bafyreigxhzuikbfs3p6spdfrybbf5yjfgecaj26cnwiwcg45ycxngce2be

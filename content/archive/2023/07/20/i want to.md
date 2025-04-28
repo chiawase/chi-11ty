@@ -1,5 +1,5 @@
 ---
-title: i want to
+title:
 summary: ""
 tags: ["design"]
 bluesky:

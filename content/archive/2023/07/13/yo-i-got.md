@@ -1,5 +1,5 @@
 ---
-title: yo-i-got
+title:
 summary: ""
 bluesky:
   id: bafyreifnu2sa25wrx43ezd67avrqoff4kirppgpiwf4jmasl2ystdydizy
