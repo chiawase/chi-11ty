@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+		{% set renderTitle = title or metadata.title %}
+		{% set renderDescription = description or metadata.description %}
 		<title>
 			{% if title %}
 				{{ title }} &bull; {{ metadata.title }}
@@ -14,8 +15,10 @@
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
-		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
+		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site! #}
 		<meta name="generator" content="{{ eleventy.generator }}">
+
+		{% include "metadata.njk" %}
 
 		{#-
 		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
@@ -29,17 +32,14 @@
 		#}
 
 		{#- Add the contents of a file to the bundle #}
-		<style>{% include "css/index.css" %}</style>
-
+		{%- css %}{% include "public/css/index.css" %}{% endcss %}
 		{#- Or you can add from node_modules #}
 		{# <style>{% include "node_modules/something.css" %}</style> #}
 
 		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
-		{# <style>
-			{% getBundle "css" %}
-		</style> #}
+		<style>{% getBundle "css" %}</style>
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
-		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+		{# <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		<script type="module">{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}</script>
@@ -49,6 +49,7 @@
 		{# Also include the toggle to track Dark/Light Mode switch events #}
 		{% js %}{% include "public/js/light-dark-switch.js" %}{% endjs %}
 
+		{# Include tracking links #}
 		{% include "tracking.njk" %}
 
 		{# favicon #}

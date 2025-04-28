@@ -12,6 +12,11 @@ import externalLinks from "eleventy-plugin-external-links";
 // for timezone
 const TIME_ZONE = "UTC+8";
 
+export function cloudinarySafeText(text) {
+	return encodeURIComponent(text)
+		.replace(/(%2C)/g, '%252C')
+		.replace(/(%2F)/g, '%252F')
+}
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -197,11 +202,28 @@ export default async function(eleventyConfig) {
 
 	// Following Eleventy and Cloudinary Images tutorial: https://sia.codes/posts/eleventy-and-cloudinary-images/
 	const CLOUDNAME = "chi-11ty"
-	const FOLDER = "v1745848628/chisenires.design/";
+	const FOLDER = "chisenires.design/";
 	const BASE_URL = `https://res.cloudinary.com/${CLOUDNAME}/image/upload/`
 	const FALLBACK_WIDTHS = [ 300, 600, 680, 1360 ];
 	const FALLBACK_WIDTH = 680;
 	const DEFAULT_SIZES = "(min-width: 580px) 512px, calc(95.38vw - 22px)";
+	const SHARE_IMAGE_FILE_NAME = "thumbnail_odokru"; // points to https://res.cloudinary.com/chi-11ty/image/upload/v1745850878/chisenires.design/thumbnail_odokru.png
+	// If font not in the root of your Cloudinary media library, need to prepend with `foldername:`
+	
+	const TITLE_FONT = "open%20sans" // setting to Open Sans for now
+	const TITLE_FONT_SIZE = 60
+	const TITLE_BOTTOM_OFFSET = 378
+	const TAGLINE_FONT = "open%20sans"
+	const TAGLINE_FONT_SIZE = 36
+	const TAGLINE_TOP_OFFSET = 298
+	const TAGLINE_LINE_HEIGHT = 10
+	const URL_FONT = "open%20sans"
+	const URL_FONT_SIZE = 36
+	const URL_BOTTOM_OFFSET = 24
+	const URL_VALUE = "chisenires.design" // update this if my domain changes
+	const TEXT_AREA_WIDTH = 1071
+	const TEXT_LEFT_OFFSET = 60
+	const TEXT_COLOR = "FDFDFD"
 	
 	// Generate srcset attribute using the fallback widths or a supplied array of widths
 	eleventyConfig.addShortcode("srcset", (file, widths) => {
@@ -217,15 +239,46 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addShortcode("src", (file, width) => {
 		return `${BASE_URL}q_auto,f_auto,w_${width ? width : FALLBACK_WIDTH}/${FOLDER}${file}`
 	});
-
+	
 	// Add defaultSizes shortcode
 	eleventyConfig.addShortcode("defaultSizes", () => {
 		return `${DEFAULT_SIZES}`;
 	});
+	
+	// Create socialImageUrl shortcode
+	// Applying the code from https://sia.codes/posts/social-share-images-using-cloudinary/
+	eleventyConfig.addShortcode("socialImageUrl", (title, description) => {
+		// Thumbnail Image particulars
+		const width = "1280";
+		const height = "640";
+		const imageConfig = `c_fill,h_${height},w_${width}/f_png/q_auto:best`;
+	
+		// encoding title (instead of passing in a function for now)
+		const encodedTitle = encodeURIComponent(title)
+		.replace(/(%2C)/g, '%252C')
+		.replace(/(%2F)/g, '%252F');
 
+		// URL on thumbnail particulars
+		const urlConfig = `co_rgb:${TEXT_COLOR},l_text:${URL_FONT}_${URL_FONT_SIZE}_bold_normal_left:${URL_VALUE}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${URL_BOTTOM_OFFSET}`;
+		
+		// Title on thumbnail particulars
+		const titleConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TITLE_FONT}_${TITLE_FONT_SIZE}_bold_normal_left:${encodedTitle}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${TITLE_BOTTOM_OFFSET}`;
+
+		// encoding description (instead of passing in a function for now)
+		const encodedDescription = encodeURIComponent(description)
+			.replace(/(%2C)/g, '%252C')
+			.replace(/(%2F)/g, '%252F');
+	
+		// Subtitle particulars
+		const taglineConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TAGLINE_FONT}_${TAGLINE_FONT_SIZE}_normal_left:${encodedDescription}/fl_layer_apply,g_north_west,x_${TEXT_LEFT_OFFSET},y_${TAGLINE_TOP_OFFSET}`;
+
+		return `${BASE_URL}${imageConfig}/${titleConfig}/${taglineConfig}/${urlConfig}/${FOLDER}${SHARE_IMAGE_FILE_NAME}`;
+	});
+	
+	
 	// Making all external links open in new window
 	eleventyConfig.addPlugin(externalLinks, {
-        // Plugin defaults:
+		// Plugin defaults:
         name: 'external-links',         // Plugin name
         regex: /^(([a-z]+:)(?!\/\/mastodon)|(\/\/))/i,  // Regex that test if href is external
         target: "_blank",               // 'target' attribute for external links
@@ -233,7 +286,7 @@ export default async function(eleventyConfig) {
         extensions: [".html"],          // Extensions to apply transform to
         includeDoctype: true,           // Default to include '<!DOCTYPE html>' at the beginning of the file
     });
-
+	
 	// Timezone
 	eleventyConfig.addDateParsing(function(dateValue) {
 		let localDate;
