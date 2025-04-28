@@ -14,7 +14,7 @@ const numberOfLatestPostsToShow = 5;
 		I share thoughts about a lot of stuff, with posts covering various topics, like: 
 		{% for tag in collections | getKeys | filterTagList | sortAlphabetically %}
 		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		{% if loop.last == true %} and {% endif %}<a href="{{ tagUrl }}" class="post-tag">{{ tag | lower }}</a>{% if loop.last != true %}, {% endif %}
+		{% if loop.last == true %} and {% endif %}<a href="{{ tagUrl }}" class="post-tag">{{ tag | lower }}</a>{% if loop.last != true %}, {% else %}.{% endif %}
 		{% endfor %}
 	</p>
 </section>
