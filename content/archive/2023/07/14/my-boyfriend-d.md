@@ -1,5 +1,5 @@
 ---
-title: my-boyfriend-d
+title:
 summary: ""
 bluesky:
   id: bafyreidj32q6nfbq6dczhshnauxt42tfw6gfm33n3bswf4k4x5z2vpi6h4

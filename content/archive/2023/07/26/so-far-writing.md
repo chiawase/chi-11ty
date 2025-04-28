@@ -1,5 +1,5 @@
 ---
-title: so-far-writing
+title:
 summary: ""
 bluesky:
   id: bafyreigefuibr6qdgwsh3tt33uq3xgebikayykp5vtd54dawrp7l5ism2m

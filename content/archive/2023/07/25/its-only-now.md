@@ -1,5 +1,5 @@
 ---
-title: its-only-now
+title:
 summary: ""
 bluesky:
   id: bafyreiej2ozimkscu65xvtldjmoocc7a3z7dddnh6daakdf67j3nuzw664

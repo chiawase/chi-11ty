@@ -1,5 +1,5 @@
 ---
-title: today is the
+title: 
 summary: ""
 bluesky:
   id: bafyreie6ao3e5qbfhet2ywbvgrlexj6ni5pem6ga5mm5sfi2juamkr433y

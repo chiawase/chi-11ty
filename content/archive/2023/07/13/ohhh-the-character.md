@@ -1,5 +1,5 @@
 ---
-title: ohhh-the-character
+title:
 summary: ""
 bluesky:
   id: bafyreifx7duad775rrjmrl4sajahu7qj5otkhv4inzjfzvcm5clglmkyqu

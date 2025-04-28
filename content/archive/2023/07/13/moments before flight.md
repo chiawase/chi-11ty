@@ -1,5 +1,5 @@
 ---
-title: moments before flight
+title:
 summary: ""
 bluesky:
   id: bafyreidt5bontnwtlcixaeaeslza3fjwydpzwkpshb2hfemsg3ohesduim
@@ -15,6 +15,7 @@ mastodon:
   id: 110703625264912772
   username: chi
   hostname: social.lol
+microblog: true
 photos:
   - https://cdn.uploads.micro.blog/113466/2023/aa03f38a2c.jpg
 photos_with_metadata:

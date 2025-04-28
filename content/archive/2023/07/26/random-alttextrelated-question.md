@@ -1,5 +1,5 @@
 ---
-title: random-alttextrelated-question
+title:
 summary: ""
 bluesky:
   id: bafyreiaxf4vt2usv5wxyolcn6qlqrcrcrcfublcyet73ly2iuc2knzbc6m
