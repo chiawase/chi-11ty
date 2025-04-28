@@ -108,6 +108,7 @@ h1,h2,h3,h4,h5,h6 {
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
 img{
   max-width: 100%;
+  height: auto;
 }
 img[width][height] {
   height: auto;
