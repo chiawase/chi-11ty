@@ -11,11 +11,11 @@ Will be housed in [chisenires.design](https://chisenires.design).
 > Just listing all the things I wanna do for this site, in no particular order.
 ### Not yet done
 - ~~fix~~ clean up the tags or categories
-- clean up the metadata? opengraph, etc.?
-  - link for refrence to check: https://sia.codes/posts/social-share-images-using-cloudinary/
+
 - make a distinction for the microblog posts and the ones that were formatted to be a proper blog post?
   - slowly getting there
 - add `tracking.njk` to ignored files when building locally
+  - check if this even matters? only concern is with the hits
 - add automation to add the URLs to post front matter once articles are "posted"
 - set up a better POSSE method xd
   - stuff to check:
@@ -38,16 +38,25 @@ Will be housed in [chisenires.design](https://chisenires.design).
 - separate microblogs or the posts from `archive/` with stuff from `blog/`
   - make it look different?
   - add a tag for it?
+- fix formatting of code
+- add these TODOs as issues ...?
+  - and then learn about pull requests lol
 
 ### Already done
 - ~~clean up old posts in `archive/` since there's gonna be a lot of missing images there + missing titles~~ done
 - ~~add an option to switch between light mode and dark mode~~ done
 - ~~fix the `index.njk` and `intro.md` to make it more fancy~~ this is fine for now
 - ~~add a sun or moon depending on the setup color scheme~~ done
+- ~~clean up the metadata? opengraph, etc.?~~ done
 
 ## Changelog
 
 > not really sure if i'll maintain this, but I'll write it here for my visibility lol
+## 29 Apr 2025
+- fixed metadata and auto social image generation via Cloudinary! Talked about it [in this blog post](https://chisenires.design/blog/finally-fixed-the-metadata-generation-and-the-auto-social-images/)
+- also added a period after the last tag in the home page
+- also commented out the eleventyImageTransformPlugin for now as I figure out my Image CDN setup
+
 ## 28 Apr 2025
 - fixed how permalinks appear for posts with no titles (within `blog/` mostly)
 - also added the date when posts within `archives/` since i have a lot of duplicate "titles"  there
