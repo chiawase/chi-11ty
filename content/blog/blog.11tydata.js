@@ -3,7 +3,7 @@ export default {
 		"posts"
 	],
 	"layout": "layouts/post.njk",
-	permalink: function({ title }) {
-		return `/blog/${this.slugify(title)}/`;
+	eleventyComputed: {
+		permalink: (data) => "/blog/{{ page.fileSlug | slugify }}/",
 	},
 };
