@@ -35,6 +35,9 @@ Will be housed in [chisenires.design](https://chisenires.design).
       - https://sive.rs/ai
 - include site in Webrings!
   - another related task to this: figure out how to set up a Tambayan 404 Webring
+- separate microblogs or the posts from `archive/` with stuff from `blog/`
+  - make it look different?
+  - add a tag for it?
 
 ### Already done
 - ~~clean up old posts in `archive/` since there's gonna be a lot of missing images there + missing titles~~ done
@@ -45,6 +48,11 @@ Will be housed in [chisenires.design](https://chisenires.design).
 ## Changelog
 
 > not really sure if i'll maintain this, but I'll write it here for my visibility lol
+## 28 Apr 2025
+- fixed how permalinks appear for posts with no titles (within `blog/` mostly)
+- also added the date when posts within `archives/` since i have a lot of duplicate "titles"  there
+- cleaned up some duplicate entries in my `archives/` that were messing with my permalinks
+
 ### 23 Apr 2025
 - add [Stuff I Use](https://chisenires.design/stuff-i-use/) page
 - modified the Blog list so I can show posts without titles
