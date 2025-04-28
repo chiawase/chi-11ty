@@ -40,7 +40,6 @@ export default async function(eleventyConfig) {
 	eleventyConfig
 		.addPassthroughCopy({
 			"./public/": "/",
-			"./content/img/": "img/"
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 	
@@ -95,7 +94,7 @@ export default async function(eleventyConfig) {
 		templateData: {
 			eleventyNavigation: {
 				key: "Feed",
-				order: 4
+				order: 9
 			}
 		},
 		collection: {
@@ -114,31 +113,53 @@ export default async function(eleventyConfig) {
 	});
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// Output formats for each image.
-		formats: ["avif", "webp", "auto"],
+	// eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+	// 	// Output formats for each image.
+	// 	formats: ["webp", "png", "auto"],
 
-		// widths: ["auto"],
+	// 	widths: ["auto"],
 
-		failOnError: false,
-		htmlOptions: {
-			imgAttributes: {
-				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
-				loading: "lazy",
-				decoding: "async"
-			}
-		},
+	// 	failOnError: false,
+		
+	// 	useCache: true,
+		
+	// 	// returnType: "html",
+	// 	htmlOptions: {
+	// 		imgAttributes: {
+	// 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+	// 			alt: "",
+	// 			loading: "lazy",
+	// 			decoding: "async",
+	// 		}
+	// 	},
 
-		sharpOptions: {
-			animated: true,
-		},
-	});
+	// 	// Which source to use for `<img width height src>` attributes
+	// 	fallback: "largest", // or "smallest"
+
+	// 	fixOrientation: true,
+
+	// 	sharpOptions: {
+	// 		animated: true,
+	// 	},
+
+	// 	outputDir: "./img/",
+
+	// 	// Once Cloudinary is used or CDN
+	// 	// urlFormat: function ({
+	// 	// 	hash, // not included for `statsOnly` images
+	// 	// 	src,
+	// 	// 	width,
+	// 	// 	format,
+	// 	// }) {
+	// 	// 	return `https://example.com/${encodeURIComponent(src)}/${width}/${format}/`;
+	// 	// }
+	// });
 
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
 
 	eleventyConfig.addPlugin(IdAttributePlugin, {
-		// by default we use Eleventy’s built-in `slugify` filter:
+		// by default we use Eleventy's built-in `slugify` filter:
 		// slugify: eleventyConfig.getFilter("slugify"),
 		// selector: "h1,h2,h3,h4,h5,h6", // default
 	});
@@ -165,15 +186,42 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addShortcode("youtube", (videoURL, title) => {
 		const url = new URL(videoURL);
 		const id = url.searchParams.get("v");
-		return `
-	<iframe class="yt-shortcode" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player${
+		return `<iframe class="yt-shortcode" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player${
 		  title ? ` for ${title}` : ""
-		}" frameborder="0" allowfullscreen></iframe>
-	`;
+		}" frameborder="0" allowfullscreen></iframe>`;
 	  });
 
 	// Year Shortcode
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+
+	// Following Eleventy and Cloudinary Images tutorial: https://sia.codes/posts/eleventy-and-cloudinary-images/
+	const CLOUDNAME = "chi-11ty"
+	const FOLDER = "v1745848628/chisenires.design/";
+	const BASE_URL = `https://res.cloudinary.com/${CLOUDNAME}/image/upload/`
+	const FALLBACK_WIDTHS = [ 300, 600, 680, 1360 ];
+	const FALLBACK_WIDTH = 680;
+	const DEFAULT_SIZES = "(min-width: 580px) 512px, calc(95.38vw - 22px)";
+	
+	// Generate srcset attribute using the fallback widths or a supplied array of widths
+	eleventyConfig.addShortcode("srcset", (file, widths) => {
+		const widthSet = widths ? widths : FALLBACK_WIDTHS;
+		return widthSet.map(width => {
+			let src = `${BASE_URL}q_auto,f_auto,w_${width ? width : FALLBACK_WIDTH}/${FOLDER}${file}`;
+			return `${src} ${width}w`;
+		}).join(", ");
+	});
+	
+	// Generate the src attribute using the fallback width or a width supplied
+	// by the shortcode params
+	eleventyConfig.addShortcode("src", (file, width) => {
+		return `${BASE_URL}q_auto,f_auto,w_${width ? width : FALLBACK_WIDTH}/${FOLDER}${file}`
+	});
+
+	// Add defaultSizes shortcode
+	eleventyConfig.addShortcode("defaultSizes", () => {
+		return `${DEFAULT_SIZES}`;
+	});
 
 	// Making all external links open in new window
 	eleventyConfig.addPlugin(externalLinks, {
