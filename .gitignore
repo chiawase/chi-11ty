@@ -3,10 +3,10 @@ node_modules/
 package-lock.json
 .cache
 
-content/_templates/
+#content/_templates/
 
 # to exclude Obsidian's settings (including plugin and hotkey configurations)
-.obsidian/
+#.obsidian/
 
 # Add below lines to exclude OS settings and caches
 .trash/
