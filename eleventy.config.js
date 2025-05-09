@@ -67,6 +67,14 @@ export default async function(eleventyConfig) {
 	// Watch changes to CSS files
 	eleventyConfig.addWatchTarget("public/css/");
 
+	// Watch changes to njk files???
+	eleventyConfig.addWatchTarget("_includes/");
+
+	eleventyConfig.setChokidarConfig({
+		usePolling: true,
+		interval: 500,
+	});
+
 	// Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
 	// Bundle <style> content and adds a {% css %} paired shortcode
 	eleventyConfig.addBundle("css", {
@@ -118,47 +126,37 @@ export default async function(eleventyConfig) {
 	});
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-	// eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-	// 	// Output formats for each image.
-	// 	formats: ["webp", "png", "auto"],
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		// Output formats for each image.
+		formats: ["webp", "png", "auto"],
 
-	// 	widths: ["auto"],
+		widths: ["auto"],
 
-	// 	failOnError: false,
+		failOnError: false,
 		
-	// 	useCache: true,
+		useCache: true,
 		
-	// 	// returnType: "html",
-	// 	htmlOptions: {
-	// 		imgAttributes: {
-	// 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
-	// 			alt: "",
-	// 			loading: "lazy",
-	// 			decoding: "async",
-	// 		}
-	// 	},
+		// returnType: "html",
+		htmlOptions: {
+			imgAttributes: {
+				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+				alt: "",
+				loading: "lazy",
+				decoding: "async",
+			}
+		},
 
-	// 	// Which source to use for `<img width height src>` attributes
-	// 	fallback: "largest", // or "smallest"
+		// Which source to use for `<img width height src>` attributes
+		fallback: "largest", // or "smallest"
 
-	// 	fixOrientation: true,
+		fixOrientation: true,
 
-	// 	sharpOptions: {
-	// 		animated: true,
-	// 	},
+		sharpOptions: {
+			animated: true,
+		},
 
-	// 	outputDir: "./img/",
-
-	// 	// Once Cloudinary is used or CDN
-	// 	// urlFormat: function ({
-	// 	// 	hash, // not included for `statsOnly` images
-	// 	// 	src,
-	// 	// 	width,
-	// 	// 	format,
-	// 	// }) {
-	// 	// 	return `https://example.com/${encodeURIComponent(src)}/${width}/${format}/`;
-	// 	// }
-	// });
+		outputDir: "./img/",
+	});
 
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);

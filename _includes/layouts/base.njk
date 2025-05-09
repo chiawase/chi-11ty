@@ -6,11 +6,16 @@
 		{% set renderTitle = title or metadata.title %}
 		{% set renderDescription = description or metadata.description %}
 		<title>
-			{% if title %}
+			{%- if title %}
+				{# if post page #}
 				{{ title }} &bull; {{ metadata.title }}
-			{% else %}
+			{# {%- else if (page.url != "/") %} #}
+				{# if page #}
+				{# {{ title }} &bull; {{ metadata.title }} #}
+			{%- else %}
+				{# if home or otherwise #}
 				{{ metadata.title }}
-			{% endif %}
+			{%- endif %}
 		</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
@@ -72,6 +77,10 @@
 				</ul>
 			</nav>
 		</header>
+		<div class="test">
+      title show here
+  		{{ page.title }}
+		</div>
 
 		<main id="main">
 			<heading-anchors>

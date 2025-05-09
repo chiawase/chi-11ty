@@ -1,0 +1,6 @@
+{
+  "folder": "blog",
+  "autorun": false,
+  "template": "_templates/post_template",
+  "format": ""
+}
