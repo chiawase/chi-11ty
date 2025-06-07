@@ -2,8 +2,9 @@
 eleventyNavigation:
   key: "/now"
   order: 4
+title: "Chi's now page"
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-04-23T04:01:41+00:00
+date_updated: 2025-06-07T02:29:03+00:00
 ---
 
 > What I'm currently up to.
@@ -11,19 +12,21 @@ date_updated: 2025-04-23T04:01:41+00:00
 
 ### Stuff on my mind
 
-- need to do last FSL 2 Assignments before the final exam on Saturday 🙈
-- also need to pack for my upcoming trip to the US!
-- I should set up my site so that it's easy for me to update even on the go, right now everything lives on my personal PC
-- also wanna add anime being watched on this list, but that is for another day
+- still haven't posted all my snaps while I was in the US, particularly the ones for Arizona huhuhu
+- I should set up my site so that it's easy for me to update even on the go, right now everything lives on my personal PC <-- this is still on my mind
+- I have ~~too~~ so many things I need to do this MONTH good god
+- I need to fix my Personal Obsidian setup sooooon 😩
 
 ### Music on Repeat
 - anything from [sakanaction](https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq?si=4S6qkjAJSySUlNdrmZcj8g)
 - also [my Anime OPs and EDs Spotify playlist](https://open.spotify.com/playlist/3RA1XmqaJLjzKwdK6JZfkC?si=ec0b7ecb0f144d28)
 - or [my JPOP LSS Spotify playlist](https://open.spotify.com/playlist/1HhGj1oozPLXOG6I1xCUDw?si=ee1be7b111034486)
+
 ### Games I'm Playing
-- [Like a Dragon: Pirate Yakuza in Hawaii](https://store.steampowered.com/app/3061810/Like_a_Dragon_Pirate_Yakuza_in_Hawaii/)
-- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/)
-- [Do No Harm](https://store.steampowered.com/app/3138780/Do_No_Harm/)
+- [TETRIS®️ THE GRAND MASTER 4 -ABSOLUTE EYE-](https://store.steampowered.com/app/3328480/TETRIS_THE_GRAND_MASTER_4_ABSOLUTE_EYE/)
+- [FANTASY LIFE i: The Girl Who Steals Time](https://store.steampowered.com/app/2993780/FANTASY_LIFE_i_The_Girl_Who_Steals_Time/)
+- [Tetris®️ Effect: Connected](https://store.steampowered.com/app/1003590/Tetris_Effect_Connected/)
+
 ### What I’m reading
 > Ho damn, this is a lot!
 
@@ -51,8 +54,7 @@ date_updated: 2025-04-23T04:01:41+00:00
 22. [Monochrome Days](https://mangaplus.shueisha.co.jp/titles/100372)
 23. [Yattara](https://mangaplus.shueisha.co.jp/titles/100370)
 24. [No Gyaru in This Class](https://mangaplus.shueisha.co.jp/titles/100357)
-25. [Darling's Vanishing Act](https://mangaplus.shueisha.co.jp/titles/100342)
-26. [Gokurakugai](https://mangaplus.shueisha.co.jp/titles/100230)
+25. [Gokurakugai](https://mangaplus.shueisha.co.jp/titles/100230)
 
 ### Communities I'm Moderating
 

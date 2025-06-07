@@ -2,6 +2,7 @@
 eleventyNavigation:
   key: "About"
   order: 2
+title: "About Me"
 ---
 
 Hello there! I'm **Chi Señires**. I'm a UX Designer from the Philippines.
