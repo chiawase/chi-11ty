@@ -3,18 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		{% set renderTitle = title or metadata.title %}
-		{% set renderDescription = description or metadata.description %}
+		{% set hasTempTitle = false %}
 		<title>
 			{%- if title %}
-				{# if post page #}
+				{# if page has title #}
 				{{ title }} &bull; {{ metadata.title }}
-			{# {%- else if (page.url != "/") %} #}
-				{# if page #}
-				{# {{ title }} &bull; {{ metadata.title }} #}
+			{% elif page.url == "/" %}
+				{# if home #}
+				{{ metadata.title }} {# set to metadata title #}
+				{% set hasTempTitle = "home" %}
 			{%- else %}
-				{# if home or otherwise #}
-				{{ metadata.title }}
+				{# for posts that don't have titles #}
+				{% set tempTitle = content | striptags | safe | truncate(60, false, "...") %}
+				{{ tempTitle }} &bull; {{ metadata.title }}
+				{% set hasTempTitle = true %}
 			{%- endif %}
 		</title>
 		<meta name="description" content="{{ description or metadata.description }}">
