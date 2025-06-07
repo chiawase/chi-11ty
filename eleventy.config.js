@@ -245,16 +245,20 @@ export default async function(eleventyConfig) {
 	
 	// Create socialImageUrl shortcode
 	// Applying the code from https://sia.codes/posts/social-share-images-using-cloudinary/
-	eleventyConfig.addShortcode("socialImageUrl", (title, description) => {
+	eleventyConfig.addShortcode("socialImageUrl", (title, description, hasTempTitle, content) => {
 		// Thumbnail Image particulars
 		const width = "1280";
 		const height = "640";
 		const imageConfig = `c_fill,h_${height},w_${width}/f_png/q_auto:best`;
 	
-		// encoding title (instead of passing in a function for now)
-		const encodedTitle = encodeURIComponent(title)
-		.replace(/(%2C)/g, '%252C')
-		.replace(/(%2F)/g, '%252F');
+		// encoding title using cloudinarySafeText function
+		let thumbnailTitle = title;
+		if (hasTempTitle === "home") {
+			thumbnailTitle = "Chi Señires";
+		} else if (hasTempTitle) {
+			thumbnailTitle = "Chi's blog post";
+		}
+		const encodedTitle = cloudinarySafeText(thumbnailTitle);
 
 		// URL on thumbnail particulars
 		const urlConfig = `co_rgb:${TEXT_COLOR},l_text:${URL_FONT}_${URL_FONT_SIZE}_bold_normal_left:${URL_VALUE}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${URL_BOTTOM_OFFSET}`;
@@ -262,10 +266,14 @@ export default async function(eleventyConfig) {
 		// Title on thumbnail particulars
 		const titleConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TITLE_FONT}_${TITLE_FONT_SIZE}_bold_normal_left:${encodedTitle}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${TITLE_BOTTOM_OFFSET}`;
 
-		// encoding description (instead of passing in a function for now)
-		const encodedDescription = encodeURIComponent(description)
-			.replace(/(%2C)/g, '%252C')
-			.replace(/(%2F)/g, '%252F');
+		// encoding description using cloudinarySafeText function
+		let thumbnailDescription = description;
+		if (hasTempTitle && hasTempTitle !== "home") {
+			thumbnailDescription = content;
+		} else if (thumbnailDescription == null) {
+			thumbnailDescription = content;
+		}
+		const encodedDescription = cloudinarySafeText(thumbnailDescription);
 	
 		// Subtitle particulars
 		const taglineConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TAGLINE_FONT}_${TAGLINE_FONT_SIZE}_normal_left:${encodedDescription}/fl_layer_apply,g_north_west,x_${TEXT_LEFT_OFFSET},y_${TAGLINE_TOP_OFFSET}`;
