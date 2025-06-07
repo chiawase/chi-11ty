@@ -9,6 +9,7 @@
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
 		"start": "npx @11ty/eleventy --serve --incremental",
 		"start-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/ --serve --incremental",
+		"startquiet": "npx @11ty/eleventy --serve --incremental --quiet",
 		"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --incremental",
 		"benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
