@@ -6,6 +6,7 @@ node_modules/
 
 # to exclude Obsidian's settings (including plugin and hotkey configurations)
 #.obsidian/
+.obsidian/workspace.json
 
 # Add below lines to exclude OS settings and caches
 .trash/
