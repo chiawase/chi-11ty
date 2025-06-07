@@ -8,39 +8,8 @@ Will be housed in [chisenires.design](https://chisenires.design).
 
 ## TODOs
 
-> Just listing all the things I wanna do for this site, in no particular order.
 ### Not yet done
-- ~~fix~~ clean up the tags or categories
-
-- make a distinction for the microblog posts and the ones that were formatted to be a proper blog post?
-  - slowly getting there
-- add `tracking.njk` to ignored files when building locally
-  - check if this even matters? only concern is with the hits
-- add automation to add the URLs to post front matter once articles are "posted"
-- set up a better POSSE method xd
-  - stuff to check:
-    - https://www.citationneeded.news/posse/
-    - https://echofeed.app/
-- learn more about Webmentions and see if it's something I can add here?
-  - resources to check:
-    - https://sia.codes/posts/webmentions-eleventy-in-depth/
-    - https://sia.codes/posts/webmentions-eleventy-talk/
-- add a secondary nav for showing ALL the links and pages I have
-  - inspiration:
-    - https://heydingus.net/
-- check what other pages in https://slashpages.net/ are things I'd like to have on my own site
-  - particularly: also write about my AI usage
-    - references:
-      - https://www.bydamo.la/p/ai-manifesto
-      - https://sive.rs/ai
-- include site in Webrings!
-  - another related task to this: figure out how to set up a Tambayan 404 Webring
-- separate microblogs or the posts from `archive/` with stuff from `blog/`
-  - make it look different?
-  - add a tag for it?
-- fix formatting of code
-- add these TODOs as issues ...?
-  - and then learn about pull requests lol
+> Update 7 June 2025: I have moved all the existing TODOs I listed that are not yet done in [my Github repo's Issues tab](https://github.com/chiawase/chi-11ty/issues). That's where I'll keep track of the things I wanna fix on my personal website.
 
 ### Already done
 - ~~clean up old posts in `archive/` since there's gonna be a lot of missing images there + missing titles~~ done
@@ -50,6 +19,8 @@ Will be housed in [chisenires.design](https://chisenires.design).
 - ~~clean up the metadata? opengraph, etc.?~~ done
 
 ## Changelog
+## 7 June 2025
+- removed the ongoing TODOs from this README.md and laid them out in [chi-11ty/issues](https://github.com/chiawase/chi-11ty/issues)
 
 > not really sure if i'll maintain this, but I'll write it here for my visibility lol
 ## 29 Apr 2025
