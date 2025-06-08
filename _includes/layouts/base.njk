@@ -14,7 +14,7 @@
 				{% set hasTempTitle = "home" %}
 			{%- else %}
 				{# for posts that don't have titles #}
-				{% set tempTitle = content | striptags | safe | truncate(60, false, "...") %}
+				{%- set tempTitle = content | striptags | safe | truncate(60, false, "...") %}
 				{{ tempTitle }} &bull; {{ metadata.title }}
 				{% set hasTempTitle = true %}
 			{%- endif %}
@@ -22,13 +22,13 @@
 		{% set renderedDescription = description %}
 		{%- if page.url == "/" %}
 			{# special handling for home #}
-			{% set renderedDescription = metadata.description %}
+			{%- set renderedDescription = metadata.description %}
 		{%- elif renderedDescription == null and tags[0] == "posts" %}
 			{# special handling for posts with no explicit description #}
-			{% set renderedDescription = page.rawInput | striptags | safe | truncate(180, false, "...") %}
+			{%- set renderedDescription = page.rawInput | striptags | safe | truncate(180, false, "...") %}
 		{%- else %}
 			{# for the rest of the pages, default to description (if any) or metadata.description if none #}
-			{% set renderedDescription = description or metadata.description %}
+			{%- set renderedDescription = description or metadata.description %}
 		{%- endif %}
 		<meta name="description" content="{{ renderedDescription }}">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
@@ -38,21 +38,10 @@
 
 		{% include "metadata.njk" %}
 
-		{#-
-		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
-		1. CSS:
-			* Add to a per-page bundle using `{% css %}{% endcss %}`
-			* Retrieve bundle content using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-		2. Or for JavaScript:
-			* Add to a per-page bundle using `{% js %}{% endjs %}`
-			* Retrieve via `{% getBundle "js" %}` or `{% getBundleFileUrl "js" %}`
-		3. Learn more: https://github.com/11ty/eleventy-plugin-bundle
-		#}
-
 		{#- Add the contents of a file to the bundle #}
-		{%- css %}{% include "public/css/index.css" %}{% endcss %}
+		<style>{% include "public/css/index.css" %}</style>
 		{#- Or you can add from node_modules #}
-		{# <style>{% include "node_modules/something.css" %}</style> #}
+		{# <style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style> #}
 
 		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
 		<style>{% getBundle "css" %}</style>
@@ -63,9 +52,10 @@
 		<script type="module">{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}</script>
 
 		{# Add Dark/Light Mode Toggle to bundle (?) #}
-		{% js %}{% include "node_modules/dark-mode-toggle/src/dark-mode-toggle.mjs" %}{% endjs %}
+		<script type="module">{% include "node_modules/dark-mode-toggle/src/dark-mode-toggle.mjs" %}</script>
+
 		{# Also include the toggle to track Dark/Light Mode switch events #}
-		{% js %}{% include "public/js/light-dark-switch.js" %}{% endjs %}
+		<script type="module">{% include "public/js/light-dark-switch.js" %}</script>
 
 		{# Include tracking links #}
 		{% include "tracking.njk" %}
