@@ -16,7 +16,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/11ty/eleventy-base-blog.git"
+		"url": "git://github.com/chiaw/chi-11ty.git"
 	},
 	"author": {
 		"name": "Chi Señires",
@@ -25,14 +25,10 @@
 	"engines": {
 		"node": ">=18"
 	},
-	"funding": {
-		"type": "opencollective",
-		"url": "https://opencollective.com/11ty"
-	},
 	"bugs": {
-		"url": "https://github.com/11ty/eleventy-base-blog/issues"
+		"url": "https://github.com/chiawase/chi-11ty/issues"
 	},
-	"homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+	"homepage": "https://chisenires.design/",
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.2",
 		"@11ty/eleventy-img": "^6.0.4",
