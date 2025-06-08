@@ -2,11 +2,10 @@
 title: "Finally fixed the metadata generation and the auto social images!"
 description: 
 date: 2025-04-28T05:24:41+00:00
-date_updated: 2025-04-28T05:34:54+00:00
+date_updated: 2025-06-08T03:57:23+00:00
 tags: 
 - writing
 - coding
-url: 
 ---
 
 This is just a quick post for now because it's 1:25 AM where I'm at and I still have work and other things to finish tomorrow. But hooray! I finally got Cloudinary to work with my 11ty blog and processed my images with the auto adding of text and rendering it as an image! I got inspired by [Sia's blog post on social share images using Cloudinary](https://sia.codes/posts/social-share-images-using-cloudinary/), but admittedly there were some things that were going over my head when I first started working on this. (Which was... maybe around 5 or 6PM my time? ... Figuring that out took way too long 🙈)
