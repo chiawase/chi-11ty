@@ -74,10 +74,12 @@ export default async function(eleventyConfig) {
 	// Adds the {% css %} paired shortcode
 	eleventyConfig.addBundle("css", {
 		toFileDirectory: "dist",
+		bundleHtmlContentFromSelector: "style",
 	});
 	// Adds the {% js %} paired shortcode
 	eleventyConfig.addBundle("js", {
 		toFileDirectory: "dist",
+		bundleHtmlContentFromSelector: "script",
 	});
 
 	// Official plugins
