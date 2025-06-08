@@ -19,7 +19,18 @@
 				{% set hasTempTitle = true %}
 			{%- endif %}
 		</title>
-		<meta name="description" content="{{ description or metadata.description }}">
+		{% set renderedDescription = description %}
+		{%- if page.url == "/" %}
+			{# special handling for home #}
+			{% set renderedDescription = metadata.description %}
+		{%- elif renderedDescription == null and tags[0] == "posts" %}
+			{# special handling for posts with no explicit description #}
+			{% set renderedDescription = page.rawInput | striptags | safe | truncate(180, false, "...") %}
+		{%- else %}
+			{# for the rest of the pages, default to description (if any) or metadata.description if none #}
+			{% set renderedDescription = description or metadata.description %}
+		{%- endif %}
+		<meta name="description" content="{{ renderedDescription }}">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site! #}

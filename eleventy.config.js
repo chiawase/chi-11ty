@@ -45,6 +45,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig
 		.addPassthroughCopy({
 			"./public/": "/",
+			"./content/img/favicon.png": "/img/favicon.png",
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 	
@@ -245,7 +246,7 @@ export default async function(eleventyConfig) {
 	
 	// Create socialImageUrl shortcode
 	// Applying the code from https://sia.codes/posts/social-share-images-using-cloudinary/
-	eleventyConfig.addShortcode("socialImageUrl", (title, description, hasTempTitle, content) => {
+	eleventyConfig.addShortcode("socialImageUrl", (title, description, hasTempTitle) => {
 		// Thumbnail Image particulars
 		const width = "1280";
 		const height = "640";
@@ -268,11 +269,6 @@ export default async function(eleventyConfig) {
 
 		// encoding description using cloudinarySafeText function
 		let thumbnailDescription = description;
-		if (hasTempTitle && hasTempTitle !== "home") {
-			thumbnailDescription = content;
-		} else if (thumbnailDescription == null) {
-			thumbnailDescription = content;
-		}
 		const encodedDescription = cloudinarySafeText(thumbnailDescription);
 	
 		// Subtitle particulars
