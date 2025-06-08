@@ -2,10 +2,9 @@
 title: 
 description: 
 date: 2025-04-27T11:17:51+00:00
-date_updated: 2025-04-27T11:56:57+00:00
+date_updated: 2025-06-08T03:57:23+00:00
 tags: 
 - writing
-url: 
 ---
 
 I've read through [Product Picnic's latest post](https://productpicnic.beehiiv.com/p/if-you-re-comfortable-your-principles-aren-t-working) and felt compelled to repost it even before I read the other related links within the article because I think it's a good read to anyone who works on UX within their own teams. It's been a while since I've seen any “design principles” communicated within teams I've worked with to help guide us through how we should make design decisions, and I do know it's even more rare to see these exercised in the way they should be.

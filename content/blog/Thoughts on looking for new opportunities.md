@@ -2,11 +2,10 @@
 title: Thoughts on looking for new opportunities
 description: Sharing my thoughts on job hunting especially after I shared to peers that I found a new role. It wasn't easy. It was long, but eventually was worth doing because I kept at it until I found something that stuck.
 date: 2025-03-23T01:14:48+00:00
-date_updated: 2025-04-23T02:00:06+00:00
+date_updated: 2025-06-08T03:57:23+00:00
 tags: 
 - writing
 - career
-url: 
 ---
 
 Since I switched companies, I occasionally get asked the question, "how did you \[find a job\]?" or, "do you have any tips \[in looking for a new role\]?"

@@ -2,10 +2,9 @@
 title: "Reflections on working in different teams"
 description: 
 date: 2025-04-22T05:57:13+00:00
-date_updated: 2025-04-23T09:00:03+00:00
+date_updated: 2025-06-08T03:57:23+00:00
 tags: 
 - writing
-url: 
 draft: true
 ---
 

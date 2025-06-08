@@ -2,11 +2,10 @@
 title: "Finally(?) setting up the site (soft launch)"
 description: "This is yet another attempt at soft launching my new website setup"
 date: 2025-03-30T01:25:19+00:00
-date_updated: 2025-03-30T03:22:43+00:00
+date_updated: 2025-06-08T03:57:23+00:00
 tags: 
 - writing
 - coding
-url: 
 ---
 
 Is this iiiiiit? Am I finally gonna be sharing this online, and not just in my test domain?

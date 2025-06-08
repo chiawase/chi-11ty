@@ -2,11 +2,10 @@
 title: "Reading Product Picnic part 3"
 description: "I only now am catching up to Pavel's newsletter post on this (which I have a new article to catch up reading to), and now I have a new set of open tabs to get back to because of all the related reading and other articles that seem interesting to me."
 date: 2025-04-06T11:38:25+00:00
-date_updated: 2025-04-07T12:23:58+00:00
+date_updated: 2025-06-08T03:57:23+00:00
 tags: 
 - writing
 - design
-url: https://chisenires.design/blog/reading-product-picnic-part-3/
 ---
 
 I only now am catching up to [Pavel's newsletter post](https://productpicnic.beehiiv.com/p/design-is-a-leadership-skill-why-design-goes-wrong-and-how-to-set-it-right-part-3) on this [now-4 part series (which I have a new article to catch up reading to)](https://productpicnic.beehiiv.com/p/design-without-feedback-is-theater-why-design-goes-wrong-and-how-to-set-it-right-part-4), and now I have a new set of open tabs to get back to because of all the related reading and other articles that seem interesting to me. 😆
