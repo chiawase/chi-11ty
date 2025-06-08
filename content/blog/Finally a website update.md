@@ -8,7 +8,7 @@ tags:
 - coding
 ---
 
-My favicon's back to normal, the test text data I had is gone from view, and my site is building again. 😆
+My favicon's back to normal, the test text data I had is gone from view, and my site is building again!
 
 <!-- more -->
 
