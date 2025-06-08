@@ -121,7 +121,8 @@ export default async function(eleventyConfig) {
 			subtitle: "Chi's space for thoughts and ideas on her side of the internet",
 			base: "https://chisenires.design/",
 			author: {
-				name: "Chi Señires"
+				name: "Chi Señires",
+				url: "https://chisenires.design/about/"
 			}
 		}
 	});
