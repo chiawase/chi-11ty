@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 4
 title: "Chi's now page"
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-06-07T02:29:03+00:00
+date_updated: 2025-06-27T09:05:15+00:00
 ---
 
 > What I'm currently up to.
@@ -12,10 +12,9 @@ date_updated: 2025-06-07T02:29:03+00:00
 
 ### Stuff on my mind
 
-- still haven't posted all my snaps while I was in the US, particularly the ones for Arizona huhuhu
+- I'll just post my Antelope Canyon photos when I feel like it
 - I should set up my site so that it's easy for me to update even on the go, right now everything lives on my personal PC <-- this is still on my mind
-- I have ~~too~~ so many things I need to do this MONTH good god
-- I need to fix my Personal Obsidian setup sooooon 😩
+- I really want to get [Webmentions](https://github.com/chiawase/chi-11ty/issues/8) set up on soon and maybe the Webring for [Tambayan 404](https://tambayan404.com) members too haha
 
 ### Music on Repeat
 - anything from [sakanaction](https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq?si=4S6qkjAJSySUlNdrmZcj8g)
@@ -23,9 +22,9 @@ date_updated: 2025-06-07T02:29:03+00:00
 - or [my JPOP LSS Spotify playlist](https://open.spotify.com/playlist/1HhGj1oozPLXOG6I1xCUDw?si=ee1be7b111034486)
 
 ### Games I'm Playing
-- [TETRIS®️ THE GRAND MASTER 4 -ABSOLUTE EYE-](https://store.steampowered.com/app/3328480/TETRIS_THE_GRAND_MASTER_4_ABSOLUTE_EYE/)
-- [FANTASY LIFE i: The Girl Who Steals Time](https://store.steampowered.com/app/2993780/FANTASY_LIFE_i_The_Girl_Who_Steals_Time/)
-- [Tetris®️ Effect: Connected](https://store.steampowered.com/app/1003590/Tetris_Effect_Connected/)
+- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/)
+- [Clair Obscur: Expedition 33](https://www.expedition33.com/)
+- [Microsoft Solitaire Collection](https://www.microsoftcasualgames.com/#solitaire) (lol yes)
 
 ### What I’m reading
 > Ho damn, this is a lot!
