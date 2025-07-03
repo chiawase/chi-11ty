@@ -1,1 +1,10 @@
-{ "trailingSlash": true }
+{
+    "trailingSlash": true,
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "redirects": [
+        {
+            "source": "/categories/:path*",
+            "destination": "/tags/:path*"
+        }
+    ]
+}
