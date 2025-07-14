@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 4
 title: "Chi's now page"
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-06-27T09:05:15+00:00
+date_updated: 2025-07-15T00:58:00+08:00
 ---
 
 > What I'm currently up to.
@@ -22,9 +22,11 @@ date_updated: 2025-06-27T09:05:15+00:00
 - or [my JPOP LSS Spotify playlist](https://open.spotify.com/playlist/1HhGj1oozPLXOG6I1xCUDw?si=ee1be7b111034486)
 
 ### Games I'm Playing
+- [Umamusume: Pretty Derby](https://store.steampowered.com/app/3224770/Umamusume_Pretty_Derby/)
+
+### Games On Hold
 - [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/)
 - [Clair Obscur: Expedition 33](https://www.expedition33.com/)
-- [Microsoft Solitaire Collection](https://www.microsoftcasualgames.com/#solitaire) (lol yes)
 
 ### What I’m reading
 > Ho damn, this is a lot!
