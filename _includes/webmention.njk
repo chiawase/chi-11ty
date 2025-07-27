@@ -16,7 +16,7 @@
         {%- endif %}
 
         {%- if webmention.published %}
-            <time datetime="{{ webmention.published }}" class="postlist-date dt-published webmention__pubdate">{{ webmention.published | readableDate }}</time>
+            <time datetime="{{ webmention.published }}" class="postlist-date dt-published webmention__pubdate">{{ webmention.published }}</time>
         {%- endif %}
     </div>
 

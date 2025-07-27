@@ -433,7 +433,7 @@ dark-mode-toggle::part(legend) { margin: 0 auto; }
 .webmentions__summary {
 	display: inline-flex;
 	gap: 1rem;
-	margin-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 
 .webmentions__facepile {
