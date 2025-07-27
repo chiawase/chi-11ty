@@ -10,7 +10,7 @@ Hello there! I'm <span class="p-name">**Chi Señires**</span>. I'm a <span class
 
 <img src="/img/chi/chi.jpg" alt="" width="400" height="400" class="chi-image u-photo">
 
-## Quick GTKM (get to know me)
+## Quick <abbr title="Getting to Know Me">GTKM</abbr>
 - I have a red trifold folding bike I've named **Candy**.
 - I love using [Figma, the collaborative design tool](https://figma.com).
 - currently working at <a href="https://humanforce.com" class="p-org">Humanforce</a> as a UX Designer.
