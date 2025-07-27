@@ -2,7 +2,7 @@
 
 Chi's Digital Garden built with a Jekyll template and notes set up in [Obsidian](https://obsidian.md).
 
-Currently built with [Eleventy](https://www.11ty.dev/) site generator (using the [v3.0 release](https://github.com/11ty/eleventy/releases/tag/v3.0.0)).
+Currently built with [Eleventy](https://www.11ty.dev/) site generator (using the [v3.1.1 release](https://github.com/11ty/eleventy/releases/tag/v3.1.1)).
 
 Will be housed in [chisenires.design](https://chisenires.design).
 
