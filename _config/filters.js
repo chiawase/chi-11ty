@@ -1,9 +1,9 @@
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
-	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
+	eleventyConfig.addFilter("readableDate", (dateObj) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-		return DateTime.fromJSDate(dateObj, { zone: zone || "UTC+8" }).toFormat(format || "dd LLLL yyyy hh:mm a");
+		return DateTime.fromJSDate(dateObj, { zone: "UTC+8" }).toFormat("dd LLLL yyyy hh:mm a");
 	});
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
@@ -40,4 +40,17 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter("sortAlphabetically", strings =>
 		(strings || []).sort((b, a) => b.localeCompare(a))
 	);
+
+	// for Webmentions
+	eleventyConfig.addFilter("getWebmentionsForUrl", (webmentions, url) => {
+		return webmentions.children.filter(entry => entry['wm-target'] === url);
+	});
+
+	eleventyConfig.addFilter("webmentionsSize", (mentions) => {
+		return !mentions ? 0 : mentions.length;
+	});
+
+	eleventyConfig.addFilter("webmentionsByType", (mentions, mentionType) => {
+		return mentions.filter(entry => !!entry[mentionType]);
+	});
 };

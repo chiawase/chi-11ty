@@ -5,6 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
+		"build:local": "NODE_ENV=production npx @11ty/eleventy",
 		"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --incremental",
 		"startquiet": "npx @11ty/eleventy --serve --incremental --quiet",
@@ -36,7 +37,9 @@
 		"cross-env": "^7.0.3",
 		"dark-mode-toggle": "^0.16.2",
 		"eleventy-plugin-external-links": "^1.1.2",
+		"lodash": "^4.17.21",
 		"luxon": "^3.6.1",
+		"node-fetch": "^3.3.2",
 		"prismjs": "^1.30.0",
 		"zod": "^3.25.67",
 		"zod-validation-error": "^3.5.2"

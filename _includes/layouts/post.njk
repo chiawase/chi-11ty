@@ -44,10 +44,14 @@ layout: layouts/base.njk
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-	{%- if previousPost %}<li class="links-nextprev-prev"><a href="{{ previousPost.url }}">← Previous</a><br> {{ (previousPost.data.title or (previousPost.content | striptags | safe | truncate(10, false, "..."))) }}</li>{% endif %}
-	{%- if nextPost %}<li class="links-nextprev-next"><a href="{{ nextPost.url }}">Next →</a><br>{{ (nextPost.data.title or (nextPost.content | striptags | safe | truncate(10, false, "..."))) }}</li>{% endif %}
-</ul>
+	{%- if nextPost or previousPost %}
+	<ul class="links-nextprev">
+		{%- if previousPost %}<li class="links-nextprev-prev"><a href="{{ previousPost.url }}">← Previous</a><br> {{ (previousPost.data.title or (previousPost.content | striptags | safe | truncate(10, false, "..."))) }}</li>{% endif %}
+		{%- if nextPost %}<li class="links-nextprev-next"><a href="{{ nextPost.url }}">Next →</a><br>{{ (nextPost.data.title or (nextPost.content | striptags | safe | truncate(10, false, "..."))) }}</li>{% endif %}
+	</ul>
+	{%- endif %}
 {%- endif %}
-{%- endif %}
+
+<!-- Webmentions -->
+{% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
+{% include "webmentions.njk" %}
