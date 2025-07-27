@@ -33,6 +33,9 @@
 		<meta name="description" content="{{ renderedDescription }}">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
+		{# Include rel-me link tags #}
+		{% include "relmeauth.njk" %}
+
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site! #}
 		<meta name="generator" content="{{ eleventy.generator }}">
 
