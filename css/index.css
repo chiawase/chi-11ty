@@ -416,3 +416,8 @@ section.intro p {
 
 /* setting the legend text to center */
 dark-mode-toggle::part(legend) { margin: 0 auto; }
+
+/* About Page */
+.chi-image {
+	border-radius: 2rem;
+}
