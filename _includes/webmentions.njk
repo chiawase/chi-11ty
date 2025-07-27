@@ -29,18 +29,18 @@
 <section class="webmentions">
   <h3>Webmentions</h3>
   <div class="webmentions__summary">
-      {% if likesSize > 0 %}<span>💖 {{ likesSize }}</span>{% endif %}
-      {% if repostsSize > 0 %}<span>🔁 {{ repostsSize }}</span>{% endif %}
-      {% if repliesSize > 0 %}<span>💬 {{ repliesSize }}</span>{% endif %}
-      {% if mentionOfSize > 0 %}<span>🗣️ {{ mentionOfSize }}</span>{% endif %}
+      {%- if likesSize > 0 %}<span>💖 {{ likesSize }}</span>{%- endif %}
+      {%- if repostsSize > 0 %}<span>🔁 {{ repostsSize }}</span>{%- endif %}
+      {%- if repliesSize > 0 %}<span>💬 {{ repliesSize }}</span>{%- endif %}
+      {%- if mentionOfSize > 0 %}<span>🗣️ {{ mentionOfSize }}</span>{%- endif %}
   </div>
 
-  {% if repliesSize > 0 %}
+  {%- if repliesSize > 0 %}
   <div class="webmention-replies">
-    <h4>{{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}</h4>
+    <h4>{{ repliesSize }} {%- if repliesSize == "1" %}Reply{% else %}Replies{%- endif %}</h4>
     {%- for webmention in replies %}{% include "webmention.njk" %}{% endfor %}
   </div>
-  {% endif %}
+  {%- endif %}
 
   {%- if mentions | length %}
     <ol class="webmentions__list">
