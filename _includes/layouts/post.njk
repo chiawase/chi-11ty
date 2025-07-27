@@ -4,34 +4,42 @@ layout: layouts/base.njk
 {# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
 <style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style>
 <style>{% include "css/prism-diff.css" %}</style>
-<h1>{{ title }}</h1>
+<article class="h-entry">
+
+<h1 class="p-name">{{ title }}</h1>
 
 {% if title %}
 <ul class="post-metadata">
-	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}">{{ date_updated | readableDate }}</time></li>{% endif %}
+	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}" class="dt-published">{{ page.date | readableDate }}</time></li>
+	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}" class="dt-updated">{{ date_updated | readableDate }}</time></li>{% endif %}
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li>{% if loop.first %}<span class="post-metadata-separator"></span>{% endif %}<a href="{{ tagUrl }}" class="post-tag">{{ tag | lower }}</a>{%- if not loop.last %}, {% endif %}</li>
+	<li>{% if loop.first %}<span class="post-metadata-separator"></span>{% endif %}<a href="{{ tagUrl }}" class="post-tag p-category">{{ tag | lower }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
 	{% if draft %}<li><span class="post-metadata-separator"></span>Draft</li>{% endif %}
 </ul>
 
+<div class="e-content">
 {{ content | safe }}
+</div>
 
 {% else %}{# if no title #}
+<div class="e-content">
 {{ content | safe }}
+</div>
 
 <ul class="post-metadata">
-	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}">{{ date_updated | readableDate }}</time></li>{% endif %}
+	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}" class="dt-published">{{ page.date | readableDate }}</time></li>
+	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}" class="dt-updated">{{ date_updated | readableDate }}</time></li>{% endif %}
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li>{% if loop.first %}<span class="post-metadata-separator"></span>{% endif %}<a href="{{ tagUrl }}" class="post-tag">{{ tag | lower }}</a>{%- if not loop.last %}, {% endif %}</li>
+	<li>{% if loop.first %}<span class="post-metadata-separator"></span>{% endif %}<a href="{{ tagUrl }}" class="post-tag p-category">{{ tag | lower }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
 	{% if draft %}<li><span class="post-metadata-separator"></span>Draft</li>{% endif %}
 </ul>
 {% endif %}
+
+</article>
 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}

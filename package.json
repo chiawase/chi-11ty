@@ -44,6 +44,7 @@
 	"dependencies": {
 		"@fontsource-variable/inconsolata": "^5.2.5",
 		"@photogabble/eleventy-plugin-interlinker": "^1.1.0",
-		"@zachleat/heading-anchors": "^1.0.5"
+		"@zachleat/heading-anchors": "^1.0.5",
+		"dotenv": "^17.2.1"
 	}
 }
