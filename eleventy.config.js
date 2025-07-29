@@ -1,5 +1,5 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import feedPlugin from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
@@ -101,31 +101,37 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
-	eleventyConfig.addPlugin(feedPlugin, {
-		type: "atom", // or "rss", "json"
-		outputPath: "/feed/feed.xml",
-		stylesheet: "pretty-atom-feed.xsl",
-		templateData: {
-			eleventyNavigation: {
-				key: "Feed",
-				order: 7
-			}
-		},
-		collection: {
-			name: "posts",
-			limit: 10,
-		},
-		metadata: {
-			language: "en",
-			title: "Chi Señires",
-			subtitle: "Chi's space for thoughts and ideas on her side of the internet",
-			base: "https://chisenires.design/",
-			author: {
-				name: "Chi Señires",
-				url: "https://chisenires.design/about/"
-			}
-		}
-	});
+	eleventyConfig.addPlugin(feedPlugin);
+
+	eleventyConfig.addLiquidFilter("dateToRfc3339", feedPlugin.dateToRfc3339);
+	eleventyConfig.addLiquidFilter("dateToRfc822", feedPlugin.dateToRfc822);
+
+	// eleventyConfig.addPlugin(feedPlugin, {
+	// 	type: "atom", // or "rss", "json"
+	// 	outputPath: "/feed.xml",
+	// 	// stylesheet: "pretty-atom-feed.xsl",
+	// 	templateData: {
+	// 		eleventyNavigation: {
+	// 			key: "Feed",
+	// 			order: 7
+	// 		},
+	// 	},
+	// 	collection: {
+	// 		name: "posts",
+	// 		limit: 10,
+	// 	},
+	// 	metadata: {
+	// 		language: "en",
+	// 		title: "Chi Señires",
+	// 		subtitle: "Chi's space for thoughts and ideas on her side of the internet",
+	// 		base: "https://chisenires.design/",
+	// 		author: {
+	// 			name: "Chi Señires",
+	// 			url: "https://chisenires.design/about/",
+	// 			email: "hello@chisenires.design"
+	// 		}
+	// 	}
+	// });
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {

@@ -1,0 +1,40 @@
+---
+permalink: "feed.xml"
+eleventyExcludeFromCollections: true
+layout: ""
+numberOfLatestPostsToShow: 10
+metadata:
+    title: "Chi Señires"
+    description: "Chi's space for thoughts and ideas on her side of the internet"
+    base: "https://chisenires.design"
+    author:
+        name: "Chi Señires"
+        url: "https://chisenires.design/about/"
+        email: "hello@chisenires.design"
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ metadata.language }}">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.description }}</subtitle>
+  <link href="{{ permalink | htmlBaseUrl(metadata.base) }}" rel="self" />
+  <link href="{{ metadata.base | addPathPrefixToFullUrl }}" />
+  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.base | addPathPrefixToFullUrl }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+  </author>
+  {%- set postsCount = collections.posts | length %}
+  {%- set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+  {%- set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+  {%- set postslistCounter = postsCount %}
+  {%- for post in postslist | reverse %}
+  {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
+  <entry>
+		<title>{%- if post.data.title %}{{ post.data.title }}{% else %}{% set tempTitle = post.content | striptags | safe | truncate(60, false, "...") %}{{ tempTitle }}{% endif %}</title>
+    <link href="{{ absolutePostUrl }}" />
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>
