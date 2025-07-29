@@ -31,6 +31,8 @@
 	--text-color-link-active: #C2302B;
 	--text-color-link-visited: #8B24DA;
 
+	--text-color-code: green;
+
 	color-scheme: var(--color-scheme, light);
 
 	--syntax-tab-size: 2;
@@ -49,6 +51,8 @@
 		--text-color-link: #FF8984;
 		--text-color-link-active: #FF8984;
 		--text-color-link-visited: #C5A6F8;
+
+		--text-color-code: greenyellow;
 
 		--background-color: #202122;
 		--background-color-overlay: #2b2b2bcc;
@@ -229,9 +233,13 @@ table th {
 pre,
 code {
 	font-family: var(--font-family-monospace);
+	padding: 0.25rem;
+	background-color: var(--background-color-overlay);
+	color: var(--text-color-code);
+	border-radius: 0.25rem;
 }
 pre:not([class*="language-"]) {
-	margin: .5em 0;
+	margin: 0.5em 0;
 	line-height: 140%;
 	-moz-tab-size: var(--syntax-tab-size);
 	-o-tab-size: var(--syntax-tab-size);
@@ -374,7 +382,7 @@ header {
 	gap: .5em;
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 1rem;
 }
 
 .post-metadata .label {
