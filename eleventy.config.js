@@ -66,7 +66,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("content/");
 
 	// Watch changes to CSS files
-	eleventyConfig.addWatchTarget("public/css/*.css");
+	eleventyConfig.addWatchTarget("public/**/*.css");
 
 	// Watch changes to njk files???
 	eleventyConfig.addWatchTarget("_includes/");
