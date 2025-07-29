@@ -6,6 +6,7 @@
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"build:local": "NODE_ENV=production npx @11ty/eleventy",
+		"postbuild": "npx webmention https://chisenires.design/feed.xml --limit 1 --send",
 		"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --incremental",
 		"startquiet": "npx @11ty/eleventy --serve --incremental --quiet",
