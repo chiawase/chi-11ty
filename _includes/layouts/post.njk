@@ -8,6 +8,14 @@ layout: layouts/base.njk
 
 <h1 class="p-name">{{ title }}</h1>
 
+{# copying the implementation of Jeremy Cherfas (https://www.jeremycherfas.net/) #}
+<div class="u-author h-card">
+	<data value="{{ metadata.url }}" class="u-url"></data>
+	<data value="Chi Señires" class="p-name"></data>
+	<data value="/img/chi/chi.jpg" class="u-photo"></data>
+	<data value="mailto:hello@chisenires.design" class="u-email"></data>
+</div>
+
 <ul class="post-metadata">
 	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}" class="dt-published">{{ page.date | readableDate }}</time></li>
 	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}" class="dt-updated">{{ date_updated | readableDate }}</time></li>{% endif %}
