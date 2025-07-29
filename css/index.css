@@ -216,7 +216,7 @@ footer {
 	padding: 1em 0;
 }
 .links-nextprev > * {
-	flex-grow: 1;
+	flex: 1;
 }
 .links-nextprev-next {
 	text-align: right;
