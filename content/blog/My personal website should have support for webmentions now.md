@@ -9,7 +9,7 @@ tags:
 ---
 
 ### 20:05 PM update:
-Just writing this post to note per timestamp what I've done so far. I feel a bit optimistic I'll finish this [Github issue])(https://github.com/chiawase/chi-11ty/issues/8) by this evening since I've already gotten the most basic Webmention pass-data to work (with the data of my test [shown here](https://webmention.io/chisenires.design/webmention/wdlPhQ9nM6WgqEoVIibL), but I'm not really sure if this would be visible to all, but linking it just for the sake of referring to it)
+Just writing this post to note per timestamp what I've done so far. I feel a bit optimistic I'll finish this [Github issue](https://github.com/chiawase/chi-11ty/issues/8) by this evening since I've already gotten the most basic Webmention pass-data to work (with the data of my test [shown here](https://webmention.io/chisenires.design/webmention/wdlPhQ9nM6WgqEoVIibL), but I'm not really sure if this would be visible to all, but linking it just for the sake of referring to it)
 
 I've been going back and forth with the following articles and posts to figure out how to make this setup work with my own website of 11ty + Coolify (since that's where my site is deployed, and not the conventional Netlify):
 - [An In-Depth Tutorial of Webmentions + Eleventy](https://sia.codes/posts/webmentions-eleventy-in-depth/) by Sia Karamalegos
@@ -36,3 +36,13 @@ I'm currently testing the webmention setup I made in [[Constantly updating this 
 Okay, I think it technically works already. I've initially published this article so I could also set up another webmention for this post in particular. Initially, I got no results because the one webmention I set up was a `mention-of` kinda thing, none yet of the other types, like `repost-of`, `like-of`, `in-reply-to`... since I don't have those yet, my posts will just have a list of all the webmentions in general shown below. But there's still gonna be a counter that shows the total number of webmentions per type. XD Maybe eventually that number will grow hehe.
 
 One thing I've yet to figure out is if is already done automatically by nature of me mentioning some of the articles here. If that doesn't really work, then I guess I'll just have to update this again. XD
+
+### Update after posting this article:
+
+> Technically it's 2 days since I have this article up, I just want to add anecdotes after this.
+
+Seems like I've only really implemented half of the whole setup. I can _receive_ webmentions, but I'm not really sure how I can _send_ them. Plus if there's also a way to specify the webmention type, like if I want to reply to someone or if I'm reposting a particular article, vs just making them all `mention-of`s.
+
+I'm still figuring that part out, hopefully I eventually get it to the point that I can write about it better. Honestly, the process of implementing this was all very confusing with all the information being... everywhere, or I guess... with some of the info not being clear cut from the get go?
+
+I hope I do get it eventually that I can write my own guide, so that in the future, whoever's in the same boat as I am can be better guided, even with the other articles I've already linked initially.
