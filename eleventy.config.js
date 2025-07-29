@@ -63,7 +63,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
 
 	// Watch changes to posts
-	eleventyConfig.addWatchTarget("content/");
+	eleventyConfig.addWatchTarget("content/*/**.*");
 
 	// Watch changes to CSS files
 	eleventyConfig.addWatchTarget("public/**/*.css");
@@ -103,12 +103,12 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"
-		outputPath: "/feed/feed.xml",
+		outputPath: "/feed.xml",
 		stylesheet: "pretty-atom-feed.xsl",
 		templateData: {
 			eleventyNavigation: {
 				key: "Feed",
-				order: 9
+				order: 7
 			}
 		},
 		collection: {
