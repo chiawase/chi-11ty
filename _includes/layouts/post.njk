@@ -8,7 +8,6 @@ layout: layouts/base.njk
 
 <h1 class="p-name">{{ title }}</h1>
 
-{% if title %}
 <ul class="post-metadata">
 	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}" class="dt-published">{{ page.date | readableDate }}</time></li>
 	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}" class="dt-updated">{{ date_updated | readableDate }}</time></li>{% endif %}
@@ -22,22 +21,6 @@ layout: layouts/base.njk
 <div class="e-content">
 {{ content | safe }}
 </div>
-
-{% else %}{# if no title #}
-<div class="e-content">
-{{ content | safe }}
-</div>
-
-<ul class="post-metadata">
-	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}" class="dt-published">{{ page.date | readableDate }}</time></li>
-	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}" class="dt-updated">{{ date_updated | readableDate }}</time></li>{% endif %}
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li>{% if loop.first %}<span class="post-metadata-separator"></span>{% endif %}<a href="{{ tagUrl }}" class="post-tag p-category">{{ tag | lower }}</a>{%- if not loop.last %}, {% endif %}</li>
-	{%- endfor %}
-	{% if draft %}<li><span class="post-metadata-separator"></span>Draft</li>{% endif %}
-</ul>
-{% endif %}
 
 </article>
 
