@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   key: "About"
-  order: 2
+  order: 3
 title: "About Me"
 ---
 <div class="h-card">

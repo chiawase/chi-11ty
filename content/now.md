@@ -1,10 +1,10 @@
 ---
 eleventyNavigation:
   key: "/now"
-  order: 4
+  order: 5
 title: "Chi's now page"
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-07-15T00:58:00+08:00
+date_updated: 2025-07-29T11:08:46+00:00
 ---
 
 > What I'm currently up to.
@@ -12,9 +12,9 @@ date_updated: 2025-07-15T00:58:00+08:00
 
 ### Stuff on my mind
 
-- I'll just post my Antelope Canyon photos when I feel like it
-- I should set up my site so that it's easy for me to update even on the go, right now everything lives on my personal PC <-- this is still on my mind
-- I really want to get [Webmentions](https://github.com/chiawase/chi-11ty/issues/8) set up on soon and maybe the Webring for [Tambayan 404](https://tambayan404.com) members too haha
+- started working on [Webmentions](https://github.com/chiawase/chi-11ty/issues/8) and I have half of the implementation ready; just need to figure out how to send out webmentions automatically (if that's even possible XD)
+- this is still on my mind: setting up the Webring for [Tambayan 404](https://tambayan404.com) members too haha
+- I got new keyboard switches hehe
 
 ### Music on Repeat
 - anything from [sakanaction](https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq?si=4S6qkjAJSySUlNdrmZcj8g)
@@ -23,10 +23,12 @@ date_updated: 2025-07-15T00:58:00+08:00
 
 ### Games I'm Playing
 - [Umamusume: Pretty Derby](https://store.steampowered.com/app/3224770/Umamusume_Pretty_Derby/)
-
-### Games On Hold
-- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/)
 - [Clair Obscur: Expedition 33](https://www.expedition33.com/)
+### Games On Hold
+- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — waiting for the 1.0 patch release!!
+
+### Currently Rewatching
+- [Avatar: The Legend of Korra](https://www.imdb.com/title/tt1695360/)
 
 ### What I’m reading
 > Ho damn, this is a lot!
