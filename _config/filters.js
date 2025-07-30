@@ -3,12 +3,18 @@ import { DateTime } from "luxon";
 export default function(eleventyConfig) {
 	eleventyConfig.addFilter("readableDate", (dateObj) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-		return DateTime.fromJSDate(dateObj, { zone: "UTC+8" }).toFormat("dd LLLL yyyy hh:mm a");
+		let d = new Date(dateObj);
+		return DateTime.fromJSDate(d).toFormat("fff");
 	});
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, { zone: "UTC+8" }).toFormat('yyyy-LL-dd');
+		let d = new Date(dateObj);
+		return DateTime.fromJSDate(d).toFormat('yyyy-LL-dd hh:mm a');
+	});
+
+	eleventyConfig.addFilter("typeOf", (value) => {
+		return typeof value;
 	});
 
 	// Get the first `n` elements of a collection.
@@ -43,7 +49,7 @@ export default function(eleventyConfig) {
 
 	// for Webmentions
 	eleventyConfig.addFilter("getWebmentionsForUrl", (webmentions, url) => {
-		return webmentions.children.filter(entry => entry['wm-target'] === url);
+		return webmentions.children.filter(entry => entry['wm-target'] === url).sort((a,b) => new Date(b.published) - new Date(a.published));
 	});
 
 	eleventyConfig.addFilter("webmentionsSize", (mentions) => {
