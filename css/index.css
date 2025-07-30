@@ -393,7 +393,7 @@ header {
 	margin-right: 0.5em;
 }
 
-.post-metadata .post-metadata-separator::before, .postlist-separator::before {
+.post-metadata .post-metadata-separator:before, .postlist-separator:before {
 	content: "\2022";
 }
 
@@ -489,5 +489,13 @@ dark-mode-toggle::part(legend) { margin: 0 auto; }
     margin-right:.5rem;
 }
 .webmention__pubdate {
-    font-style: italic;
+	margin-left: 0.25rem;
+}
+.webmention__pubdate:before {
+    content: "\2022";
+	margin-right: 0.5em;
+}
+
+.webmention__link_only {
+	margin-left: 0.25rem;
 }

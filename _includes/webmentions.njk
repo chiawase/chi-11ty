@@ -21,7 +21,7 @@
 {# Count total number of replies #}
 {% set repliesSize = replies | webmentionsSize %}
 
-{# set replies as mentions that are `mention-of` #}
+{# set mentionOfs as mentions that are `mention-of` #}
 {% set mentionOfs = mentions | webmentionsByType("mention-of") %}
 {# Count total number of replies #}
 {% set mentionOfSize = mentionOfs | webmentionsSize %}
