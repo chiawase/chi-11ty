@@ -16,6 +16,10 @@ layout: layouts/base.njk
 	<data value="mailto:hello@chisenires.design" class="u-email"></data>
 </div>
 
+<div class="e-content">
+{{ content | safe }}
+</div>
+
 <ul class="post-metadata">
 	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}" class="dt-published">{{ page.date | readableDate }}</time></li>
 	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}" class="dt-updated">{{ date_updated | readableDate }}</time></li>{% endif %}
@@ -25,10 +29,6 @@ layout: layouts/base.njk
 	{%- endfor %}
 	{% if draft %}<li><span class="post-metadata-separator"></span>Draft</li>{% endif %}
 </ul>
-
-<div class="e-content">
-{{ content | safe }}
-</div>
 
 </article>
 
