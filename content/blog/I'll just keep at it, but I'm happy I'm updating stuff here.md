@@ -2,7 +2,7 @@
 title: "I'll just keep at it, but I'm happy I'm updating stuff here"
 description: "I wanted to type on my keyboard. Mulling over the things I've been working on the past few days on my website now, like webmentions and the date format fix I did!"
 date: 2025-07-30T02:47:15+00:00
-date_updated: 2025-07-30T02:57:08+00:00
+date_updated: 2025-07-31T01:16:05+00:00
 tags: 
 - writing
 ---
@@ -34,3 +34,7 @@ export default function(eleventyConfig) {
 Instead of keeping it just to the `return` line helped fix the long standing DateTime issue I had. Hooray!
 
 Alright, I have chores to get back to. I'm also happy whenever people online reply to my ramblings or musings on the fediverse or elsewhere. I hope I can immerse myself a bit more and more intentional in the IndieWeb soon. For the longest time, I've just been lurking and reading things from time to time, but now since I have more motivation to get things done, I'll do just that. 😁
+
+> Update: Hooray the linking back to my fediverse account when sharing links in Mastodon works now 😄 I think I just needed to wait for it to propagate haha
+
+(i would share an image here but I'm still figuring that part out with auto-uploading to CDN for images and such or whatever, still need to rethink my media organization here XD soon™️)
