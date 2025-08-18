@@ -10,16 +10,18 @@ tags:
 
 Since I switched companies, I occasionally get asked the question, "how did you \[find a job\]?" or, "do you have any tips \[in looking for a new role\]?"
 
-### The short answer to that is:
+The short answer to that is:
 
 - I modified my resume so other than explaining the design work I did, I also included the business impact my designs resulted in; and
 - I just kept applying to jobs until I found one that stuck.
 
 (and it feels like a cop out to say these since it seems so simple, but wala, yun lang rin masasabi ko eh)
-### For the long answer:
+
+For the long answer...
+
 For the current timeframe of when I am writing this (which is near the end of Q1 2025), I just want to share: I was already job hunting around late 2023. Initially I was just doing it partly as practice and partly because I was already anticipating I might stagnate in my growth if I stayed where I was given my existing skillset. I was in a somewhat cushy corporate job, with good benefits even with dependents and also some room to grow withing the company. But I didn't think I would grow my design skills there, specifically in learning more about design systems. So I started searching for other places where I could potentially get that learning.
 
-*(As an aside, I also just want to mention here that I've voiced out my desire to get involved in design systems at the start of me joining my previous company, but as much as I kept fronting it and also kind of involving myself in things relating to our existing design system then, since I was hired for a different reason, I didn't get to exercise that muscle as much. I'm pretty sure people who worked with me before were not surprised why I eventually left, along with other reasons I will not mention here. 😛)*
+(As an aside, I also just want to mention here that I've voiced out my desire to get involved in design systems at the start of me joining my previous company, but as much as I kept fronting it and also kind of involving myself in things relating to our existing design system then, since I was hired for a different reason, I didn't get to exercise that muscle as much. I'm pretty sure people who worked with me before were not surprised why I eventually left, along with other reasons I will not mention here. 😛)
 
 By start of 2024, I had some good news then: I was being considered for a role in a big company in Europe. They even paid for part of my trip then because I already had a scheduled trip to visit my partner for a few weeks. I got to know the potential team I was gonna work with, got a tour of the offices, and got to discuss possible offers with their HR. I was so excited to hear back from them then!
 
@@ -52,6 +54,7 @@ Prepare your resume. Prepare your portfolio. Just keep looking. Just keep applyi
 And also: don't put too much emotional weight on applying for jobs. Just put in enough effort. That enough is something you have to define for yourself.
 
 It is what it is; you are simply just filling up a form and providing details about your previous experiences or your thought processes, or writing an email to share more information about yourself. But if you did your part and the place you're applying to either:
+
 - did not respond (looking at you PH companies lol do better)
 - said you're not who they're looking for
 - will not pursue your application
