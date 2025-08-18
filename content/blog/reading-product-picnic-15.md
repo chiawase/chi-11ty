@@ -16,3 +16,4 @@ There would have been so many things that could have been "easier" to decide on 
 (I usually wanna just share an article once I've at least skimmed through all the related links. But maybe I'll hold off on that idea now. If all else fails, I can just make a post on my own, linking back to this.)
 
 > First shared this post on [LinkedIn](https://www.linkedin.com/posts/chisenires_if-youre-comfortable-your-principles-arent-activity-7322397001101250560-jmye).
+> 

@@ -18,17 +18,18 @@ There's so many more things I wanna fix, and part of that also involves me under
 I'm gonna give myself a hard stop for tonight on this because I still have some laundry to fold and I want to do not-code for the rest of my evening.
 
 Just as a last aside before I wrap up this post: I'm super happy I figured out how to fix the date issue I had with a filter I added to show dates in a particular format 😆 There was a good 1 hour earlier of me just getting confused why I kept getting `Invalid DateTime` whenever I tried to render the string of text that, to me, looked like a valid input to the filter to get it to output it in a different format, but I'm assuming JavaScript was just being JavaScript-y and was being finicky with me feeding it a String when I wanted to turn it into a Date. I don't know. What I know is, making the code like this:
+
 ```js
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
-	eleventyConfig.addFilter("readableDate", (dateObj) => {
-		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-		let d = new Date(dateObj); // this was the only addition I made
-		return DateTime.fromJSDate(d).toFormat("fff"); // also changed the variable called here
-	});
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+    let d = new Date(dateObj); // this was the only addition I made
+    return DateTime.fromJSDate(d).toFormat("fff"); // also changed the variable called here
+  });
 
-	... // more filters
+  ... // more filters
 ```
 
 Instead of keeping it just to the `return` line helped fix the long standing DateTime issue I had. Hooray!
