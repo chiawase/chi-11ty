@@ -4,17 +4,19 @@ eleventyNavigation:
   order: 5
 title: "Chi's now page"
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-07-29T11:08:46+00:00
+date_updated: 2025-09-06T11:00:03+08:00
 ---
 
 > What I'm currently up to.
 > Last updated on {{ date_updated | readableDate }}.
-
 ### Stuff on my mind
 
-- started working on [Webmentions](https://github.com/chiawase/chi-11ty/issues/8) and I have half of the implementation ready; just need to figure out how to send out webmentions automatically (if that's even possible XD)
+- i haven't really continued the Webmentions project I started last ... month? huhu
+	- but it's still something I remember I wanna finish @-)
+- I realize I have a different kind of set up for every device, which is making it harder for me to just "do" whatever, wherever
+	- mostly thinking about this in the context of working on random personal projects
 - this is still on my mind: setting up the Webring for [Tambayan 404](https://tambayan404.com) members too haha
-- I got new keyboard switches hehe
+- I ordered a new keyboard and just waiting for it to arrive hehe
 
 ### Music on Repeat
 - anything from [sakanaction](https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq?si=4S6qkjAJSySUlNdrmZcj8g)
@@ -27,12 +29,10 @@ date_updated: 2025-07-29T11:08:46+00:00
 ### Games On Hold
 - [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — waiting for the 1.0 patch release!!
 
-### Currently Rewatching
-- [Avatar: The Legend of Korra](https://www.imdb.com/title/tt1695360/)
-
 ### What I’m reading
 > Ho damn, this is a lot!
 
+#### Manga
 1. [One Piece](https://myanimelist.net/manga/13/One_Piece)
 2. [SPY x FAMILY](https://mangaplus.shueisha.co.jp/titles/100056)
 3. [Akane-banashi](https://mangaplus.shueisha.co.jp/titles/100185)
