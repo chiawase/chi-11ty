@@ -8,6 +8,7 @@ import pluginFilters from "./_config/filters.js";
 import { EleventyRenderPlugin } from "@11ty/eleventy";
 import { DateTime } from "luxon";
 import externalLinks from "eleventy-plugin-external-links";
+import footnote_plugin from "markdown-it-footnote";
 
 // for timezone
 const TIME_ZONE = "UTC+8";
@@ -66,7 +67,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("content/*/**.*");
 
 	// Watch changes to CSS files
-	eleventyConfig.addWatchTarget("public/**/*.css");
+	eleventyConfig.addWatchTarget("./public/**/*.css");
 
 	// Watch changes to njk files???
 	eleventyConfig.addWatchTarget("_includes/");
@@ -192,6 +193,9 @@ export default async function(eleventyConfig) {
 			defaultLayout: 'layouts/default.liquid'
 		}
 	);
+
+	// markdown-it plugins
+	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(footnote_plugin));
 
 	// YouTube Embedder Shortcode
 	eleventyConfig.addShortcode("youtube", (videoURL, title) => {
