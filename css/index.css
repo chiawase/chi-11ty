@@ -157,6 +157,11 @@ li:not(ul.nav li):not(ul.post-metadata li):last-child {
 	margin-bottom: 1rem;
 }
 
+/* For lists in articles, add some spacing after an item */
+article .e-content * > li {
+	margin-bottom: 1.25rem;
+}
+
 a[href] {
 	color: var(--text-color-link);
 }
