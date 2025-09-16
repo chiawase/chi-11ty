@@ -1,6 +1,6 @@
 {
 	"name": "chisenires.design",
-	"version": "1.0.0",
+	"version": "25.01.M.0916",
 	"description": "Chi's space for thoughts and ideas on her side of the internet",
 	"type": "module",
 	"scripts": {
@@ -50,6 +50,7 @@
 		"@photogabble/eleventy-plugin-interlinker": "^1.1.0",
 		"@remy/webmention": "^1.5.0",
 		"@zachleat/heading-anchors": "^1.0.5",
-		"dotenv": "^17.2.1"
+		"dotenv": "^17.2.1",
+		"markdown-it-footnote": "^4.0.0"
 	}
 }
