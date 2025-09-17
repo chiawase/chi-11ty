@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 4
 title: "Contact"
 date: 2025-04-07T10:40:30+00:00
-date_updated: 2025-04-07T11:40:14+00:00
+date_updated: 2025-09-17T09:00:57+00:00
 ---
 
 ## Where to find me online
@@ -15,12 +15,12 @@ But to also just have them listed in my personal website, here they all are, in 
 - [bento.me/chiawase](https://bento.me/chiawase)
 - [@chi@social.lol on Mastodon](https://social.lol/@chi)
 - [@chisenires.design on BlueSky](https://bsky.app/profile/chisenires.design)
-- [Designlab Mentor Profile](https://app.designlab.com/chisenires/)
+- [Connect with me on LinkedIn](https://linkedin.com/in/chisenires)
 - [Tambayan 404](https://tambayan404.com) Co-Founder and Admin.
 - User Group Leader at [Friends of Figma, PH 🇵🇭](https://friends.figma.com/philippines).
 - [@chisenires in Figma Community](https://figma.com/@chisenires)
-- [@ChiSenires on Twitter (inactive)](https://twitter.com/ChiSenires)
-- [Connect with me on LinkedIn](https://linkedin.com/in/chisenires)
+- [@ChiSenires on Twitter](https://twitter.com/ChiSenires) (inactive)
+- [Designlab Mentor Profile](https://app.designlab.com/chisenires/)
 - [Chi's Strava Profile](https://www.strava.com/athletes/40002012)
 - Twitch Affiliate @ [ChiAwase](https://twitch.tv/ChiAwase) (indefinite hiatus)
 - [Arya Tsukino @ Meteor - Ramuh #FFXIV](https://na.finalfantasyxiv.com/lodestone/character/36591732/) (currently on hiatus)
