@@ -47,6 +47,7 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy({
 			"./public/": "/",
 			"./content/img/favicon.png": "/img/favicon.png",
+			"./content/img/chi/chi.jpg": "/img/chi.jpg",
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 	
