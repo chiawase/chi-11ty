@@ -4,15 +4,13 @@ eleventyNavigation:
   order: 5
 title: "Chi's now page"
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-09-16T04:33:52+00:00
+date_updated: 2025-09-24T01:57:22+00:00
 ---
 
 > What I'm currently up to.
 > Last updated on {{ date_updated | readableDate }}.
 ### Stuff on my mind
 
-- i haven't really continued the Webmentions project I started last ... month? huhu
-	- but it's still something I remember I wanna finish @-)
 - this is still on my mind: setting up the Webring for [Tambayan 404](https://tambayan404.com) members too haha
 - I ordered a new keyboard and just waiting for it to arrive hehe
 
@@ -22,11 +20,13 @@ date_updated: 2025-09-16T04:33:52+00:00
 - or [my JPOP LSS Spotify playlist](https://open.spotify.com/playlist/1HhGj1oozPLXOG6I1xCUDw?si=ee1be7b111034486)
 
 ### Games I'm Playing
-- [Umamusume: Pretty Derby](https://store.steampowered.com/app/3224770/Umamusume_Pretty_Derby/) (but I’m getting kinda burnt out huhu 🥲)
+- none yet as of this update!
 
 ### Just finished playing…
 - [Clair Obscur: Expedition 33](https://www.expedition33.com/)
+	- but I might go back to this again
 ### Games On Hold
+- [Umamusume: Pretty Derby](https://store.steampowered.com/app/3224770/Umamusume_Pretty_Derby/) (but I’m getting kinda burnt out huhu 🥲)
 - [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — waiting for the 1.0 patch release!!
 
 ### What I’m reading
