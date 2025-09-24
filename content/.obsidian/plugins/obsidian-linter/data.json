@@ -63,10 +63,10 @@
       "date-created-key": "date",
       "date-modified": true,
       "date-modified-key": "date_updated",
-      "format": "YYYY-MM-DDThh:mm:ssZ",
+      "format": "YYYY-MM-DDTHH:mm:ssZ",
       "convert-to-utc": true,
       "date-created-source-of-truth": "file system",
-      "date-modified-source-of-truth": "file system",
+      "date-modified-source-of-truth": "user or Linter edits",
       "update-on-file-contents-updated": "after 1 minute"
     },
     "yaml-title": {
