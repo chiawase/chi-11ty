@@ -83,7 +83,7 @@ html {
 	overflow-y: scroll;
 }
 body {
-	max-width: 44em;
+	max-width: 56rem;
 	font-variation-settings:
 		"wdth" 100;
 }
@@ -372,8 +372,8 @@ header {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	text-transform: capitalize;
 	font-weight: 400;
+	overflow-wrap: break-word;
 }
 .postlist-item > .post-tag {
 	align-self: center;
@@ -384,7 +384,6 @@ header {
 	font-size: 0.8rem;
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: 0.5rem;
 	list-style: none;
 	padding: 0;
 	margin: 1rem 0;
@@ -392,6 +391,10 @@ header {
 
 .post-metadata .label {
 	color: var(--color-gray-20);
+}
+
+.post-metadata li .post-tag {
+	margin-left: 0.1rem;
 }
 
 .post-metadata time, .postlist-item time, .postlist-item .postlist-separator, .post-metadata .post-metadata-separator {

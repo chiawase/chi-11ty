@@ -1,10 +1,10 @@
 ---
 title: 
 description: 
-date: 2025-06-27T02:52:25+00:00
-date_updated: 2025-06-27T02:54:52+00:00
 tags: 
 - shortcuts
+date: 2025-06-27T02:52:25+00:00
+date_updated: 2025-09-24T14:42:40+00:00
 ---
 
 Duplicated this [[iOS Shortcut BlueSky link]] and made one to support `threads.com` links to turn them into `fixthreads.net`, since I do this manually anyway when I try to share Threads links in Discord.

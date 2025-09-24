@@ -1,16 +1,17 @@
 ---
 title: Random list of things to share
 description: 
-date: 2025-09-16T03:09:08+00:00
-date_updated: 2025-09-16T04:34:19+00:00
 tags: 
 - writing
 - "8to"
+date: 2025-09-16T15:09:08+00:00
+date_updated: 2025-09-24T14:43:01+00:00
 ---
 
 I just want to create a collection of updates to share as I every now and then go back to tinkering with my website and make changes based on things I encounter online or just things I figured I could work on now. Also kinda inspired by things like [Jarrod Blundy's 7 Things This Week](https://heydingus.net/tagged/7-things) or other similar blog post types.
 
 1. Mainly the reason why I decided to type this out—I stumbled upon [this article by Rishikesh Sreehari entitled “Why and How I Version My Blog”](https://rishikeshs.com/blog-version/) and figured I’d update how that’s listed in my `package.json` file. Ever since I started running my blog on 11ty from a forked version of the time when I started it, I’ve been slightly bothered seeing the version be shown as `chisenires.design@1.0.0` when I try to build my website locally all the time. I was thinking of how else I could “version” my site, but I guess… I can try this one out and see how it goes? It’s going to be very manual in the beginning but maybe I’ll eventually figure out some automation to help me update this haha
+   > An update to this: might just drop this for now since I’ve concluded that having a version tied to my personal blog or website feels more ridiculous the more I think about it 😆 I’ll just re-add it again once it makes more sense. But for now, I’ll keep things simple 😊
 2. While thinking whether I’d make this a consistent thing or not (and as I searched the web for the link back to Jarrod’s website since this is mainly where I saw this format from) I thought of a way to name this “thing” I’m gonna start here: **8to**, which is a Taglish[^1] play on words, with `eight` for me planning to share around 8 random things and `ito` as… `it` in Tagalog 😆 For now I’ll keep the tag set and hopefully I remember this next time I think about doing this 😁 (Today’s also a Tuesday, the most randomest of days… I wonder if I’ll get the itch to edit my site again on a Tuesday?)
 3. I have sooooooooo many saved Tabs on my personal Zen Browser that I have yet to go through. I feel a bit guilty not going thru most of them. To make up for it, I’ll share one article that I _have_ gone through, albeit skimmed a bit: [Stéphanie Walter’s blog post titled “Enterprise UX: essential sources to design complex data tables”](https://stephaniewalter.design/blog/essential-resources-design-complex-data-tables/), which I went through because I was trying to look for sources of inspiration on how to style tables for a thing at work. I ended up with more opened tabs that I have yet to read again… 😅
 4. A recent interaction on Threads reminded me to search dub.sh on the web and I saw that they had [a way to report shortlinks](https://dub.co/legal/abuse) that make use of their service but are spammy or abusive in some way. I reported two of the most commonly received links I get from spam texts and [shared the news on Threads](https://www.threads.com/@_chiawase/post/DOpeVx3klQN).
