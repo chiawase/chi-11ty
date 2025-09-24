@@ -1,10 +1,11 @@
 ---
 title: "I'll just keep at it, but I'm happy I'm updating stuff here"
 description: "I wanted to type on my keyboard. Mulling over the things I've been working on the past few days on my website now, like webmentions and the date format fix I did!"
-date: 2025-07-30T02:47:15+00:00
-date_updated: 2025-07-31T01:35:20+00:00
 tags: 
 - writing
+- coding
+date: 2025-07-30T14:47:15+00:00
+date_updated: 2025-09-24T14:43:32+00:00
 ---
 
 As of writing this, I'm still not sure if my Webmentions setup actually works. I've added an additional `NODE_ENV` declaration in my web server, hoping that would ... maybe fix things? hahaha

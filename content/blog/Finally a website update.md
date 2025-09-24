@@ -1,11 +1,11 @@
 ---
 title: "Finally, a website update"
 description: 
-date: 2025-06-08T06:58:00+00:00
-date_updated: 2025-06-08T07:46:20+00:00
 tags: 
 - writing
 - coding
+date: 2025-06-08T12:24:06+00:00
+date_updated: 2025-09-24T14:42:19+00:00
 ---
 
 My favicon's back to normal, the test text data I had is gone from view, and my site is building again!

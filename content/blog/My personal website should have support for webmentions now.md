@@ -1,11 +1,11 @@
 ---
 title: My personal website should have support for webmentions now
 description: Sort of a play-by-play timestamped collection of notes of me figuring out setting up Webmentions with my blog.
-date: 2025-07-27T12:05:06+00:00
-date_updated: 2025-07-27T02:56:38+00:00
 tags: 
 - writing
 - coding
+date: 2025-07-27T12:05:06+00:00
+date_updated: 2025-09-24T14:42:49+00:00
 ---
 
 ### 20:05 PM update:

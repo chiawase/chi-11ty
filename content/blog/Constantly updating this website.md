@@ -1,11 +1,11 @@
 ---
 title: Constantly updating this website
 description: "Mostly made this to 'test' the updates to my website again. But can also serve as a mini blog update."
-date: 2025-04-19T06:51:55+00:00
-date_updated: 2025-06-08T03:57:23+00:00
 tags: 
 - writing
 - coding
+date: 2025-04-19T06:51:55+00:00
+date_updated: 2025-09-24T14:42:12+00:00
 ---
 
 Since writing [[Setting up my website again for the nth time|my soft launch post]], I've made lots of small changes to how this site is built. 

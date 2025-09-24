@@ -4,13 +4,13 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter("readableDate", (dateObj) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		let d = new Date(dateObj);
-		return DateTime.fromJSDate(d, {zone: 'UTC+8'}).toFormat("fff");
+		return DateTime.fromJSDate(d, {zone: "UTC+8"}).toFormat("fff");
 	});
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		let d = new Date(dateObj);
-		return DateTime.fromJSDate(d, {zone: 'UTC+8'}).toFormat('yyyy-LL-dd hh:mm a');
+		return DateTime.fromJSDate(d).toFormat("yyyy-LL-dd hh:mm a");
 	});
 
 	eleventyConfig.addFilter("typeOf", (value) => {
