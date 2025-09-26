@@ -1,19 +1,28 @@
 ---
-date: 2025-08-15T11:16:15+00:00
-date_updated: 2025-09-16T04:34:35+00:00
+eleventyNavigation:
+  key: "Blogroll"
+  parent: "More"
+title: "Blogroll"
+date: 2025-09-19T06:35:25+00:00
+date_updated: 2025-09-26T12:59:21+00:00
 ---
-> Just a dump of links for now since I'm not sure how to go about this yet! But I've been adding to this slowly; the latest update was {{ date_updated | readableDate }}!
 
-<a href="https://localghost.dev/" target="_blank">https://localghost.dev/</a>
+> Just a dump of links of websites from other people for now since I'm not sure how to go about this yet! But I've been adding to this slowly; the latest update was {{ date_updated | readableDate }}!
 
-<a href="https://rknight.me/" target="_blank">https://rknight.me/</a>
+[https://localghost.dev/](https://localghost.dev/)
 
-<a href="https://grepjason.sh/" target="_blank">https://grepjason.sh/</a>
+[https://rknight.me/](https://rknight.me/)
 
-<a href="https://heydingus.net/" target="_blank">https://heydingus.net/</a>
+[https://grepjason.sh/](https://grepjason.sh/)
 
-<a href="https://cyrneko.eu/" target="_blank">https://cyrneko.eu/</a>
+[https://heydingus.net/](https://heydingus.net/)
 
-<a href="https://gerireid.com/" target="_blank">https://gerireid.com/</a>
+[https://cyrneko.eu/](https://cyrneko.eu/)
 
-<a href="https://matthewsmith.website/" target="_blank">https://matthewsmith.website/</a>
+[https://gerireid.com/](https://gerireid.com/)
+
+[https://matthewsmith.website/](https://matthewsmith.website/)
+
+[https://missmansanas.com/](https://missmansanas.com/)
+
+[https://stellify.net/](https://stellify.net/)

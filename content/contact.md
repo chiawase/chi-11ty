@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   key: "Contact"
-  order: 4
+  order: 3
 title: "Contact"
 date: 2025-04-07T10:40:30+00:00
 date_updated: 2025-09-17T09:00:57+00:00

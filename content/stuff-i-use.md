@@ -3,9 +3,9 @@ title: "Stuff I Use"
 description: "Listing all the stuff I use for whatever purpose."
 eleventyNavigation:
   key: "Stuff I Use"
-  order: 6
-date: 2025-04-23T11:31:21+00:00
-date_updated: 2025-04-24T02:17:40+00:00
+  order: 4
+date: 2025-08-18T07:34:56+00:00
+date_updated: 2025-09-26T13:16:10+00:00
 ---
 
 > Last updated on {{ date_updated | readableDate }}.
