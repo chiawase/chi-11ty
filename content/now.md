@@ -4,34 +4,44 @@ eleventyNavigation:
   order: 5
 title: "Chi's now page"
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-09-24T01:57:22+00:00
+date_updated: 2025-09-26T23:22:25+00:00
 ---
 
 > What I'm currently up to.
 > Last updated on {{ date_updated | readableDate }}.
+
 ### Stuff on my mind
 
 - this is still on my mind: setting up the Webring for [Tambayan 404](https://tambayan404.com) members too haha
 - I ordered a new keyboard and just waiting for it to arrive hehe
 
+### Last seen in…
+
+- Cebu for [UXPH Mini 2025: Cebu](https://2025.uxph.org/cebu)!
+	- I wanna write a post about my experience on this and [UXPH Mini 2025: Davao](https://2025.uxph.org/davao) after going back to Metro Manila 😄
+
 ### Music on Repeat
+
 - anything from [sakanaction](https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq?si=4S6qkjAJSySUlNdrmZcj8g)
 - also [my Anime OPs and EDs Spotify playlist](https://open.spotify.com/playlist/3RA1XmqaJLjzKwdK6JZfkC?si=ec0b7ecb0f144d28)
 - or [my JPOP LSS Spotify playlist](https://open.spotify.com/playlist/1HhGj1oozPLXOG6I1xCUDw?si=ee1be7b111034486)
 
 ### Games I'm Playing
-- none yet as of this update!
+
+- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — version 1.0 released!!!
+- [Umamusume: Pretty Derby](https://store.steampowered.com/app/3224770/Umamusume_Pretty_Derby/) (but I’m getting kinda burnt out huhu 🥲)
 
 ### Just finished playing…
+
 - [Clair Obscur: Expedition 33](https://www.expedition33.com/)
 	- but I might go back to this again
-### Games On Hold
-- [Umamusume: Pretty Derby](https://store.steampowered.com/app/3224770/Umamusume_Pretty_Derby/) (but I’m getting kinda burnt out huhu 🥲)
-- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — waiting for the 1.0 patch release!!
 
 ### What I’m reading
+
 > Ho damn, this is a lot!
+
 #### Manga
+
 1. [One Piece](https://myanimelist.net/manga/13/One_Piece)
 2. [SPY x FAMILY](https://mangaplus.shueisha.co.jp/titles/100056)
 3. [Akane-banashi](https://mangaplus.shueisha.co.jp/titles/100185)
