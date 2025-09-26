@@ -7,7 +7,7 @@
 		"build:local": "NODE_ENV=production npx @11ty/eleventy",
 		"postbuild": "npx webmention https://chisenires.design/feed.xml --limit 1 --send",
 		"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
-		"start": "npx @11ty/eleventy --serve --incremental",
+		"start": "npx @11ty/eleventy --serve",
 		"startquiet": "npx @11ty/eleventy --serve --incremental --quiet",
 		"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --incremental",
