@@ -99,7 +99,7 @@
       "enabled": false
     },
     "remove-trailing-punctuation-in-heading": {
-      "enabled": false,
+      "enabled": true,
       "punctuation-to-remove": ".,;:!。，；：！"
     },
     "footnote-after-punctuation": {
@@ -176,11 +176,11 @@
       "list-style": "consistent"
     },
     "compact-yaml": {
-      "enabled": false,
+      "enabled": true,
       "inner-new-lines": false
     },
     "consecutive-blank-lines": {
-      "enabled": false
+      "enabled": true
     },
     "convert-spaces-to-tabs": {
       "enabled": false,
@@ -199,7 +199,7 @@
       "enabled": false
     },
     "heading-blank-lines": {
-      "enabled": false,
+      "enabled": true,
       "bottom": true,
       "empty-line-after-yaml": true
     },
@@ -304,8 +304,8 @@
   "lintCommands": [],
   "customRegexes": [],
   "commonStyles": {
-    "aliasArrayStyle": "single-line",
-    "tagArrayStyle": "single-line",
+    "aliasArrayStyle": "multi-line",
+    "tagArrayStyle": "multi-line",
     "minimumNumberOfDollarSignsToBeAMathBlock": 2,
     "escapeCharacter": "\"",
     "removeUnnecessaryEscapeCharsForMultiLineArrays": false
