@@ -1,0 +1,38 @@
+---
+title: "More Pages"
+eleventyNavigation:
+  key: "More"
+  order: 6
+---
+
+<p>Here's a list of all the other pages I have in my website.</p>
+
+{% set navPages = collections.all | eleventyNavigation("More") %}
+
+{% macro renderNavListItem(entry) %}
+  {% if entry.children.length %}
+    <li>
+      <details
+        {%- for child in entry.children %}
+          {% if child.parent == entry.title and child.url == page.url %}
+            class="is-active"
+            open
+          {% endif %}
+        {% endfor %}
+      >
+        <summary>{{ entry.title }}</summary>
+        <ul role="list">
+          {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+        </ul>
+      </details>
+    </li>
+  {% else %}
+    <li>
+      <a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a>
+    </li>
+  {%- endif -%}
+{%- endmacro %}
+
+<ul class="nav-list" role="list">
+{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+</ul>
