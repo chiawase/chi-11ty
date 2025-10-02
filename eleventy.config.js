@@ -51,9 +51,14 @@ export default async function(eleventyConfig) {
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 	
-	// getting the Inconsolata font pulled from node_modules
+	// getting the Victor Mono font pulled from node_modules
 	eleventyConfig.addPassthroughCopy({
-		"./node_modules/@fontsource-variable/inconsolata/files/*.woff2": "fonts/inconsolata/"
+		"./node_modules/@fontsource-variable/victor-mono/files/*.woff2": "fonts/victor-mono/"
+	});
+
+	// getting the Chivo Mono font pulled from node_modules
+	eleventyConfig.addPassthroughCopy({
+		"./node_modules/@fontsource-variable/chivo-mono/files/*.woff2": "fonts/chivo-mono/"
 	});
 
 	// Run Eleventy when these files change:
