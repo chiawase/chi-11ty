@@ -21,7 +21,7 @@ The favicon is a red (`#681310`) squircle with my nickname on it using the font 
 
 ## Website Font
 
-The main font used on this website is [Inconsolata Variable](https://levien.com/type/myfonts/inconsolata.html) which is pulled in to my website using [Fontsource](https://fontsource.org/fonts/inconsolata).
+The heading font used is [Victor Mono Variable](https://rubjo.github.io/victor-mono/) and the body font is [Chivo Mono Variable](https://github.com/Omnibus-Type/Chivo). Both fonts are loaded into my website using [Fontsource](https://fontsource.org/).
 
 ## Website domain
 
