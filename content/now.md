@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 5
 title: "Chi's now page"
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-10-02T16:37:56+00:00
+date_updated: 2025-10-22T09:16:36+00:00
 ---
 
 > What I'm currently up to.
@@ -12,9 +12,10 @@ date_updated: 2025-10-02T16:37:56+00:00
 
 ### Stuff on my mind
 
+- upcoming event this weekend: [Figma Make-a-thon](https://friends.figma.com/e/m45w2m/)!!
 - this is still on my mind: setting up the Webring for [Tambayan 404](https://tambayan404.com) members too haha
-- I ordered a new keyboard and just waiting for it to arrive hehe
-- I was supposed to a post about my experience on [UXPH Mini 2025: Cebu](https://2025.uxph.org/cebu) and [UXPH Mini 2025: Davao](https://2025.uxph.org/davao) but I found out I’m also doing a workshop in [the Manila leg](https://2025.uxph.org/manila) so I think I’ll consolidate everything into one once I’m done 😄
+- learning more about my new [Baseform Keyboard](https://posture.works/baseform/)
+- Still need to consolidate my thoughts and writing about my experience with [UXPH Mini 2025](https://2025.uxph.org) since I was there for the Davao, Cebu, and Manila legs 😁
 
 ### Music on Repeat
 
@@ -23,8 +24,11 @@ date_updated: 2025-10-02T16:37:56+00:00
 ### Games I'm Playing
 
 - [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — version 1.0 released!!!
-- [Marvel’s Spider-Man Remastered on the PS5 Pro](https://www.playstation.com/en-ph/games/marvels-spider-man-remastered/)
-- [Umamusume: Pretty Derby](https://store.steampowered.com/app/3224770/Umamusume_Pretty_Derby/) (but I’m getting kinda burnt out huhu 🥲)
+- [Ghost of Yotei](https://www.playstation.com/en-us/games/ghost-of-yotei/)
+
+#### Paused
+
+- [Umamusume: Pretty Derby](https://store.steampowered.com/app/3224770/Umamusume_Pretty_Derby/) (I got super burnt out with the dailies 😭 but I still do want to keep playing haha)
 
 ### What I’m reading
 
