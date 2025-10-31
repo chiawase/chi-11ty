@@ -7,8 +7,8 @@ node_modules/
 
 # to exclude Obsidian's settings (including plugin and hotkey configurations)
 #.obsidian/
-content/.obsidian/workspace.json
-content/.obsidian/plugins/emoji-autocomplete/data.json
+.obsidian/workspace.json
+.obsidian/plugins/emoji-autocomplete/data.json
 
 # Add below lines to exclude OS settings and caches
 .trash/
