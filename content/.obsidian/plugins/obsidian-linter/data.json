@@ -70,7 +70,7 @@
       "update-on-file-contents-updated": "after 1 minute"
     },
     "yaml-title": {
-      "enabled": false,
+      "enabled": true,
       "title-key": "title",
       "mode": "filename"
     },
