@@ -6,7 +6,7 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "folder",
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "img/uploads/2025",
+  "attachmentFolderPath": "public/img/uploads/2025",
   "promptDelete": false,
   "mobileToolbarCommands": [
     "editor:insert-wikilink",
@@ -40,5 +40,13 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "newFileFolderPath": "blog"
+  "newFileFolderPath": "content/blog",
+  "useMarkdownLinks": true,
+  "userIgnoreFilters": [
+    "_config/",
+    "_data/",
+    "_includes/",
+    "_site/",
+    "node_modules/"
+  ]
 }

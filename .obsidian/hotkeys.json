@@ -70,5 +70,13 @@
       ],
       "key": "N"
     }
+  ],
+  "templater-obsidian:create-content/_templates/post_template.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "N"
+    }
   ]
 }
