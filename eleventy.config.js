@@ -158,8 +158,6 @@ export default async function(eleventyConfig) {
 		sharpOptions: {
 			animated: true,
 		},
-
-		outputDir: "./img/",
 	});
 
 	// Filters
