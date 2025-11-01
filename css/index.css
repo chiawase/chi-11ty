@@ -413,6 +413,15 @@ header {
 	content: "\2022";
 }
 
+/* Images in posts */
+article picture img {
+	border-radius: 1rem;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
 /* YouTube iFrame */
 iframe.yt-shortcode {
 	height: 50vw;
