@@ -38,7 +38,7 @@
 	--text-color: var(--color-gray-90);
 
 	--text-color-link: #C2302B;
-	--text-color-link-active: #C2302B;
+	--text-color-link-active: #8B24DA;
 	--text-color-link-visited: #8B24DA;
 
 	--text-color-code: green;
@@ -59,7 +59,7 @@
 
 		/* --text-color is assigned to --color-gray-_ above */
 		--text-color-link: #FF8984;
-		--text-color-link-active: #FF8984;
+		--text-color-link-active: #C5A6F8;
 		--text-color-link-visited: #C5A6F8;
 
 		--text-color-code: greenyellow;
@@ -178,9 +178,13 @@ a[href] {
 a[href]:not(:hover) {
 	text-decoration: none;
 }
-a[href]:visited {
+/*** hiding this for now since there was some feedback that 
+* having the visited nav links confused others navigating 
+* thru my site 
+*/
+/* a[href]:visited {
 	color: var(--text-color-link-visited);
-}
+} */
 a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
@@ -318,6 +322,7 @@ header {
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;
 	text-underline-position: from-font;
+	color: var(--text-color-link-active)
 }
 
 /* Nav in footer */
