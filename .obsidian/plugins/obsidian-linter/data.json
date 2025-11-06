@@ -66,17 +66,17 @@
       "format": "YYYY-MM-DDTHH:mm:ssZ",
       "convert-to-utc": true,
       "date-created-source-of-truth": "file system",
-      "date-modified-source-of-truth": "user or Linter edits",
+      "date-modified-source-of-truth": "file system",
       "update-on-file-contents-updated": "after 1 minute"
     },
     "yaml-title": {
-      "enabled": true,
+      "enabled": false,
       "title-key": "title",
-      "mode": "filename"
+      "mode": "first-h1"
     },
     "yaml-title-alias": {
       "enabled": false,
-      "preserve-existing-alias-section-style": true,
+      "preserve-existing-alias-section-style": false,
       "keep-alias-that-matches-the-filename": false,
       "use-yaml-key-to-keep-track-of-old-filename-or-heading": true,
       "alias-helper-key": "linter-yaml-title-alias"
@@ -276,7 +276,12 @@
   "lintOnFileChange": false,
   "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,
-  "foldersToIgnore": [],
+  "foldersToIgnore": [
+    "_site",
+    "_includes",
+    "_data",
+    "_config"
+  ],
   "filesToIgnore": [
     {
       "label": "ignore intro.md",
