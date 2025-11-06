@@ -2,10 +2,12 @@
 eleventyNavigation:
   key: "Blogroll"
   parent: "More"
-title: "Blogroll"
+title: Blogroll
 date: 2025-09-19T06:35:25+00:00
-date_updated: 2025-09-26T12:59:21+00:00
+date_updated: 2025-11-06T15:24:17+00:00
 ---
+
+# Random list of websites I find cool
 
 > Just a dump of links of websites from other people for now since I'm not sure how to go about this yet! But I've been adding to this slowly; the latest update was {{ date_updated | readableDate }}!
 
@@ -26,3 +28,5 @@ date_updated: 2025-09-26T12:59:21+00:00
 [https://missmansanas.com/](https://missmansanas.com/)
 
 [https://stellify.net/](https://stellify.net/)
+
+[https://jamesiv.es/](https://jamesiv.es/)
