@@ -2,7 +2,7 @@
 title: Initial thoughts after UXPH Mini 2025
 description: "This was supposed to be short, but I ended up writing a mini blog post as I drafted it. So here's me sharing my initial thoughts 2 weeks after UXPH Mini 2025 concluded."
 date: 2025-10-31T15:41:30+00:00
-date_updated: 2025-11-01T03:05:28+00:00
+date_updated: 2025-11-01T03:32:59+00:00
 tags: 
 - writing
 - thoughts
@@ -27,7 +27,7 @@ lol this is supposed to be short but I guess it ended up being a mini blog post 
 
 ![Chi doing a wide angle selfie with other workshop facilitators and speakers from UXPH Mini 2025: Davao. They are seen sitting on the floor of an auditorium while eating lunch in a group huddle setup.](../img/uploads/2025/20250825-uxphmini2025-davao-01.jpeg "With speakers and workshop facilitators for UXPH Mini 2025: Davao! The first leg wooo 😁")
 
-![Chi doing a wide angle selfie with the attendees of her workshop at UXPH Mini 2025: Davao in a computer lab classroom.](../img/uploads/2025/20250825-uxphmini2025-davao-02.jpeg "The first out of 3 workshop legs, this one is for the Davao leg!")
+![Chi doing a wide angle selfie with the attendees of her workshop at UXPH Mini 2025: Davao in a computer lab classroom.](../img/uploads/2025/20250825-uxphmini2025-davao-02.jpeg "The first out of 3 workshop leg selfies with the class, this one is for the Davao leg!")
 
 ![Group photo of the speakers, workshop facilitators, and the main organizers for UXPH Mini 2025: Davao. Chi is seated at the second row, helping hold up a black cloth flag with the UXPH logo printed on it.](../img/uploads/2025/20250825-uxphmini2025-davao-03.jpg "With other speakers and workshop facilitators for UXPH Mini 2025: Davao! 😄")
 
@@ -43,7 +43,7 @@ lol this is supposed to be short but I guess it ended up being a mini blog post 
 
 ![Chi posing in front of all 3 tarps for UXPH Mini 2025, with her arms stretched to the sides. The tarps behind her show, from left to right, the one for Manila, Davao, and Cebu legs.](../img/uploads/2025/20251018-uxphmini2025-manila-01.jpeg "Posing in front of all 3 tarps for UXPH Mini 2025, where the 3 legs are represented")
 
-![Chi and Richard posing in front of the 3 tarps for the different legs for UXPH Mini 2025. Richard is by the left side of the Manila leg tarp holding up a peace sign, and Chi is on the right side with the Davao leg tarp. Both Chi and Richard are also holding on to their conference swag bags.](../img/uploads/2025/20251018-uxphmini2025-manila-02.jpeg "With Richard while at UXPH Mini 2025: Manila")
+![Chi and Richard posing in front of the 3 tarps for the different legs for UXPH Mini 2025. Richard is by the left side of the Manila leg tarp holding up a peace sign, and Chi is on the right side with the Davao leg tarp. Both Chi and Richard are also holding on to their conference swag bags.](../img/uploads/2025/20251018-uxphmini2025-manila-02.jpeg "With Richard while at UXPH Mini 2025: Manila! He did two workshops, I did three 😆")
 
 ![Chi posing next to her photo on her intro slide for her workshop with both her thumbs up. She is wearing a black cardigan only buttoned at the top, a polka dot top, black wavy slacks, and her conference ID lanyard. Her photo on the intro slide shows her in the exact same outfit, but only showing half body and with slightly shorter hair.](../img/uploads/2025/20251018-uxphmini2025-manila-03.jpeg "I didn’t realize I wore the same exact outfit as the photo of myself on my intro slide 😆")
 
