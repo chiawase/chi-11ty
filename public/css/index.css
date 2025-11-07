@@ -200,10 +200,6 @@ main :first-child {
 	margin-top: 0;
 }
 
-header {
-	border-bottom: 1px dashed var(--color-gray-20);
-}
-
 footer {
 	text-align: center;
 }
@@ -290,7 +286,17 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1em;
+	border-bottom: 1px dashed var(--color-gray-20);
 }
+
+@media (min-width: 768px) {
+	header {
+		position: sticky;
+		top: 0;
+		background-color: var(--background-color);
+	}
+}
+
 .home-link {
 	flex-grow: 1;
 	font-size: 1em;
@@ -364,7 +370,7 @@ header {
 .postlist-link.postlist-header {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
-	line-height: 100%;
+	line-height: 140%;
 	flex-basis: calc(100% - 1.5rem);
 	text-underline-position: from-font;
 	text-underline-offset: 0;
@@ -411,7 +417,7 @@ header {
 }
 
 .post-metadata time, .postlist-item time, .postlist-item .postlist-separator, .post-metadata .post-metadata-separator {
-	margin-right: 0.25rem;
+	margin-right: 0.5rem;
 }
 
 .post-metadata .post-metadata-separator:before, .postlist-separator:before {
