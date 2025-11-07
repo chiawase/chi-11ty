@@ -5,5 +5,4 @@
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<li>{% if loop.first %}<span class="post-metadata-separator"></span>{% endif %}<a href="{{ tagUrl }}" class="post-tag p-category">{{ tag | lower }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
-	{% if draft %}<li><span class="post-metadata-separator"></span>Draft</li>{% endif %}
 </ul>
