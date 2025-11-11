@@ -14,7 +14,7 @@
 				{%- set hasTempTitle = "home" %}
 			{%- else %}
 				{# for posts that don't have titles #}
-				{%- set tempTitle = content | striptags | safe | truncate(60, false, "...") %}
+				{%- set tempTitle = page.rawInput | striptags | safe | truncate(60, false, "...") %}
 				{{- tempTitle }} &bull; {{ metadata.title }}
 				{%- set hasTempTitle = true %}
 			{%- endif %}
