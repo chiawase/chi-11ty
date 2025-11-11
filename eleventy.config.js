@@ -64,16 +64,14 @@ export default async function(eleventyConfig) {
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
-	// Watch CSS files
-	eleventyConfig.addWatchTarget("css/**/*.css");
 	// Watch images for the image pipeline.
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
 
 	// Watch changes to posts
-	eleventyConfig.addWatchTarget("content/*/**.*");
+	eleventyConfig.addWatchTarget("content/{archive,blog}/**.*");
 
 	// Watch changes to CSS files
-	eleventyConfig.addWatchTarget("./public/**/*.css");
+	eleventyConfig.addWatchTarget("public/**/*.css");
 
 	// Watch changes to njk files???
 	eleventyConfig.addWatchTarget("_includes/");

@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   key: "/now"
-  order: 5
+  order: 4
 title: now
 date: 2025-03-30T12:48:25+00:00
 date_updated: 2025-11-06T15:37:00+00:00

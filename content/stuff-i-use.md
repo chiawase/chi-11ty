@@ -3,7 +3,7 @@ title: Stuff I Use
 description: "Listing all the stuff I use for whatever purpose."
 eleventyNavigation:
   key: "Stuff I Use"
-  order: 4
+  parent: "More"
 date: 2025-08-18T07:34:56+00:00
 date_updated: 2025-11-06T15:16:06+00:00
 ---
