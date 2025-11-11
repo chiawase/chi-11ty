@@ -1,3 +1,14 @@
+/* victor-mono-latin-wght-italic */
+@font-face {
+  font-family: 'Victor Mono Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 700;
+  font-stretch: 50% 200%;
+  src: url(/fonts/victor-mono/victor-mono-latin-wght-italic.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
 /* victor-mono-latin-wght-normal */
 @font-face {
   font-family: 'Victor Mono Variable';
@@ -9,21 +20,22 @@
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
-/* chivo-mono-latin-wght-normal */
+/* anybody-latin-wght-italic */
 @font-face {
-  font-family: 'Chivo Mono Variable';
-  font-style: normal;
+  font-family: 'Anybody Variable';
+  font-style: italic;
   font-display: swap;
   font-weight: 100 900;
-  src: url(/fonts/chivo-mono/chivo-mono-latin-wght-normal.woff2) format('woff2-variations');
+  font-stretch: 50% 150%;
+  src: url(/fonts/anybody/anybody-latin-wdth-italic.woff2) format('woff2-variations');
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
 /* Defaults */
 :root {
-	--font-family-heading: "Victor Mono Variable", -apple-system, system-ui, sans-serif;
-	--font-family-body: "Chivo Mono Variable", -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-family-heading: "Anybody Variable", -apple-system, system-ui, sans-serif;
+	--font-family-body: "Victor Mono Variable", -apple-system, system-ui, sans-serif;
+	--font-family-monospace: "Victor Mono Variable", Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
 /* Theme colors */
@@ -48,6 +60,8 @@
 	--syntax-tab-size: 2;
 
 	--size-body-text: 18px;
+
+	--max-width: 50rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,29 +98,46 @@ body {
 	padding: 0;
 	margin: 0 auto;
 	font-family: var(--font-family-body);
-	font-synthesis: weight;
 	font-size: var(--size-body-text);
 	color: var(--text-color);
 	background-color: var(--background-color);
 }
+
 html {
 	overflow-y: scroll;
 }
+
 body {
-	max-width: 50rem;
-	font-weight: lighter;
-	font-variation-settings:
-		"wdth" 100;
+	max-width: var(--max-width);
+	font-style: normal;
+	font-variation-settings: "wdth" 100, "ital" 0, "wght" 200;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: var(--font-family-heading);
-	font-style: normal;
-	font-weight: 400;
-	line-height: 120%;
-	font-variation-settings:
-    	"wdth" 112.5;
+	font-style: italic;
+	line-height: 105%;
+	font-variation-settings: "ital" 1, "wdth" 88.2, "wght" 250;
+	margin-bottom: 1.5rem;
 }
+
+/* Heading sizes */
+h1 { font-size: 4.3em; }
+/* Using Ratio 1.2 -- see https://www.modularscale.com/?18&px&1.2 for more info */
+h2 { font-size: 2.488em; }
+h3 { font-size: 2.074em; }
+h4 { font-size: 1.728em; }
+h5 { font-size: 1.44em; }
+h6 { font-size: 1.2em; }
+
+/* Heading Fonts */
+h3,
+h4,
+h5,
+h6 {
+	--font-family-heading: "Victor Mono Variable", -apple-system, system-ui, sans-serif;
+	letter-spacing: -0.1rem;
+ }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden:not(:focus):not(:active) {
@@ -155,7 +186,7 @@ p:has(+ h4),
 p:has(+ h5),
 p:has(+ h6),
 p:has(+ .links-nextprev) {
-	margin-bottom: 2.5rem;
+	margin-bottom: 2rem;
 }
 
 li {
@@ -247,18 +278,19 @@ table th {
 
 pre,
 code {
-	font-family: var(--font-family-monospace);
+	font-family: var(--font-family-monospace) !important;
+	font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
 	padding: 0.25rem;
 	background-color: var(--background-color-overlay);
 	color: var(--text-color-code);
-	border-radius: 0.25rem;
 }
+
 pre:not([class*="language-"]) {
 	margin: 0.5em 0;
-	line-height: 140%;
-	-moz-tab-size: var(--syntax-tab-size);
-	-o-tab-size: var(--syntax-tab-size);
-	tab-size: var(--syntax-tab-size);
+	line-height: 140% !important;
+	-moz-tab-size: var(--syntax-tab-size) !important;
+	-o-tab-size: var(--syntax-tab-size) !important;
+	tab-size: var(--syntax-tab-size) !important;
 	-webkit-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
@@ -269,12 +301,14 @@ pre:not([class*="language-"]) {
 	word-break: normal;
 	overflow-x: auto;
 }
-code {
-	word-break: break-all;
+
+pre:has(+ p) {
+	margin-left: -6rem !important;
+	width: calc(var(--max-width) + 12rem);
 }
 
 em {
-	font-style: normal;
+	font-style: italic;
 	font-weight: 500;
 }
 
@@ -300,11 +334,8 @@ header {
 .home-link {
 	flex-grow: 1;
 	font-size: 1em;
-	font-weight: 700;
-	font-width: expanded;
-	font-stretch: expanded;
-	font-variation-settings:
-    	"wdth" 125;
+	font-family: var(--font-family-body);
+	font-style: italic;
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
@@ -325,17 +356,19 @@ header {
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
 }
+.nav-item a[href]:hover {
+	font-style: italic;
+}
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;
 	text-underline-position: from-font;
-	color: var(--text-color-link-active)
+	color: var(--text-color-link-active);
 }
 
 /* Nav in footer */
 .nav-footer {
 	justify-content: center;
 }
-
 
 /* Posts list */
 .postlist {
@@ -349,7 +382,7 @@ header {
 	flex-wrap: wrap;
 	align-items: baseline;
 	counter-increment: start-from -1;
-	margin-bottom: 1em;
+	margin-bottom: 1.75em;
 }
 .postlist-item:before {
 	display: inline-block;
@@ -357,7 +390,7 @@ header {
 	content: "" counter(start-from, decimal-leading-zero) ". ";
 	line-height: 100%;
 	text-align: right;
-	margin-left: -1.5rem;
+	margin-left: -2.5rem;
 }
 
 .postlist-item:before {
@@ -368,10 +401,9 @@ header {
 	word-spacing: -0.5px;
 }
 .postlist-link.postlist-header {
-	font-size: 1.1875em; /* 19px /16 */
-	font-weight: 700;
-	line-height: 140%;
-	flex-basis: calc(100% - 1.5rem);
+	font-size: 1.44em; /* h5 size */
+	line-height: 110%;
+	flex-basis: calc(100% - 1rem);
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
@@ -381,7 +413,7 @@ header {
 }
 
 .postlist-header, .postlist-description {
-	flex-basis: calc(100% - 1.5rem);
+	flex-basis: calc(100% - 1rem);
 	padding-left: 0.25em;
 	padding-right: 0.5em;
 }
@@ -422,6 +454,10 @@ header {
 
 .post-metadata .post-metadata-separator:before, .postlist-separator:before {
 	content: "\2022";
+}
+
+.post-backlinks	{
+	margin-bottom: 2rem;
 }
 
 /* Images in posts */

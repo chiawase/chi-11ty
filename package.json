@@ -45,7 +45,7 @@
 		"zod-validation-error": "^3.5.2"
 	},
 	"dependencies": {
-		"@fontsource-variable/chivo-mono": "^5.2.8",
+		"@fontsource-variable/anybody": "^5.2.7",
 		"@fontsource-variable/victor-mono": "^5.2.8",
 		"@photogabble/eleventy-plugin-interlinker": "^1.1.0",
 		"@remy/webmention": "^1.5.0",

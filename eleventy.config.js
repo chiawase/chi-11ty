@@ -27,7 +27,7 @@ export default async function(eleventyConfig) {
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if (data.draft) {
-			data.title = `${data.title} (draft)`;
+			data.title = `(draft) ${data.title}`;
 		}
 
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
@@ -56,9 +56,9 @@ export default async function(eleventyConfig) {
 		"./node_modules/@fontsource-variable/victor-mono/files/*.woff2": "fonts/victor-mono/"
 	});
 
-	// getting the Chivo Mono font pulled from node_modules
+	// getting the Anybody font pulled from node_modules
 	eleventyConfig.addPassthroughCopy({
-		"./node_modules/@fontsource-variable/chivo-mono/files/*.woff2": "fonts/chivo-mono/"
+		"./node_modules/@fontsource-variable/anybody/files/*.woff2": "fonts/anybody/"
 	});
 
 	// Run Eleventy when these files change:
@@ -211,7 +211,6 @@ export default async function(eleventyConfig) {
 	// Year Shortcode
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-
 	// Following Eleventy and Cloudinary Images tutorial: https://sia.codes/posts/eleventy-and-cloudinary-images/
 	const CLOUDNAME = "chi-11ty"
 	const FOLDER = "chisenires.design/";
@@ -290,7 +289,6 @@ export default async function(eleventyConfig) {
 		return `${BASE_URL}${imageConfig}/${titleConfig}/${taglineConfig}/${urlConfig}/${FOLDER}${SHARE_IMAGE_FILE_NAME}`;
 	});
 	
-	
 	// Making all external links open in new window
 	eleventyConfig.addPlugin(externalLinks, {
 		// Plugin defaults:
@@ -301,20 +299,6 @@ export default async function(eleventyConfig) {
         extensions: [".html"],          // Extensions to apply transform to
         includeDoctype: true,           // Default to include '<!DOCTYPE html>' at the beginning of the file
     });
-	
-	// Timezone
-	// eleventyConfig.addDateParsing(function(dateValue) {
-	// 	let localDate;
-	// 	if(dateValue instanceof Date) { // and YAML
-	// 		localDate = DateTime.fromJSDate(dateValue, { zone: "utc" }).setZone(TIME_ZONE, { keepLocalTime: true });
-	// 	} else if(typeof dateValue === "string") {
-	// 		localDate = DateTime.fromISO(dateValue, { zone: TIME_ZONE });
-	// 	}
-	// 	if (localDate?.isValid === false) {
-	// 		throw new Error(`Invalid \`date\` value (${dateValue}) is invalid for ${this.page.inputPath}: ${localDate.invalidReason}`);
-	// 	}
-	// 	return localDate;
-	// });
 };
 
 export const config = {
