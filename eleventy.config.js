@@ -178,10 +178,6 @@ export default async function(eleventyConfig) {
 		// selector: "h1,h2,h3,h4,h5,h6", // default
 	});
 
-	eleventyConfig.addShortcode("currentBuildDate", () => {
-		return (new Date()).toISOString();
-	});
-
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line
@@ -302,7 +298,6 @@ export default async function(eleventyConfig) {
 
 	// PostGraph from Robb Knight (https://postgraph.rknight.me/)
 	eleventyConfig.addPlugin(postGraph, {
-		yearLink: "/posts/{{year}}",
 		sort: "desc",
 	});
 };

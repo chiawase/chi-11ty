@@ -325,6 +325,7 @@ header {
 	align-items: center;
 	padding: 1em;
 	border-bottom: 1px dashed var(--color-gray-20);
+	z-index: 8;
 }
 
 @media (min-width: 768px) {
@@ -348,7 +349,7 @@ header {
 	font-style: normal;
 }
 
-#color-scheme-top {
+.color-scheme-top {
 	flex-grow: 1;
 	margin-top: -0.3rem;
 }

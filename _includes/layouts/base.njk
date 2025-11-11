@@ -84,7 +84,7 @@
 			<a href="/" class="home-link">{{ metadata.title }}</a>
 			<!-- Light/Dark Mode toggle -->
 			<dark-mode-toggle
-					id="color-scheme-top"
+					class="color-scheme-top"
 					appearance="toggle"
 					permanent=""
 			></dark-mode-toggle>
@@ -106,7 +106,6 @@
 
 		{% include "footer.njk" %}
 
-		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
 	</body>
 </html>
