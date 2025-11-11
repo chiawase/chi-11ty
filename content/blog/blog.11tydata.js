@@ -1,6 +1,7 @@
 export default {
 	tags: [
-		"posts"
+		"posts",
+		"blog"
 	],
 	"layout": "layouts/post.njk",
 	eleventyComputed: {

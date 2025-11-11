@@ -6,9 +6,9 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import eleventyPluginInterlinker from "@photogabble/eleventy-plugin-interlinker";
 import pluginFilters from "./_config/filters.js";
 import { EleventyRenderPlugin } from "@11ty/eleventy";
-import { DateTime } from "luxon";
 import externalLinks from "eleventy-plugin-external-links";
 import footnote_plugin from "markdown-it-footnote";
+import postGraph from "@rknightuk/eleventy-plugin-post-graph";
 
 // for timezone
 const TIME_ZONE = "UTC+8";
@@ -299,6 +299,12 @@ export default async function(eleventyConfig) {
         extensions: [".html"],          // Extensions to apply transform to
         includeDoctype: true,           // Default to include '<!DOCTYPE html>' at the beginning of the file
     });
+
+	// PostGraph from Robb Knight (https://postgraph.rknight.me/)
+	eleventyConfig.addPlugin(postGraph, {
+		yearLink: "/posts/{{year}}",
+		sort: "desc",
+	});
 };
 
 export const config = {

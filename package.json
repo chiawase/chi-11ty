@@ -34,6 +34,7 @@
 		"@11ty/eleventy-navigation": "^1.0.4",
 		"@11ty/eleventy-plugin-rss": "^2.0.4",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+		"@rknightuk/eleventy-plugin-post-graph": "^1.0.8",
 		"cross-env": "^7.0.3",
 		"dark-mode-toggle": "^0.16.2",
 		"eleventy-plugin-external-links": "^1.1.2",
