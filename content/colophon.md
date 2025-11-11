@@ -4,7 +4,7 @@ eleventyNavigation:
   parent: "More"
 title: "Colophon"
 date: 2025-09-26T09:08:31+00:00
-date_updated: 2025-11-09T10:14:07+00:00
+date_updated: 2025-11-10T14:46:59+00:00
 ---
 
 > Following the guide from [IndieWeb](https://indieweb.org/colophon) for what a Colophon page includes, I’ll do my best to lay down how I’ve set up my side of the internet. Last updated {{ date_updated | readableDate }}.
@@ -17,7 +17,7 @@ The code for this website can be found [on Github](https://github.com/chiawase/c
 
 ![Favicon for chisenires.design](img/favicon.png)
 
-The favicon is a red (`#681310`) squircle with my nickname on it using the font [Comic Nueue](https://github.com/crozynski/comicneue). _Man, I really am using Comic Nueue for my site... LOL_
+The favicon is a red (`#681310`) squircle with my nickname on it using the font [Anybody](https://etceteratype.co/anybody) for the letter `C` and [Victor Mono](https://rubjo.github.io/victor-mono/) for the letters `hi`. The letter spacing for this is also adjusted so all letters are neatly put together in the middle.
 
 ## Website Fonts
 
