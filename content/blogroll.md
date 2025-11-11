@@ -4,7 +4,7 @@ eleventyNavigation:
   parent: "More"
 title: Blogroll
 date: 2025-09-19T06:35:25+00:00
-date_updated: 2025-11-06T15:37:00+00:00
+date_updated: 2025-11-10T14:52:28+00:00
 ---
 
 # Random list of websites I find cool
@@ -30,3 +30,5 @@ date_updated: 2025-11-06T15:37:00+00:00
 [https://stellify.net/](https://stellify.net/)
 
 [https://jamesiv.es/](https://jamesiv.es/)
+
+[https://flamedfury.com/](https://flamedfury.com/)
