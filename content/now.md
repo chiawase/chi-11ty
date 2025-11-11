@@ -19,7 +19,6 @@ date_updated: 2025-11-06T15:37:00+00:00
 ### Ideas to get back to
 
 - setting up the Webring for [Tambayan 404](https://tambayan404.com) members too haha
-- updating the style of this website? 🧐
 - I reaaally really want to make something like this but for my own life: [Life in Weeks](https://busterbenson.com/life-in-weeks)
 
 ### Games on my mind
