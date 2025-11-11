@@ -1,11 +1,11 @@
 ---
 title: Setting up my website again for the nth time
-description: Testing how this would look like in metadata?
+description: This is my test post for when I re-launched my website again in Eleventy and using Obsidian as my place to write thoughts down.
 tags:
 - writing
 - coding
 date: 2025-03-11T08:39:39+00:00
-date_updated: 2025-09-24T14:43:13+00:00
+date_updated: 2025-11-10T15:27:58+00:00
 ---
 
 > This was initially written on March 5, 2025. I then made this particular blog post as my "test post" to see how static site generators would render the stuff I wrote in Markdown and then some.
