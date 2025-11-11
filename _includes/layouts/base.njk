@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{% set hasTempTitle = false %}
 		<title>
+			{%- if draft %}(Draft){% endif %}
 			{%- if title %}
 				{# if page has title #}
 				{{- title }} &bull; {{ metadata.title }}

@@ -5,9 +5,9 @@ layout: layouts/base.njk
 <style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style>
 <style>{% include "public/css/prism-diff.css" %}</style>
 <article class="h-entry">
-
-<h1 class="p-name">{{ title }}</h1>
-
+{%- if title !== null %}
+<h1 class="p-name">{{ title }} {% if draft %}(draft){% endif %}</h1>
+{%- endif %}
 {# copying the implementation of Jeremy Cherfas (https://www.jeremycherfas.net/) #}
 <div class="u-author h-card">
 	<data value="{{ metadata.url }}" class="u-url"></data>
@@ -15,9 +15,9 @@ layout: layouts/base.njk
 	<data value="{{ metadata.url }}/img/chi.jpg" class="u-photo"></data>
 	<data value="mailto:hello@chisenires.design" class="u-email"></data>
 </div>
-
+{%- if title !== null %}
 {% include "postmetadata.njk" %}
-
+{%- endif %}
 <div class="e-content">
 {{ content | safe }}
 </div>
@@ -42,7 +42,7 @@ layout: layouts/base.njk
 	<h4>Backlinks</h4>
 	<ul>
 	{% for link in backlinks %}
-		<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+		<li><a href="{{ link.url }}">{{ link.title }} {% if link.draft %}(draft){% endif %}</a></li>
 	{% endfor %}
 	</ul>
 </nav>
