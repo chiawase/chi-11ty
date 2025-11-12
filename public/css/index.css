@@ -499,8 +499,9 @@ header {
 	margin-bottom: 2rem;
 }
 
-/* Images in posts */
-article picture img {
+/* Images in posts, and also in other pages */
+article picture img,
+.page picture img {
 	border-radius: 1rem;
 	max-width: 100%;
 	height: auto;
@@ -540,7 +541,9 @@ dark-mode-toggle::part(legend) { margin: 0 auto; }
 
 /* About Page */
 .chi-image {
+	display: block;
 	border-radius: 2rem;
+	margin: 0 auto;
 }
 
 /* Styling for Webmentions */

@@ -15,7 +15,7 @@ Hello there! I'm <span class="p-name">**Chi Señires**</span>. I'm a <span class
 
 ## Quick <abbr title="Getting to Know Me">GTKM</abbr>
 
-- I have a red trifold Brompton folding bike I've named **Gold Ship**.
+- I have a red trifold Brompton folding bike I've named [**Gold Ship**](/stuff-i-use/#my-bicycle).
 - currently working at <a href="https://humanforce.com" class="p-org">Humanforce</a> as a UX Designer.
 - Most of my time working is within [Figma](https://figma.com). Though I also code occasionally now and contribute to our internal design system!
 - I am familiar with front-end web development. HTML & CSS are my jam!
@@ -35,6 +35,15 @@ Though if you'd like to chat, you may contact me through the following public ac
 - [BlueSky](https://bsky.app/profile/chisenires.design "I sometimes go here to chronologically go through topics")
 - [LinkedIn](https://linkedin.com/in/chisenires "yeah of course for the networking clout")
 
-<img src="/img/chi/chi-02.png" alt="" class="chi-image">
+## Communities I'm part of
+
+While I do have a list of the communities I'm part of in my now page, I figured I should also just have a general list of which communities I am a part of, regardless if I moderate / organize stuff there or I'm simply a member.
+
+- [Tambayan 404](https://tambayan404.com) (Co-founder and Admin)
+- [Friends of Figma, Philippines](https://friends.figma.com/philippines) (User Group Leader)
+- [Pinay Bike Commuter Community](https://fb.com/groups/pinaybikecommutercommunity) (Co-founder, Moderator)
+- [UXPH](https://uxph.org "UX Philippines") (Core Volunteer)
+
+<img src="/img/uploads/2025/chi-and-goldship.jpeg" alt="Chi with her red folding bike, Gold Ship, parked in a garage driveway at night. A red GO FAR Bromp bag is attached to the front. She’s wearing her red Lumos helmet, a red striped sleeveless top, and black shorts, smiling under the glow of nearby headlights." title="This photo was a bit amusing because it was taken as soon as someone was trying to make a U-turn on the road in front of me, ending up with them giving me a bit of lighting in the early evening 😆" width="500" class="chi-image">
 
 </div>

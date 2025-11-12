@@ -5,10 +5,9 @@ eleventyNavigation:
   key: "Stuff I Use"
   parent: "More"
 date: 2025-08-18T07:34:56+00:00
-date_updated: 2025-11-06T15:16:06+00:00
+date_updated: 2025-11-12T09:48:50+00:00
+layout: "layouts/page.njk"
 ---
-
-> Last updated on {{ date_updated | readableDate }}.
 
 # Stuff I Use
 
@@ -17,6 +16,16 @@ Initially put this together after seeing [Jarrod's](https://heydingus.net/gear) 
 Some of the links here may be referral links! I'll just mark them accordingly if there's anything special about them.
 
 I eventually want to spiffy this up while getting some inspiration from these blogs: [Jason Burk's](https://grepjason.sh/mysetup)
+
+> Last updated on {{ date_updated | readableDate }}.
+
+#### 🚲 My bicycle
+
+![A red Brompton bike with its rear wheel folded under, allowing it to stand upright on its own. A red bag is mounted on the front rack with a matching red helmet resting on top. The bike is parked on the roadside in front of The Peninsula Manila, whose plaque is visible behind some greenery.](img/uploads/2025/goldship.jpeg "The first time I brought Gold Ship out for a ride after I got her")
+
+- a custom painted red Brompton named *Gold Ship*
+	- my bag here is a GO FAR Large Bromp bag I bought from [Bikeary](https://bikeary.com/), though I don’t think they sell it on their store anymore
+	- I also have a [LUMOS Ultra MIPS helmet](https://ridelumos.com/products/lumos-ultra?variant=40418367766684) that has seen better days lol
 
 #### 📨 Mail Client
 
@@ -137,10 +146,11 @@ I eventually want to spiffy this up while getting some inspiration from these bl
 #### 🎵 Music
 
 - [Spotify Premium](https://open.spotify.com/) user
+- [YouTube Premium](https://youtube.com) user as well, though I haven’t downloaded the actual YouTube Music app yet, I just make use of it on the TV or on my PC
 
 #### 🏡 Blog Hosting
 
-- [Coolify](https://www.coolify.io/)
+- [Coolify](https://www.coolify.io/) (for now... 😏)
 
 #### 🌐 Domains
 
@@ -149,8 +159,10 @@ I eventually want to spiffy this up while getting some inspiration from these bl
 
 #### 💻 Coding & Setup
 
-- Terminal: [Ghostty](https://ghostty.org/)
-- Code Editor: [Cursor](https://www.cursor.com/) (while sparingly using the AI functionality for now)
+- Terminal:
+	- on Mac: [Ghostty](https://ghostty.org/)
+	- on Windows: just plain old Terminal
+- Code Editor: VS Code
 - My main keyboard: [Baseform](https://posture.works/baseform/ "just released last September 2025!") with [Equalz Fruit Smoothie Switches](https://www.switchkeys.com.au/products/equalz-fruit-smoothie-switches-x10?_pos=8&_fid=1808135e3&_ss=c "special thanks to a friend based in AU who recoo’d this hehe")
 
 #### 📢Social Media Networks
