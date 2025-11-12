@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 6
 ---
 
-<p>Here's a list of all the other pages I have in my website.</p>
+<p>Here's a list of all the other pages I have in my website, sorted in alphabetical order!</p>
 
 {% set navPages = collections.all | eleventyNavigation("More") %}
 
@@ -34,5 +34,5 @@ eleventyNavigation:
 {%- endmacro %}
 
 <ul class="nav-list" role="list">
-{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+{%- for entry in navPages | sort(false, true, "title") %}{{ renderNavListItem(entry) }}{%- endfor -%}
 </ul>
