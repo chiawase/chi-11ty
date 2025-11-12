@@ -1,8 +1,8 @@
 ---
 title: 
 description: 
-date: 
-date_updated: 
+date: 2025-11-11T09:15:17+00:00
+date_updated: 2025-11-12T10:12:13+00:00
 tags: 
 - writing
 - coding
