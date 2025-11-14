@@ -337,6 +337,11 @@ pre:has(+ p) {
 	width: calc(var(--max-width) + 12rem);
 }
 
+pre[class*="language-Plaintext"],
+code[class*="language-Plaintext"] {
+	line-height: 1 !important;
+}
+
 em {
 	font-style: italic;
 	font-weight: 500;
@@ -395,7 +400,8 @@ header {
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
 }
-.nav-item a[href]:hover {
+.nav-item a[href]:hover,
+.post-metadata li .post-permalink:hover {
 	font-style: italic;
 }
 .nav a[href][aria-current="page"] {
@@ -483,8 +489,12 @@ header {
 	color: var(--color-gray-20);
 }
 
-.post-metadata li .post-tag {
-	margin-left: 0.1rem;
+.post-metadata li .post-tag,
+.post-metadata li .post-language {
+	display: inline-block;
+	padding: 0.015rem 0.25rem;
+	background-color: var(--background-color-overlay);
+	margin-right: 0.25rem;
 }
 
 .post-metadata time, .postlist-item time, .postlist-item .postlist-separator, .post-metadata .post-metadata-separator {
