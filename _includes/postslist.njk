@@ -7,7 +7,7 @@
 		{% for tag in post.data.tags | filterTagList %}
 		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 		{% if loop.first %}<span class="postlist-separator"></span>{% endif %}
-		<a href="{{ tagUrl }}" class="postlist-tag">{{ tag | lower }}</a>{% if not loop.last %},&nbsp;{% endif %}
+		<a href="{{ tagUrl }}" class="postlist-tag">{{ tag | lower }}</a>
 		{% endfor %}
 		{% if post.data.draft %}&nbsp;(draft){% endif %}
 	</li>
