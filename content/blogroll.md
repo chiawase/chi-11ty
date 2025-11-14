@@ -36,3 +36,7 @@ date_updated: 2025-11-14T14:00:26+00:00
 [https://mkultra.monster/](https://mkultra.monster/)
 
 [https://rosswintle.uk/](https://rosswintle.uk/)
+
+[https://dbushell.com/](https://dbushell.com/)
+
+[https://jamesg.blog/](https://jamesg.blog/)
