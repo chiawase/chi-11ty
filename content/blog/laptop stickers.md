@@ -2,7 +2,7 @@
 title: 
 description: 
 date: 2025-11-12T08:32:53+00:00
-date_updated: 2025-11-12T09:11:15+00:00
+date_updated: 2025-11-14T11:30:58+00:00
 tags: 
 - writing
 ---
@@ -16,3 +16,5 @@ Seeing this project, I immediately went and took a photo of my laptop’s curren
 Seeing this now though, I realize I don’t even have a [UXPH](https://uxph.org) reference on my laptop! That has to change soon. 😛
 
 While looking thru the fediverse too, I saw that there’s a similar (if not exact same concept?) website that also just showcases laptop lids of people, which is [devlids.com](https://devlids.com). I’m submitting the same photo above there too :)) Their submission workflow is via email, so I guess I’ll just update this if I see my laptop has been added to the grid 😆 Each laptop (or I guess, each user?) gets their own page on the site so I can easily link back to it 😄
+
+**Update 14 Nov 2025**: My laptop lid is now on DevLids.com! Check it out~ [DevLids.com/lids/chiawase](https://devlids.com/lids/chiawase)
