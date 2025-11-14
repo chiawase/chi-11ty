@@ -1,9 +1,10 @@
 <ul class="post-metadata">
-	<li><span class="label">Created:</span> <time datetime="{{ page.date | htmlDateString }}" class="dt-published">{{ page.date | readableDate }}</time></li>
+	<li><span class="label">Created:</span> <time datetime="{{ date | htmlDateString }}" class="dt-published">{{ date | readableDate }}</time></li>
 	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}" class="dt-updated">{{ date_updated | readableDate }}</time></li>{% endif %}
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li>{% if loop.first %}<span class="post-metadata-separator"></span>{% endif %}<a href="{{ tagUrl }}" class="post-tag p-category">{{ tag | lower }}</a>{%- if not loop.last %}, {% endif %}</li>
+	<li>{%- if loop.first %}<span class="post-metadata-separator"></span><span class="label">Tags: </span>{% endif %}<a href="{{ tagUrl }}" class="post-tag p-category">{{ tag | lower }}</a></li>
 	{%- endfor %}
-	{% if draft %}<li>&nbsp;(draft)</li>{% endif %}
+	{% if post_language %}<li><span class="post-metadata-separator"></span><span class="label">Post language:</span> <span class="post-language">{{ post_language }}</span></li>{% endif %}
+	<li><span class="post-metadata-separator"></span><a href="{{ url }}" class="u-url post-permalink">Permalink</a></li>
 </ul>
