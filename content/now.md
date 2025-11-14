@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 4
 title: now
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-11-06T15:37:00+00:00
+date_updated: 2025-11-14T13:42:09+00:00
 ---
 
 # What I’m currently up to
@@ -13,7 +13,7 @@ date_updated: 2025-11-06T15:37:00+00:00
 
 ### Stuff on my mind
 
-- I want to eventually put together my wishlist here lol
+- I want to eventually put together my wishlist on my blog lol
 - still learning more about my new [Baseform Keyboard](https://posture.works/baseform/)
 
 ### Ideas to get back to
@@ -24,8 +24,9 @@ date_updated: 2025-11-06T15:37:00+00:00
 ### Games on my mind
 
 - [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — ongoing!
-- [Ghost of Yotei](https://www.playstation.com/en-us/games/ghost-of-yotei/) — just finished the other day!
 - [Clair Obscur: Expedition 33](https://www.expedition33.com/) — replaying this on the PS5 Pro for better graphics 😎 and so I get all the things i missed haha
+- [Easy Delivery Co.](https://store.steampowered.com/app/3293010/Easy_Delivery_Co/) — playing this thru my Steam Family access, reco’d by my boyfriend when I was looking for something else to try 😆
+- [Undusted: Letters from the Past](https://store.steampowered.com/app/2891020/Undusted_Letters_from_the_Past/) — I finished this just the other day, it’s such a cozy game! Made me cry at the end, too, with its story. If you like cleaning games, this is a nice short game to get 😁
 
 ### What I’m reading
 
