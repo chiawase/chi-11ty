@@ -71,10 +71,10 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("content/{archive,blog}/**.*");
 
 	// Watch changes to CSS files
-	eleventyConfig.addWatchTarget("public/**/*.css");
+	eleventyConfig.addWatchTarget("public/css/*.css");
 
 	// Watch changes to njk files???
-	eleventyConfig.addWatchTarget("_includes/");
+	eleventyConfig.addWatchTarget("_includes/**.*", "_includes/*/**.*");
 
 	eleventyConfig.setChokidarConfig({
 		usePolling: true,
