@@ -37,7 +37,7 @@ Though if you'd like to chat, you may contact me through the following public ac
 
 ## Communities I'm part of
 
-While I do have a list of the communities I'm part of in my now page, I figured I should also just have a general list of which communities I am a part of, regardless if I moderate / organize stuff there or I'm simply a member.
+While I do have a list of the communities I organize in my now page, I figured I should also just have a general list of which communities I participate in, regardless if I moderate / organize stuff there or I'm simply a member.
 
 - [Tambayan 404](https://tambayan404.com) (Co-founder and Admin)
 - [Friends of Figma, Philippines](https://friends.figma.com/philippines) (User Group Leader)
