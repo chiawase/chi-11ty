@@ -341,6 +341,13 @@ pre:has(+ p) {
 	width: calc(var(--max-width) + 12rem);
 }
 
+@media (max-width: 1000px) {
+	pre:has(+ p) {
+		margin-left: initial !important;
+		width: 100%;
+	}
+}
+
 pre[class*="language-Plaintext"],
 code[class*="language-Plaintext"] {
 	line-height: 1 !important;
