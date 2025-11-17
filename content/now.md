@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 4
 title: now
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-11-14T13:42:09+00:00
+date_updated: 2025-11-17T03:36:38+00:00
 ---
 
 # What I’m currently up to
@@ -23,7 +23,7 @@ date_updated: 2025-11-14T13:42:09+00:00
 
 ### Games on my mind
 
-- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — ongoing!
+- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — still ongoing! Got to the True Ending already though 😁
 - [Clair Obscur: Expedition 33](https://www.expedition33.com/) — replaying this on the PS5 Pro for better graphics 😎 and so I get all the things i missed haha
 - [Easy Delivery Co.](https://store.steampowered.com/app/3293010/Easy_Delivery_Co/) — playing this thru my Steam Family access, reco’d by my boyfriend when I was looking for something else to try 😆
 - [Undusted: Letters from the Past](https://store.steampowered.com/app/2891020/Undusted_Letters_from_the_Past/) — I finished this just the other day, it’s such a cozy game! Made me cry at the end, too, with its story. If you like cleaning games, this is a nice short game to get 😁
@@ -32,30 +32,33 @@ date_updated: 2025-11-14T13:42:09+00:00
 
 #### Manga
 
-> Just updated this list to remove some recently finished ones, which are [Beat & Motion](https://mangaplus.shueisha.co.jp/titles/100228), [Sirens Won't Sing For You](https://mangaplus.shueisha.co.jp/titles/100420), and [Yattara](https://mangaplus.shueisha.co.jp/titles/100370).
+> Just updated this list to remove some recently finished ones, which are [Beat & Motion](https://mangaplus.shueisha.co.jp/titles/100228), [Sirens Won't Sing For You](https://mangaplus.shueisha.co.jp/titles/100420), and [Yattara](https://mangaplus.shueisha.co.jp/titles/100370). Also rearranged this alphabetically so it’s easier for me to insert and remove certain ones 😆
 
-1. [One Piece](https://myanimelist.net/manga/13/One_Piece)
-2. [SPY x FAMILY](https://mangaplus.shueisha.co.jp/titles/100056)
 3. [Akane-banashi](https://mangaplus.shueisha.co.jp/titles/100185)
-4. [Kindergarten WARS](https://mangaplus.shueisha.co.jp/titles/100246)
-5. [Kakegurui](https://global.bookwalker.jp/series/75664/)
-6. [DANDADAN](https://mangaplus.shueisha.co.jp/titles/100171)
-7. [Make the Exorcist Fall in Love](https://mangaplus.shueisha.co.jp/titles/100198)
-8. [SAKAMOTO DAYS](https://mangaplus.shueisha.co.jp/titles/100127)
-9. [MARRIAGETOXIN](https://mangaplus.shueisha.co.jp/titles/100190)
-10. [Blooming Love](https://mangaplus.shueisha.co.jp/titles/100245)
-11. [The God Before Me](https://mangaplus.shueisha.co.jp/titles/100289)
+4. [Blooming Love](https://mangaplus.shueisha.co.jp/titles/100245)
+5. [DANDADAN](https://mangaplus.shueisha.co.jp/titles/100171)
+6. [Drama Queen](https://mangaplus.shueisha.co.jp/titles/100404)
+7. [Eunuch of Empire](https://mangaplus.shueisha.co.jp/titles/100439)
+8. [G.G.G.](https://mangaplus.shueisha.co.jp/titles/100480)
+9. [Girl meets Rock!](https://mangaplus.shueisha.co.jp/titles/100291)
+10. [Gokurakugai](https://mangaplus.shueisha.co.jp/titles/100230)
+11. [Home at the Horizon](https://mangaplus.shueisha.co.jp/titles/100467)
 12. [Hope You're Happy, Lemon](https://mangaplus.shueisha.co.jp/titles/100280)
-13. [Drama Queen](https://mangaplus.shueisha.co.jp/titles/100404)
-14. [War of the Adults](https://mangaplus.shueisha.co.jp/titles/100479)
-15. [Home at the Horizon](https://mangaplus.shueisha.co.jp/titles/100467)
-16. [Eunuch of Empire](https://mangaplus.shueisha.co.jp/titles/100439)
-17. [Waiting for the Sunlight](https://mangaplus.shueisha.co.jp/titles/100409)
-18. [Girl meets Rock!](https://mangaplus.shueisha.co.jp/titles/100291)
+13. [Kakegurui](https://global.bookwalker.jp/series/75664/)
+14. [Kindergarten WARS](https://mangaplus.shueisha.co.jp/titles/100246)
+15. [Magical Girl and Narco Wars](https://mangaplus.shueisha.co.jp/titles/100491)
+16. [Make the Exorcist Fall in Love](https://mangaplus.shueisha.co.jp/titles/100198)
+17. [MARRIAGETOXIN](https://mangaplus.shueisha.co.jp/titles/100190)
+18. [Monochrome Days](https://mangaplus.shueisha.co.jp/titles/100372)
 19. [Night Light Hounds](https://mangaplus.shueisha.co.jp/titles/100374)
-20. [Monochrome Days](https://mangaplus.shueisha.co.jp/titles/100372)
-21. [No Gyaru in This Class](https://mangaplus.shueisha.co.jp/titles/100357)
-22. [Gokurakugai](https://mangaplus.shueisha.co.jp/titles/100230)
+20. [No Gyaru in This Class](https://mangaplus.shueisha.co.jp/titles/100357)
+21. [One Piece](https://myanimelist.net/manga/13/One_Piece)
+22. [Otr of the Flame](https://mangaplus.shueisha.co.jp/titles/100493)
+23. [SAKAMOTO DAYS](https://mangaplus.shueisha.co.jp/titles/100127)
+24. [SPY x FAMILY](https://mangaplus.shueisha.co.jp/titles/100056)
+25. [The God Before Me](https://mangaplus.shueisha.co.jp/titles/100289)
+26. [Waiting for the Sunlight](https://mangaplus.shueisha.co.jp/titles/100409)
+27. [War of the Adults](https://mangaplus.shueisha.co.jp/titles/100479)
 
 ### Communities I'm Moderating
 
