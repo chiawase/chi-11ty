@@ -46,6 +46,11 @@
 
 		{% include "metadata.njk" %}
 
+		{# Restricting indexing with AI crawlers #}
+		{# From: https://simplycreative.uk/stop-chatgpt-ai-scraping/ #}
+		<meta name="robots" content="noai, noimageai">
+		<meta name="ChatGPTBot" content="noindex, nofollow">
+
 		{#- Add the contents of a file to the bundle #}
 		<style>{%- include "public/css/index.css" %}</style>
 		{#- Or you can add from node_modules #}
