@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 4
 title: now
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-11-17T03:36:38+00:00
+date_updated: 2025-11-20T12:16:51+00:00
 ---
 
 # What I’m currently up to
@@ -66,4 +66,4 @@ date_updated: 2025-11-17T03:36:38+00:00
 - [Friends of Figma, Philippines](https://friends.figma.com/philippines)
 - [Pinay Bike Commuter Community](https://fb.com/groups/pinaybikecommutercommunity)
 
-> Want to know more about the concept of `/now` pages? Check out [nownownow.com/about](https://nownownow.com/about).
+> Want to know more about the concept of `/now` pages? Check out [nownownow.com/about](https://nownownow.com/about). You can also check my `/now` page on nownownow.com: [Chi’s nownownow page](https://nownownow.com/p/kreC)
