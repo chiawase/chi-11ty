@@ -2,7 +2,7 @@
 title: TIL of npm cross-platform support
 description: 
 date: 2025-11-14T09:56:50+00:00
-date_updated: 2025-11-14T12:10:27+00:00
+date_updated: 2025-11-20T12:45:13+00:00
 tags: 
 - writing
 - coding
@@ -40,9 +40,9 @@ Initially, the error was more confusing, since this was the error message:
 2025-Nov-06 15:50:41.304701 #13 167.6 [11ty] 3. Cannot find package '@11ty/eleventy' imported from /app/eleventy.config.js
 ```
 
-At this point, I tinkered with the deployment setup stuff on [my website’s test environment](https://testinglang.chisenires.design).
+At this point, I tinkered with the deployment setup stuff on *my website’s test environment*[^1].
 
-(and yes, my site does have a test environment 😆 it’s currently set up to mirror what I have on my main site at the moment, but it opens up the opportunity for me to tinker with some things before I “push” it to the production site 😛)
+~~(and yes, my site does have a test environment 😆 it’s currently set up to mirror what I have on my main site at the moment, but it opens up the opportunity for me to tinker with some things before I “push” it to the production site 😛)~~ As of 20 Nov 2025, this is not true anymore 🥲 RIP testing site lol
 
 One of the recommendations in the logs was to set up a new environment variable `NIXPACKS_NODE_VERSION` and set it to `22`, so I went and did that. Then the error changed.
 
@@ -104,3 +104,5 @@ When I shared it to my boyfriend, he just said, “this is why I don’t like wo
 Well, now that I have this set up, I guess I shouldn’t have to worry about anything anymore… right? 😅
 
 At least now I finally get to share my updated website in all its glory 😁 Time to share this blog post and a bajillion others I’ve put up the past week lol
+
+[^1]: **Update 20 Nov 2025:** My testing site is now down as my partner had to remove some unneeded repos on our server to manage file sizes. 😅 So now whatever I had above will just go to a 404 page. The original URL was `testinglang.chisenires.design`.
