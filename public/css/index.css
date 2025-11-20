@@ -67,6 +67,8 @@
 
 	--max-width: 50rem;
 
+	--height-header: 73px;
+
 	--subtle-transition: 300ms ease-in-out;
 }
 
@@ -256,6 +258,20 @@ a[href^="http"]:active:after {
 	background-image: var(--svg-external-link-icon-hover);
 }
 
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before,
+.footnote-item:before {
+	display: block;
+	content: " ";
+	margin-top: calc(-1 * var(--height-header));
+	height: var(--height-header);
+	visibility: hidden;
+	pointer-events: none;
+}
+
 main,
 footer {
 	padding: 1rem;
@@ -356,6 +372,11 @@ code[class*="language-Plaintext"] {
 em {
 	font-style: italic;
 	font-weight: 500;
+}
+
+strong {
+	font-weight: 600;
+  font-variation-settings: "wdth" 150 , "ital" 0, "wght" 600;
 }
 
 /* Header */
