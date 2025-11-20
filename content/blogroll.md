@@ -4,7 +4,7 @@ eleventyNavigation:
   parent: "More"
 title: Blogroll
 date: 2025-09-19T06:35:25+00:00
-date_updated: 2025-11-14T14:00:26+00:00
+date_updated: 2025-11-20T13:31:15+00:00
 ---
 
 # Random list of websites I find cool
@@ -40,3 +40,5 @@ date_updated: 2025-11-14T14:00:26+00:00
 [https://dbushell.com/](https://dbushell.com/)
 
 [https://jamesg.blog/](https://jamesg.blog/)
+
+[https://json.blog/](https://json.blog/)
