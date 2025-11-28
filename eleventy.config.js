@@ -254,7 +254,7 @@ export default async function(eleventyConfig) {
 	
 	// Create socialImageUrl shortcode
 	// Applying the code from https://sia.codes/posts/social-share-images-using-cloudinary/
-	eleventyConfig.addShortcode("socialImageUrl", (title, description, metadataTitle) => {
+	eleventyConfig.addShortcode("socialImageUrl", (title, description, hasTempTitle) => {
 		// Thumbnail Image particulars
 		const width = "1280";
 		const height = "640";
@@ -262,9 +262,9 @@ export default async function(eleventyConfig) {
 	
 		// encoding title using cloudinarySafeText function
 		let thumbnailTitle = title;
-		if (metadataTitle === "home") {
+		if (hasTempTitle === "home") {
 			thumbnailTitle = "Chi Señires";
-		} else {
+		} else if (hasTempTitle) {
 			thumbnailTitle = "Chi’s blog post";
 		}
 		const encodedTitle = cloudinarySafeText(thumbnailTitle);

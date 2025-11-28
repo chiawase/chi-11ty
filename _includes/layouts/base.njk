@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{% set metadataTitle = false %}
+	{% set hasTempTitle = false %}
 	<title>
 		{%- if draft %}(Draft){% endif %}
 		{%- if title %}
@@ -11,12 +11,12 @@
 		{%- elif page.url == "/" %}
 			{# if home #}
 			{{- metadata.title }} {# set to metadata title #}
-			{%- set metadataTitle = "home" %}
+			{%- set hasTempTitle = "home" %}
 		{%- else %}
 			{# for posts that don't have titles #}
 			{%- set tempTitle = content | striptags | safe | truncate(60, false, "...") %}
 			{{- tempTitle }} &bull; {{ metadata.title }}
-			{%- set metadataTitle = tempTitle %}
+			{%- set hasTempTitle = tempTitle %}
 		{%- endif %}
 	</title>
 	{% set renderedDescription = description %}
