@@ -228,7 +228,7 @@ a[href] {
 	color: var(--text-color-link);
 }
 a[href]:not(:hover) {
-	text-decoration: none;
+	text-decoration-color: transparent;
 }
 a[href]:hover,
 a[href]:active {
@@ -285,7 +285,7 @@ footer {
 }
 
 #skip-link {
-	text-decoration: none;
+	text-decoration-color: transparent;
 	background: var(--background-color);
 	color: var(--text-color);
 	padding: 0.5rem 1rem;
@@ -406,7 +406,7 @@ header {
 	font-style: italic;
 }
 .home-link:link:not(:hover) {
-	text-decoration: none;
+	text-decoration-color: transparent;
 }
 .home-link:link:hover {
 	font-style: normal;
@@ -430,7 +430,7 @@ header {
 	display: inline-block;
 }
 .nav-item a[href]:not(:hover) {
-	text-decoration: none;
+	text-decoration-color: transparent;
 }
 .nav-item a[href]:hover,
 .post-metadata li .post-permalink:hover {
@@ -484,7 +484,7 @@ header {
 
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
-	color: var(--color-gray-50);
+	color: currentColor;
 }
 .postlist-date {
 	word-spacing: -0.5px;
