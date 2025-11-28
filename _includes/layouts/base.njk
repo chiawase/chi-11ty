@@ -1,117 +1,123 @@
-<!doctype html>
 <html lang="{{ metadata.language }}">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		{% set hasTempTitle = false %}
-		<title>
-			{%- if draft %}(Draft){% endif %}
-			{%- if title %}
-				{# if page has title #}
-				{{- title }} &bull; {{ metadata.title }}
-			{%- elif page.url == "/" %}
-				{# if home #}
-				{{- metadata.title }} {# set to metadata title #}
-				{%- set hasTempTitle = "home" %}
-			{%- else %}
-				{# for posts that don't have titles #}
-				{%- set tempTitle = page.rawInput | striptags | safe | truncate(60, false, "...") %}
-				{{- tempTitle }} &bull; {{ metadata.title }}
-				{%- set hasTempTitle = true %}
-			{%- endif %}
-		</title>
-		{% set renderedDescription = description %}
-		{%- if page.url == "/" %}
-			{# special handling for home #}
-			{%- set renderedDescription = metadata.description %}
-		{%- elif renderedDescription == null and tags[0] == "posts" %}
-			{# special handling for posts with no explicit description #}
-			{%- set renderedDescription = page.rawInput | striptags | safe | truncate(180, false, "...") %}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% set metadataTitle = false %}
+	<title>
+		{%- if draft %}(Draft){% endif %}
+		{%- if title %}
+			{# if page has title #}
+			{{- title }} &bull; {{ metadata.title }}
+		{%- elif page.url == "/" %}
+			{# if home #}
+			{{- metadata.title }} {# set to metadata title #}
+			{%- set metadataTitle = "home" %}
 		{%- else %}
-			{# for the rest of the pages, default to description (if any) or metadata.description if none #}
-			{%- set renderedDescription = description or metadata.description %}
+			{# for posts that don't have titles #}
+			{%- set tempTitle = content | striptags | safe | truncate(60, false, "...") %}
+			{{- tempTitle }} &bull; {{ metadata.title }}
+			{%- set metadataTitle = tempTitle %}
 		{%- endif %}
-		<meta name="description" content="{{ renderedDescription }}">
-		<link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+	</title>
+	{% set renderedDescription = description %}
+	{%- if page.url == "/" %}
+		{# special handling for home #}
+		{%- set renderedDescription = metadata.description %}
+	{%- elif renderedDescription == null and tags[0] == "posts" %}
+		{# special handling for posts with no explicit description #}
+		{%- set renderedDescription = content | striptags | safe | truncate(180, false, "...") %}
+	{%- else %}
+		{# for the rest of the pages, default to description (if any) or metadata.description if none #}
+		{%- set renderedDescription = description or metadata.description %}
+	{%- endif %}
+	<meta name="description" content="{{ renderedDescription }}">
+	<link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
-		{# Include rel-me link tags #}
-		{% include "relmeauth.njk" %}
+	{#- Include rel-me link tags #}
+	{% include "relmeauth.njk" %}
 
-		{# Webmention stuff #}
-		<link rel="webmention" href="https://webmention.io/{{ metadata.domain }}/webmention" />
-		<link rel="pingback" href="https://webmention.io/{{ metadata.domain }}/xmlrpc" />
+	{#- Webmention stuff #}
+	<link rel="webmention" href="https://webmention.io/{{ metadata.domain }}/webmention" />
+	<link rel="pingback" href="https://webmention.io/{{ metadata.domain }}/xmlrpc" />
 
-		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site! #}
-		<meta name="generator" content="{{ eleventy.generator }}">
+	{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site! #}
+	<meta name="generator" content="{{ eleventy.generator }}">
 
-		{% include "metadata.njk" %}
+	{%- include "metadata.njk" %}
 
-		{# Restricting indexing with AI crawlers #}
-		{# From: https://simplycreative.uk/stop-chatgpt-ai-scraping/ #}
-		<meta name="robots" content="noai, noimageai">
-		<meta name="ChatGPTBot" content="noindex, nofollow">
+	{#- Restricting indexing with AI crawlers #}
+	{#- From: https://simplycreative.uk/stop-chatgpt-ai-scraping/ #}
+	<meta name="robots" content="noai, noimageai">
+	<meta name="ChatGPTBot" content="noindex, nofollow">
 
-		{#- Add the contents of a file to the bundle #}
-		<style>{%- include "public/css/index.css" %}</style>
-		{#- Or you can add from node_modules #}
-		{# <style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style> #}
+	{#- Add the contents of a file to the bundle #}
+	<style>{%- include "public/css/index.css" %}</style>
+	{#- Or you can add from node_modules #}
+	{#- <style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style> #}
 
-		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
-		<style>{%- getBundle "css" %}</style>
-		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
-		{# <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
+	{# If page layout is a Post, also include these styles #}
+	{%- if layout == "layouts/post.njk" %}
+	{# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
+	<style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style>
+	<style>{% include "public/css/prism-diff.css" %}</style>
+	{%- endif %}
 
-		{#- Add the heading-anchors web component to the JavaScript bundle #}
-		<script type="module">
-		{%- include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}
-		</script>
+	{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
+	<style>{%- getBundle "css" %}</style>
+	{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
+	{# <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 
-		{# Add Dark/Light Mode Toggle to bundle #}
-		<script type="module">
-		{%- include "node_modules/dark-mode-toggle/src/dark-mode-toggle.mjs" %}
-		</script>
+	{#- Add the heading-anchors web component to the JavaScript bundle #}
+	<script type="module">
+	{%- include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}
+	</script>
 
-		{# Also include the toggle to track Dark/Light Mode switch events #}
-		<script type="module">
-		{%- include "public/js/light-dark-switch.js" %}
-		</script>
+	{# Add Dark/Light Mode Toggle to bundle #}
+	<script type="module">
+	{%- include "node_modules/dark-mode-toggle/src/dark-mode-toggle.mjs" %}
+	</script>
 
-		{# Include tracking links #}
-		{%- include "tracking.njk" %}
+	{# Also include the toggle to track Dark/Light Mode switch events #}
+	<script type="module">
+	{%- include "public/js/light-dark-switch.js" %}
+	</script>
 
-		{# favicon #}
-		<link rel="icon" href="/img/favicon.png" type="image/png">
-	</head>
-	<body>
-		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
+	{# Include tracking links #}
+	{%- include "tracking.njk" %}
 
-		<header>
-			<img src="/img/favicon.png" alt="" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 0.5em;">
-			<a href="/" class="home-link">{{ metadata.title }}</a>
-			<!-- Light/Dark Mode toggle -->
-			<dark-mode-toggle
-					class="color-scheme-top"
-					appearance="toggle"
-					permanent=""
-			></dark-mode-toggle>
+	{# favicon #}
+	<link rel="icon" href="/img/favicon.png" type="image/png">
+</head>
+<body>
+	<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
 
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-			</nav>
-		</header>
-		<main id="skip">
-			<heading-anchors>
-				{{ content | safe }}
-			</heading-anchors>
-		</main>
+	<header>
+		<img src="/img/favicon.png" alt="" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 0.5em;">
+		<a href="/" class="home-link">{{ metadata.title }}</a>
+		<!-- Light/Dark Mode toggle -->
+		<dark-mode-toggle
+				class="color-scheme-top"
+				appearance="toggle"
+				permanent=""
+		></dark-mode-toggle>
 
-		{% include "footer.njk" %}
+		<nav>
+			<h2 class="visually-hidden">Top level navigation menu</h2>
+			<ul class="nav">
+			{%- for entry in collections.all | eleventyNavigation %}
+				<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+			{%- endfor %}
+			</ul>
+		</nav>
+	</header>
+	<main id="skip">
+		<heading-anchors>
+			{{ content | safe }}
+		</heading-anchors>
+	</main>
 
-		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
-	</body>
+	{% include "footer.njk" %}
+
+	<script type="module" src="{% getBundleFileUrl "js" %}"></script>
+</body>
 </html>

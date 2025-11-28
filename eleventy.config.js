@@ -242,7 +242,7 @@ export default async function(eleventyConfig) {
 	});
 	
 	// Generate the src attribute using the fallback width or a width supplied
-	// by the shortcode params
+	// by the shortcode param
 	eleventyConfig.addShortcode("src", (file, width) => {
 		return `${BASE_URL}q_auto,f_auto,w_${width ? width : FALLBACK_WIDTH}/${FOLDER}${file}`
 	});
@@ -254,7 +254,7 @@ export default async function(eleventyConfig) {
 	
 	// Create socialImageUrl shortcode
 	// Applying the code from https://sia.codes/posts/social-share-images-using-cloudinary/
-	eleventyConfig.addShortcode("socialImageUrl", (title, description, hasTempTitle) => {
+	eleventyConfig.addShortcode("socialImageUrl", (title, description, metadataTitle) => {
 		// Thumbnail Image particulars
 		const width = "1280";
 		const height = "640";
@@ -262,27 +262,27 @@ export default async function(eleventyConfig) {
 	
 		// encoding title using cloudinarySafeText function
 		let thumbnailTitle = title;
-		if (hasTempTitle === "home") {
+		if (metadataTitle === "home") {
 			thumbnailTitle = "Chi Señires";
-		} else if (hasTempTitle) {
-			thumbnailTitle = "Chi's blog post";
+		} else {
+			thumbnailTitle = "Chi’s blog post";
 		}
 		const encodedTitle = cloudinarySafeText(thumbnailTitle);
-
-		// URL on thumbnail particulars
-		const urlConfig = `co_rgb:${TEXT_COLOR},l_text:${URL_FONT}_${URL_FONT_SIZE}_bold_normal_left:${URL_VALUE}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${URL_BOTTOM_OFFSET}`;
-		
-		// Title on thumbnail particulars
-		const titleConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TITLE_FONT}_${TITLE_FONT_SIZE}_bold_normal_left:${encodedTitle}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${TITLE_BOTTOM_OFFSET}`;
 
 		// encoding description using cloudinarySafeText function
 		let thumbnailDescription = description;
 		const encodedDescription = cloudinarySafeText(thumbnailDescription);
-	
+
+		// Title on thumbnail particulars
+		const titleConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TITLE_FONT}_${TITLE_FONT_SIZE}_bold_normal_left:${encodedTitle}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${TITLE_BOTTOM_OFFSET}`;
+		
 		// Subtitle particulars
 		const taglineConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TAGLINE_FONT}_${TAGLINE_FONT_SIZE}_normal_left:${encodedDescription}/fl_layer_apply,g_north_west,x_${TEXT_LEFT_OFFSET},y_${TAGLINE_TOP_OFFSET}`;
+		
+		// URL on thumbnail particulars
+		const urlConfig = `co_rgb:${TEXT_COLOR},l_text:${URL_FONT}_${URL_FONT_SIZE}_bold_normal_left:${URL_VALUE}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${URL_BOTTOM_OFFSET}`;
 
-		return `${BASE_URL}${imageConfig}/${titleConfig}/${taglineConfig}/${urlConfig}/${FOLDER}${SHARE_IMAGE_FILE_NAME}`;
+		return `${BASE_URL}${imageConfig}/${titleConfig}/${taglineConfig}/${urlConfig}/${FOLDER}${SHARE_IMAGE_FILE_NAME}`;;
 	});
 	
 	// Making all external links open in new window
