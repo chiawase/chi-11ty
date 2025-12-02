@@ -3,8 +3,8 @@ eleventyNavigation:
   key: "Contact"
   order: 3
 title: "Contact"
-date: 2025-04-07T10:40:30+00:00
-date_updated: 2025-09-17T09:00:57+00:00
+date: 2025-11-30T06:39:33+00:00
+date_updated: 2025-12-02T16:37:14+00:00
 ---
 
 # Where to find me online
@@ -14,6 +14,7 @@ I have a grid version of my links laid out in [bento.me/chiawase](https://bento.
 But to also just have them listed in my personal website, here they all are, in no particular order:
 
 - [bento.me/chiawase](https://bento.me/chiawase "I occasionally update this with places I've visited")
+- [@chiawase on Matrix.org](https://matrix.to/#/@chiawase:matrix.org?client=im.fluffychat "Recently set this up, it would be cool to get chats here to test it out")
 - [@\_chiawase on Threads](https://threads.com/@_chiawase "my new slop online")
 - [@\_chiawase on Instagram](https://instagram.com/@_chiawase "my public photo album of memories")
 - [@chi@social.lol on Mastodon](https://social.lol/@chi "I sometimes post private stuff here")
@@ -26,7 +27,7 @@ But to also just have them listed in my personal website, here they all are, in 
 - Twitch Affiliate @ [ChiAwase](https://twitch.tv/ChiAwase "on indefinite hiatus") (indefinite hiatus)
 - [Arya Tsukino @ Meteor - Ramuh #FFXIV](https://na.finalfantasyxiv.com/lodestone/character/36591732/ "on indefinite hiatus") (currently on hiatus)
 - [@ChiSenires on Twitter](https://twitter.com/ChiSenires "last used July 2023") (inactive)
-- [also @\_ChiAwase on Twitter](https://twitter.com/_ChiAwase "Also my Twitter, which I also do not use")
+- [also @\_ChiAwase on Twitter](https://twitter.com/_ChiAwase "Also my Twitter, which I also do not use") (also inactive)
 
 ### Tips & Support
 
