@@ -3,8 +3,8 @@
 	"description": "Chi's space for thoughts and ideas on her side of the internet",
 	"type": "module",
 	"scripts": {
-		"build": "npx @11ty/eleventy",
-		"build:local": "NODE_ENV=production npx @11ty/eleventy",
+		"build": "ENVIRONMENT=production npx @11ty/eleventy",
+		"build:local": "ENVIRONMENT=dev NODE_ENV=production npx @11ty/eleventy",
 		"postbuild": "npx webmention https://chisenires.design/feed.xml --limit 1 --send",
 		"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve",

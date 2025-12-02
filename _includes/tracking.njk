@@ -1,4 +1,10 @@
 {# Personal Tracking #}
-{%- if process.env.ELEVENTY_RUN_MODE === "production" %}
-<script defer src="https://umami.chisenires.design/script.js" data-website-id="82d4b6de-5ddb-4afb-bb8e-515e93b89f91"></script>
+{%- if process.env.ENVIRONMENT === "production" %}
+<!-- Umami tracking code -->
+<script
+	defer
+	src="https://umami.chisenires.design/script.js"
+	data-website-id="82d4b6de-5ddb-4afb-bb8e-515e93b89f91"
+	data-do-not-track="true"
+></script>
 {%- endif %}
