@@ -5,7 +5,7 @@ eleventyNavigation:
   key: "Stuff I Use"
   parent: "More"
 date: 2025-08-18T07:34:56+00:00
-date_updated: 2025-11-12T09:48:50+00:00
+date_updated: 2025-12-02T16:24:19+00:00
 layout: "layouts/page.njk"
 ---
 
@@ -159,10 +159,13 @@ I eventually want to spiffy this up while getting some inspiration from these bl
 
 #### 💻 Coding & Setup
 
+- Dual-booted PC with [CachyOS](https://cachyos.org/)+[niri](https://github.com/YaLTeR/niri/)+[Noctalia shell](https://github.com/noctalia-dev/noctalia-shell) (explained more [here](/blog/dual-boot-linux-pc)) and Windows 11
 - Terminal:
-	- on Mac: [Ghostty](https://ghostty.org/)
+	- on Mac and Linux: [Ghostty](https://ghostty.org/)
 	- on Windows: just plain old Terminal
-- Code Editor: VS Code
+- Code Editor:
+	- on Mac and Windows: VS Code
+	- on Linux: [Zed](https://zed.dev/)
 - My main keyboard: [Baseform](https://posture.works/baseform/ "just released last September 2025!") with [Equalz Fruit Smoothie Switches](https://www.switchkeys.com.au/products/equalz-fruit-smoothie-switches-x10?_pos=8&_fid=1808135e3&_ss=c "special thanks to a friend based in AU who recoo’d this hehe")
 
 #### 📢Social Media Networks
