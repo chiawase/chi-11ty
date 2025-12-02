@@ -294,11 +294,6 @@
       "flags": "i"
     },
     {
-      "label": "ignore contact.md",
-      "match": "contact.md",
-      "flags": "i"
-    },
-    {
       "label": "ignore post template",
       "match": "post_template",
       "flags": "i"
