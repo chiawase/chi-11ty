@@ -1,6 +1,7 @@
 <ul class="post-metadata">
 	<li><span class="label">Created:</span> <time datetime="{{ date | htmlDateString }}" class="dt-published">{{ date | readableDate }}</time></li>
 	{% if date_updated %}<li><span class="post-metadata-separator"></span><span class="label">Last updated:</span> <time datetime="{{ date_updated | htmlDateString }}" class="dt-updated">{{ date_updated | readableDate }}</time></li>{% endif %}
+	<li><span class="post-metadata-separator"></span><span class="label" class="readingtime">Reading time:</span> {{ content | readingtime }}</li>
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<li>{%- if loop.first %}<span class="post-metadata-separator"></span><span class="label">Tags: </span>{% endif %}<a href="{{ tagUrl }}" class="post-tag p-category">{{ tag | lower }}</a></li>

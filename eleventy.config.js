@@ -1,4 +1,8 @@
-import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
+import {
+	IdAttributePlugin,
+	InputPathToUrlTransformPlugin,
+	HtmlBasePlugin,
+} from "@11ty/eleventy";
 import feedPlugin from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
@@ -9,28 +13,29 @@ import { EleventyRenderPlugin } from "@11ty/eleventy";
 import externalLinks from "eleventy-plugin-external-links";
 import footnote_plugin from "markdown-it-footnote";
 import postGraph from "@rknightuk/eleventy-plugin-post-graph";
+import readingtime from "@myxotod/eleventy-plugin-readingtime";
 
 // for timezone
 const TIME_ZONE = "UTC+8";
 
 export function cloudinarySafeText(text) {
 	return encodeURIComponent(text)
-		.replace(/(%2C)/g, '%252C')
-		.replace(/(%2F)/g, '%252F')
+		.replace(/(%2C)/g, "%252C")
+		.replace(/(%2F)/g, "%252F");
 }
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
-export default async function(eleventyConfig) {
+export default async function (eleventyConfig) {
 	// Eleventy Render Plugin from https://www.11ty.dev/docs/plugins/render/
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
-	
+
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		// if (data.draft) {
 		// 	data.title = `(draft) ${data.title}`;
 		// }
 
-		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+		if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
 			return false;
 		}
 	});
@@ -38,7 +43,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.setFrontMatterParsingOptions({
 		excerpt: true,
 		excerpt_alias: "description",
-		excerpt_separator: "<!-- more -->"
+		excerpt_separator: "<!-- more -->",
 	});
 
 	// Copy the contents of the `public` folder to the output folder
@@ -50,15 +55,17 @@ export default async function(eleventyConfig) {
 			"./content/img/chi/chi.jpg": "/img/chi.jpg",
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
-	
+
 	// getting the Victor Mono font pulled from node_modules
 	eleventyConfig.addPassthroughCopy({
-		"./node_modules/@fontsource-variable/victor-mono/files/*.woff2": "fonts/victor-mono/"
+		"./node_modules/@fontsource-variable/victor-mono/files/*.woff2":
+			"fonts/victor-mono/",
 	});
 
 	// getting the Anybody font pulled from node_modules
 	eleventyConfig.addPassthroughCopy({
-		"./node_modules/@fontsource-variable/anybody/files/*.woff2": "fonts/anybody/"
+		"./node_modules/@fontsource-variable/anybody/files/*.woff2":
+			"fonts/anybody/",
 	});
 
 	// Run Eleventy when these files change:
@@ -100,7 +107,7 @@ export default async function(eleventyConfig) {
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
-		preAttributes: { tabindex: 0 }
+		preAttributes: { tabindex: 0 },
 	});
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(HtmlBasePlugin);
@@ -146,9 +153,9 @@ export default async function(eleventyConfig) {
 		widths: ["auto"],
 
 		failOnError: false,
-		
+
 		useCache: true,
-		
+
 		// returnType: "html",
 		htmlOptions: {
 			imgAttributes: {
@@ -156,7 +163,7 @@ export default async function(eleventyConfig) {
 				alt: "",
 				loading: "lazy",
 				decoding: "async",
-			}
+			},
 		},
 
 		// Which source to use for `<img width height src>` attributes
@@ -188,9 +195,8 @@ export default async function(eleventyConfig) {
 
 	// Interlinker
 	eleventyConfig.addPlugin(eleventyPluginInterlinker, {
-			defaultLayout: 'layouts/default.liquid'
-		}
-	);
+		defaultLayout: "layouts/default.liquid",
+	});
 
 	// markdown-it plugins
 	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(footnote_plugin));
@@ -200,118 +206,119 @@ export default async function(eleventyConfig) {
 		const url = new URL(videoURL);
 		const id = url.searchParams.get("v");
 		return `<iframe class="yt-shortcode" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player${
-		  title ? ` for ${title}` : ""
+			title ? ` for ${title}` : ""
 		}" frameborder="0" allowfullscreen></iframe>`;
-	  });
+	});
 
 	// Year Shortcode
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
 	// Following Eleventy and Cloudinary Images tutorial: https://sia.codes/posts/eleventy-and-cloudinary-images/
-	const CLOUDNAME = "chi-11ty"
+	const CLOUDNAME = "chi-11ty";
 	const FOLDER = "chisenires.design/";
-	const BASE_URL = `https://res.cloudinary.com/${CLOUDNAME}/image/upload/`
-	const FALLBACK_WIDTHS = [ 300, 600, 680, 1360 ];
+	const BASE_URL = `https://res.cloudinary.com/${CLOUDNAME}/image/upload/`;
+	const FALLBACK_WIDTHS = [300, 600, 680, 1360];
 	const FALLBACK_WIDTH = 680;
 	const DEFAULT_SIZES = "(min-width: 580px) 512px, calc(95.38vw - 22px)";
 	const SHARE_IMAGE_FILE_NAME = "thumbnail_odokru"; // points to https://res.cloudinary.com/chi-11ty/image/upload/v1745850878/chisenires.design/thumbnail_odokru.png
 	// If font not in the root of your Cloudinary media library, need to prepend with `foldername:`
-	
-	const TITLE_FONT = "open%20sans" // setting to Open Sans for now
-	const TITLE_FONT_SIZE = 60
-	const TITLE_BOTTOM_OFFSET = 378
-	const TAGLINE_FONT = "open%20sans"
-	const TAGLINE_FONT_SIZE = 36
-	const TAGLINE_TOP_OFFSET = 298
-	const TAGLINE_LINE_HEIGHT = 10
-	const URL_FONT = "open%20sans"
-	const URL_FONT_SIZE = 36
-	const URL_BOTTOM_OFFSET = 24
-	const URL_VALUE = "chisenires.design" // update this if my domain changes
-	const TEXT_AREA_WIDTH = 1071
-	const TEXT_LEFT_OFFSET = 60
-	const TEXT_COLOR = "FDFDFD"
-	
+
+	const TITLE_FONT = "open%20sans"; // setting to Open Sans for now
+	const TITLE_FONT_SIZE = 60;
+	const TITLE_BOTTOM_OFFSET = 378;
+	const TAGLINE_FONT = "open%20sans";
+	const TAGLINE_FONT_SIZE = 36;
+	const TAGLINE_TOP_OFFSET = 298;
+	const TAGLINE_LINE_HEIGHT = 10;
+	const URL_FONT = "open%20sans";
+	const URL_FONT_SIZE = 36;
+	const URL_BOTTOM_OFFSET = 24;
+	const URL_VALUE = "chisenires.design"; // update this if my domain changes
+	const TEXT_AREA_WIDTH = 1071;
+	const TEXT_LEFT_OFFSET = 60;
+	const TEXT_COLOR = "FDFDFD";
+
 	// Generate srcset attribute using the fallback widths or a supplied array of widths
 	eleventyConfig.addShortcode("srcset", (file, widths) => {
 		const widthSet = widths ? widths : FALLBACK_WIDTHS;
-		return widthSet.map(width => {
-			let src = `${BASE_URL}q_auto,f_auto,w_${width ? width : FALLBACK_WIDTH}/${FOLDER}${file}`;
-			return `${src} ${width}w`;
-		}).join(", ");
+		return widthSet
+			.map((width) => {
+				let src = `${BASE_URL}q_auto,f_auto,w_${width ? width : FALLBACK_WIDTH}/${FOLDER}${file}`;
+				return `${src} ${width}w`;
+			})
+			.join(", ");
 	});
-	
+
 	// Generate the src attribute using the fallback width or a width supplied
 	// by the shortcode param
 	eleventyConfig.addShortcode("src", (file, width) => {
-		return `${BASE_URL}q_auto,f_auto,w_${width ? width : FALLBACK_WIDTH}/${FOLDER}${file}`
+		return `${BASE_URL}q_auto,f_auto,w_${width ? width : FALLBACK_WIDTH}/${FOLDER}${file}`;
 	});
-	
+
 	// Add defaultSizes shortcode
 	eleventyConfig.addShortcode("defaultSizes", () => {
 		return `${DEFAULT_SIZES}`;
 	});
-	
+
 	// Create socialImageUrl shortcode
 	// Applying the code from https://sia.codes/posts/social-share-images-using-cloudinary/
-	eleventyConfig.addShortcode("socialImageUrl", (title, description, hasTempTitle) => {
-		// Thumbnail Image particulars
-		const width = "1280";
-		const height = "640";
-		const imageConfig = `c_fill,h_${height},w_${width}/f_png/q_auto:best`;
-	
-		// encoding title using cloudinarySafeText function
-		let thumbnailTitle = title;
-		if (hasTempTitle === "home") {
-			thumbnailTitle = "Chi Señires";
-		} else if (hasTempTitle) {
-			thumbnailTitle = "Chi’s blog post";
-		}
-		const encodedTitle = cloudinarySafeText(thumbnailTitle);
+	eleventyConfig.addShortcode(
+		"socialImageUrl",
+		(title, description, hasTempTitle) => {
+			// Thumbnail Image particulars
+			const width = "1280";
+			const height = "640";
+			const imageConfig = `c_fill,h_${height},w_${width}/f_png/q_auto:best`;
 
-		// encoding description using cloudinarySafeText function
-		let thumbnailDescription = description;
-		const encodedDescription = cloudinarySafeText(thumbnailDescription);
+			// encoding title using cloudinarySafeText function
+			let thumbnailTitle = title;
+			if (hasTempTitle === "home") {
+				thumbnailTitle = "Chi Señires";
+			} else if (hasTempTitle) {
+				thumbnailTitle = "Chi’s blog post";
+			}
+			const encodedTitle = cloudinarySafeText(thumbnailTitle);
 
-		// Title on thumbnail particulars
-		const titleConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TITLE_FONT}_${TITLE_FONT_SIZE}_bold_normal_left:${encodedTitle}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${TITLE_BOTTOM_OFFSET}`;
-		
-		// Subtitle particulars
-		const taglineConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TAGLINE_FONT}_${TAGLINE_FONT_SIZE}_normal_left:${encodedDescription}/fl_layer_apply,g_north_west,x_${TEXT_LEFT_OFFSET},y_${TAGLINE_TOP_OFFSET}`;
-		
-		// URL on thumbnail particulars
-		const urlConfig = `co_rgb:${TEXT_COLOR},l_text:${URL_FONT}_${URL_FONT_SIZE}_bold_normal_left:${URL_VALUE}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${URL_BOTTOM_OFFSET}`;
+			// encoding description using cloudinarySafeText function
+			let thumbnailDescription = description;
+			const encodedDescription = cloudinarySafeText(thumbnailDescription);
 
-		return `${BASE_URL}${imageConfig}/${titleConfig}/${taglineConfig}/${urlConfig}/${FOLDER}${SHARE_IMAGE_FILE_NAME}`;;
-	});
-	
+			// Title on thumbnail particulars
+			const titleConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TITLE_FONT}_${TITLE_FONT_SIZE}_bold_normal_left:${encodedTitle}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${TITLE_BOTTOM_OFFSET}`;
+
+			// Subtitle particulars
+			const taglineConfig = `co_rgb:${TEXT_COLOR},c_fit,w_${TEXT_AREA_WIDTH},l_text:${TAGLINE_FONT}_${TAGLINE_FONT_SIZE}_normal_left:${encodedDescription}/fl_layer_apply,g_north_west,x_${TEXT_LEFT_OFFSET},y_${TAGLINE_TOP_OFFSET}`;
+
+			// URL on thumbnail particulars
+			const urlConfig = `co_rgb:${TEXT_COLOR},l_text:${URL_FONT}_${URL_FONT_SIZE}_bold_normal_left:${URL_VALUE}/fl_layer_apply,g_south_west,x_${TEXT_LEFT_OFFSET},y_${URL_BOTTOM_OFFSET}`;
+
+			return `${BASE_URL}${imageConfig}/${titleConfig}/${taglineConfig}/${urlConfig}/${FOLDER}${SHARE_IMAGE_FILE_NAME}`;
+		},
+	);
+
 	// Making all external links open in new window
 	eleventyConfig.addPlugin(externalLinks, {
 		// Plugin defaults:
-        name: 'external-links',         // Plugin name
-        regex: /^(([a-z]+:)(?!\/\/mastodon)|(\/\/))/i,  // Regex that test if href is external
-        target: "_blank",               // 'target' attribute for external links
-        rel: "noopener",                // 'rel' attribute for external links
-        extensions: [".html"],          // Extensions to apply transform to
-        includeDoctype: true,           // Default to include '<!DOCTYPE html>' at the beginning of the file
-    });
+		name: "external-links", // Plugin name
+		regex: /^(([a-z]+:)(?!\/\/mastodon)|(\/\/))/i, // Regex that test if href is external
+		target: "_blank", // 'target' attribute for external links
+		rel: "noopener", // 'rel' attribute for external links
+		extensions: [".html"], // Extensions to apply transform to
+		includeDoctype: true, // Default to include '<!DOCTYPE html>' at the beginning of the file
+	});
 
 	// PostGraph from Robb Knight (https://postgraph.rknight.me/)
 	eleventyConfig.addPlugin(postGraph, {
 		sort: "desc",
 	});
-};
+
+	eleventyConfig.addPlugin(readingtime);
+}
 
 export const config = {
 	// Control which files Eleventy will process
 	// e.g.: *.md, *.njk, *.html, *.liquid
-	templateFormats: [
-		"md",
-		"njk",
-		"html",
-		"liquid",
-		"11ty.js",
-	],
+	templateFormats: ["md", "njk", "html", "liquid", "11ty.js"],
 
 	// Pre-process *.md files with: (default: `liquid`)
 	markdownTemplateEngine: "njk",
@@ -321,10 +328,10 @@ export const config = {
 
 	// These are all optional:
 	dir: {
-		input: "content",          // default: "."
-		includes: "../_includes",  // default: "_includes" (`input` relative)
-		data: "../_data",          // default: "_data" (`input` relative)
-		output: "_site"
+		input: "content", // default: "."
+		includes: "../_includes", // default: "_includes" (`input` relative)
+		data: "../_data", // default: "_data" (`input` relative)
+		output: "_site",
 	},
 
 	// -----------------------------------------------------------------
@@ -340,4 +347,3 @@ export const config = {
 
 	// pathPrefix: "/",
 };
-

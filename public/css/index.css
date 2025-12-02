@@ -1,41 +1,59 @@
 /* victor-mono-latin-wght-italic */
 @font-face {
-  font-family: 'Victor Mono Variable';
-  font-style: italic;
-  font-display: swap;
-  font-weight: 100 700;
-  font-stretch: 50% 200%;
-  src: url(/fonts/victor-mono/victor-mono-latin-wght-italic.woff2) format('woff2-variations');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	font-family: "Victor Mono Variable";
+	font-style: italic;
+	font-display: swap;
+	font-weight: 100 700;
+	font-stretch: 50% 200%;
+	src: url(/fonts/victor-mono/victor-mono-latin-wght-italic.woff2)
+		format("woff2-variations");
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+		U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+		U+2215, U+FEFF, U+FFFD;
 }
 
 /* victor-mono-latin-wght-normal */
 @font-face {
-  font-family: 'Victor Mono Variable';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 100 700;
-  font-stretch: 50% 200%;
-  src: url(/fonts/victor-mono/victor-mono-latin-wght-normal.woff2) format('woff2-variations');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	font-family: "Victor Mono Variable";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 700;
+	font-stretch: 50% 200%;
+	src: url(/fonts/victor-mono/victor-mono-latin-wght-normal.woff2)
+		format("woff2-variations");
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+		U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+		U+2215, U+FEFF, U+FFFD;
 }
 
 /* anybody-latin-wght-italic */
 @font-face {
-  font-family: 'Anybody Variable';
-  font-style: italic;
-  font-display: swap;
-  font-weight: 100 900;
-  font-stretch: 50% 150%;
-  src: url(/fonts/anybody/anybody-latin-wdth-italic.woff2) format('woff2-variations');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	font-family: "Anybody Variable";
+	font-style: italic;
+	font-display: swap;
+	font-weight: 100 900;
+	font-stretch: 50% 150%;
+	src: url(/fonts/anybody/anybody-latin-wdth-italic.woff2)
+		format("woff2-variations");
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+		U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+		U+2215, U+FEFF, U+FFFD;
 }
 
 /* Defaults */
 :root {
-	--font-family-heading: "Anybody Variable", -apple-system, system-ui, sans-serif;
-	--font-family-body: "Victor Mono Variable", -apple-system, system-ui, sans-serif;
-	--font-family-monospace: "Victor Mono Variable", Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-family-heading:
+		"Anybody Variable", -apple-system, system-ui, sans-serif;
+	--font-family-body:
+		"Victor Mono Variable", -apple-system, system-ui, sans-serif;
+	--font-family-monospace:
+		"Victor Mono Variable", Consolas, Menlo, Monaco, Andale Mono WT,
+		Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
+		Courier, monospace;
 }
 
 /* Theme colors */
@@ -45,19 +63,19 @@
 	--color-gray-90: #333;
 
 	--background-color: #f3f3f3;
-	--background-color-overlay: #F8E3E2cc;
+	--background-color-overlay: #f8e3e2cc;
 
 	--text-color: var(--color-gray-90);
 
-	--text-color-link: #C2302B;
-	--text-color-link-active: #8B24DA;
-	--text-color-link-visited: #8B24DA;
+	--text-color-link: #c2302b;
+	--text-color-link-active: #8b24da;
+	--text-color-link-visited: #8b24da;
 
 	/* MingCute Icon formatted in Figma for appropriate link colors */
-		--svg-external-link-icon: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.16667 5C9.38768 5 9.59964 5.0878 9.75592 5.24408C9.9122 5.40036 10 5.61232 10 5.83333C10 6.05435 9.9122 6.26631 9.75592 6.42259C9.59964 6.57887 9.38768 6.66667 9.16667 6.66667H4.16667V15.8333H13.3333V10.8333C13.3333 10.6123 13.4211 10.4004 13.5774 10.2441C13.7337 10.0878 13.9457 10 14.1667 10C14.3877 10 14.5996 10.0878 14.7559 10.2441C14.9122 10.4004 15 10.6123 15 10.8333V15.8333C15 16.2754 14.8244 16.6993 14.5118 17.0118C14.1993 17.3244 13.7754 17.5 13.3333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V6.66667C2.5 6.22464 2.67559 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H9.16667ZM16.6667 2.5C16.8877 2.5 17.0996 2.5878 17.2559 2.74408C17.4122 2.90036 17.5 3.11232 17.5 3.33333V7.5C17.5 7.72101 17.4122 7.93298 17.2559 8.08926C17.0996 8.24554 16.8877 8.33333 16.6667 8.33333C16.4457 8.33333 16.2337 8.24554 16.0774 8.08926C15.9211 7.93298 15.8333 7.72101 15.8333 7.5V5.345L8.9225 12.2558C8.76533 12.4076 8.55483 12.4916 8.33633 12.4897C8.11784 12.4878 7.90882 12.4002 7.75432 12.2457C7.59981 12.0912 7.51217 11.8822 7.51027 11.6637C7.50837 11.4452 7.59237 11.2347 7.74417 11.0775L14.655 4.16667H12.5C12.279 4.16667 12.067 4.07887 11.9107 3.92259C11.7545 3.76631 11.6667 3.55435 11.6667 3.33333C11.6667 3.11232 11.7545 2.90036 11.9107 2.74408C12.067 2.5878 12.279 2.5 12.5 2.5H16.6667Z' fill='%23C2302B'/%3E%3C/svg%3E");
-		--svg-external-link-icon-hover: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.16667 5C9.38768 5 9.59964 5.0878 9.75592 5.24408C9.9122 5.40036 10 5.61232 10 5.83333C10 6.05435 9.9122 6.26631 9.75592 6.42259C9.59964 6.57887 9.38768 6.66667 9.16667 6.66667H4.16667V15.8333H13.3333V10.8333C13.3333 10.6123 13.4211 10.4004 13.5774 10.2441C13.7337 10.0878 13.9457 10 14.1667 10C14.3877 10 14.5996 10.0878 14.7559 10.2441C14.9122 10.4004 15 10.6123 15 10.8333V15.8333C15 16.2754 14.8244 16.6993 14.5118 17.0118C14.1993 17.3244 13.7754 17.5 13.3333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V6.66667C2.5 6.22464 2.67559 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H9.16667ZM16.6667 2.5C16.8877 2.5 17.0996 2.5878 17.2559 2.74408C17.4122 2.90036 17.5 3.11232 17.5 3.33333V7.5C17.5 7.72101 17.4122 7.93298 17.2559 8.08926C17.0996 8.24554 16.8877 8.33333 16.6667 8.33333C16.4457 8.33333 16.2337 8.24554 16.0774 8.08926C15.9211 7.93298 15.8333 7.72101 15.8333 7.5V5.345L8.9225 12.2558C8.76533 12.4076 8.55483 12.4916 8.33633 12.4897C8.11784 12.4878 7.90882 12.4002 7.75432 12.2457C7.59981 12.0912 7.51217 11.8822 7.51027 11.6637C7.50837 11.4452 7.59237 11.2347 7.74417 11.0775L14.655 4.16667H12.5C12.279 4.16667 12.067 4.07887 11.9107 3.92259C11.7545 3.76631 11.6667 3.55435 11.6667 3.33333C11.6667 3.11232 11.7545 2.90036 11.9107 2.74408C12.067 2.5878 12.279 2.5 12.5 2.5H16.6667Z' fill='%238B24DA'/%3E%3C/svg%3E%0A");
-	
-		--text-color-code: green;
+	--svg-external-link-icon: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.16667 5C9.38768 5 9.59964 5.0878 9.75592 5.24408C9.9122 5.40036 10 5.61232 10 5.83333C10 6.05435 9.9122 6.26631 9.75592 6.42259C9.59964 6.57887 9.38768 6.66667 9.16667 6.66667H4.16667V15.8333H13.3333V10.8333C13.3333 10.6123 13.4211 10.4004 13.5774 10.2441C13.7337 10.0878 13.9457 10 14.1667 10C14.3877 10 14.5996 10.0878 14.7559 10.2441C14.9122 10.4004 15 10.6123 15 10.8333V15.8333C15 16.2754 14.8244 16.6993 14.5118 17.0118C14.1993 17.3244 13.7754 17.5 13.3333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V6.66667C2.5 6.22464 2.67559 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H9.16667ZM16.6667 2.5C16.8877 2.5 17.0996 2.5878 17.2559 2.74408C17.4122 2.90036 17.5 3.11232 17.5 3.33333V7.5C17.5 7.72101 17.4122 7.93298 17.2559 8.08926C17.0996 8.24554 16.8877 8.33333 16.6667 8.33333C16.4457 8.33333 16.2337 8.24554 16.0774 8.08926C15.9211 7.93298 15.8333 7.72101 15.8333 7.5V5.345L8.9225 12.2558C8.76533 12.4076 8.55483 12.4916 8.33633 12.4897C8.11784 12.4878 7.90882 12.4002 7.75432 12.2457C7.59981 12.0912 7.51217 11.8822 7.51027 11.6637C7.50837 11.4452 7.59237 11.2347 7.74417 11.0775L14.655 4.16667H12.5C12.279 4.16667 12.067 4.07887 11.9107 3.92259C11.7545 3.76631 11.6667 3.55435 11.6667 3.33333C11.6667 3.11232 11.7545 2.90036 11.9107 2.74408C12.067 2.5878 12.279 2.5 12.5 2.5H16.6667Z' fill='%23C2302B'/%3E%3C/svg%3E");
+	--svg-external-link-icon-hover: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.16667 5C9.38768 5 9.59964 5.0878 9.75592 5.24408C9.9122 5.40036 10 5.61232 10 5.83333C10 6.05435 9.9122 6.26631 9.75592 6.42259C9.59964 6.57887 9.38768 6.66667 9.16667 6.66667H4.16667V15.8333H13.3333V10.8333C13.3333 10.6123 13.4211 10.4004 13.5774 10.2441C13.7337 10.0878 13.9457 10 14.1667 10C14.3877 10 14.5996 10.0878 14.7559 10.2441C14.9122 10.4004 15 10.6123 15 10.8333V15.8333C15 16.2754 14.8244 16.6993 14.5118 17.0118C14.1993 17.3244 13.7754 17.5 13.3333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V6.66667C2.5 6.22464 2.67559 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H9.16667ZM16.6667 2.5C16.8877 2.5 17.0996 2.5878 17.2559 2.74408C17.4122 2.90036 17.5 3.11232 17.5 3.33333V7.5C17.5 7.72101 17.4122 7.93298 17.2559 8.08926C17.0996 8.24554 16.8877 8.33333 16.6667 8.33333C16.4457 8.33333 16.2337 8.24554 16.0774 8.08926C15.9211 7.93298 15.8333 7.72101 15.8333 7.5V5.345L8.9225 12.2558C8.76533 12.4076 8.55483 12.4916 8.33633 12.4897C8.11784 12.4878 7.90882 12.4002 7.75432 12.2457C7.59981 12.0912 7.51217 11.8822 7.51027 11.6637C7.50837 11.4452 7.59237 11.2347 7.74417 11.0775L14.655 4.16667H12.5C12.279 4.16667 12.067 4.07887 11.9107 3.92259C11.7545 3.76631 11.6667 3.55435 11.6667 3.33333C11.6667 3.11232 11.7545 2.90036 11.9107 2.74408C12.067 2.5878 12.279 2.5 12.5 2.5H16.6667Z' fill='%238B24DA'/%3E%3C/svg%3E%0A");
+
+	--text-color-code: green;
 
 	color-scheme: var(--color-scheme, light);
 
@@ -76,13 +94,13 @@
 	:root {
 		--color-scheme: dark;
 		--color-gray-20: #acacac;
-		--color-gray-50: #C0C0C0;
+		--color-gray-50: #c0c0c0;
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #FF8984;
-		--text-color-link-active: #C5A6F8;
-		--text-color-link-visited: #C5A6F8;
+		--text-color-link: #ff8984;
+		--text-color-link-active: #c5a6f8;
+		--text-color-link-visited: #c5a6f8;
 
 		/* MingCute Icon formatted in Figma for appropriate link colors */
 		--svg-external-link-icon: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.16667 5C9.38768 5 9.59964 5.0878 9.75592 5.24408C9.9122 5.40036 10 5.61232 10 5.83333C10 6.05435 9.9122 6.26631 9.75592 6.42259C9.59964 6.57887 9.38768 6.66667 9.16667 6.66667H4.16667V15.8333H13.3333V10.8333C13.3333 10.6123 13.4211 10.4004 13.5774 10.2441C13.7337 10.0878 13.9457 10 14.1667 10C14.3877 10 14.5996 10.0878 14.7559 10.2441C14.9122 10.4004 15 10.6123 15 10.8333V15.8333C15 16.2754 14.8244 16.6993 14.5118 17.0118C14.1993 17.3244 13.7754 17.5 13.3333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V6.66667C2.5 6.22464 2.67559 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H9.16667ZM16.6667 2.5C16.8877 2.5 17.0996 2.5878 17.2559 2.74408C17.4122 2.90036 17.5 3.11232 17.5 3.33333V7.5C17.5 7.72101 17.4122 7.93298 17.2559 8.08926C17.0996 8.24554 16.8877 8.33333 16.6667 8.33333C16.4457 8.33333 16.2337 8.24554 16.0774 8.08926C15.9211 7.93298 15.8333 7.72101 15.8333 7.5V5.345L8.9225 12.2558C8.76533 12.4076 8.55483 12.4916 8.33633 12.4897C8.11784 12.4878 7.90882 12.4002 7.75432 12.2457C7.59981 12.0912 7.51217 11.8822 7.51027 11.6637C7.50837 11.4452 7.59237 11.2347 7.74417 11.0775L14.655 4.16667H12.5C12.279 4.16667 12.067 4.07887 11.9107 3.92259C11.7545 3.76631 11.6667 3.55435 11.6667 3.33333C11.6667 3.11232 11.7545 2.90036 11.9107 2.74408C12.067 2.5878 12.279 2.5 12.5 2.5H16.6667Z' fill='%23FF8984'/%3E%3C/svg%3E");
@@ -94,7 +112,6 @@
 		--background-color-overlay: #2b2b2bcc;
 	}
 }
-
 
 /* Global stylesheet */
 * {
@@ -123,14 +140,25 @@ html {
 body {
 	max-width: var(--max-width);
 	font-style: normal;
-	font-variation-settings: "wdth" 100, "ital" 0, "wght" 200;
+	font-variation-settings:
+		"wdth" 100,
+		"ital" 0,
+		"wght" 200;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: var(--font-family-heading);
 	font-style: italic;
 	line-height: 105%;
-	font-variation-settings: "ital" 1, "wdth" 88.2, "wght" 250;
+	font-variation-settings:
+		"ital" 1,
+		"wdth" 88.2,
+		"wght" 250;
 	margin-bottom: 1.5rem;
 }
 
@@ -141,14 +169,26 @@ h1 {
 	margin-bottom: 0;
 }
 /* Using Ratio 1.2 -- see https://www.modularscale.com/?18&px&1.2 for more info */
-h2 { font-size: 2.488rem; }
-h3 { font-size: 2.074rem; }
-h4 { font-size: 1.728rem; }
-h5 { font-size: 1.44rem; }
-h6 { font-size: 1.2rem; }
+h2 {
+	font-size: 2.488rem;
+}
+h3 {
+	font-size: 2.074rem;
+}
+h4 {
+	font-size: 1.728rem;
+}
+h5 {
+	font-size: 1.44rem;
+}
+h6 {
+	font-size: 1.2rem;
+}
 
 @media (max-width: 768px) {
-	h1 { font-size: 4rem; }
+	h1 {
+		font-size: 4rem;
+	}
 }
 
 /* Heading Fonts */
@@ -156,9 +196,10 @@ h3,
 h4,
 h5,
 h6 {
-	--font-family-heading: "Victor Mono Variable", -apple-system, system-ui, sans-serif;
+	--font-family-heading:
+		"Victor Mono Variable", -apple-system, system-ui, sans-serif;
 	letter-spacing: -0.1rem;
- }
+}
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden:not(:focus):not(:active) {
@@ -172,17 +213,17 @@ h6 {
 }
 
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
-img{
-  max-width: 100%;
-  height: auto;
+img {
+	max-width: 100%;
+	height: auto;
 }
 img[width][height] {
-  height: auto;
+	height: auto;
 }
 img[src$=".svg"] {
-  width: 100%;
-  height: auto;
-  max-width: none;
+	width: 100%;
+	height: auto;
+	max-width: none;
 }
 video,
 iframe {
@@ -201,9 +242,9 @@ p {
 }
 
 /* selects the paragraphs that come after a heading or at the end of the post */
-p:has(+ h2), 
-p:has(+ h3), 
-p:has(+ h4), 
+p:has(+ h2),
+p:has(+ h3),
+p:has(+ h4),
 p:has(+ h5),
 p:has(+ h6),
 p:has(+ .links-nextprev) {
@@ -251,7 +292,7 @@ a[href^="http"]:after {
 	background-size: 100%;
 	filter: var(--text-color-link);
 	background-image: var(--svg-external-link-icon);
-  transform: translateY(0.5rem);
+	transform: translateY(0.5rem);
 }
 a[href^="http"]:hover:after,
 a[href^="http"]:active:after {
@@ -305,7 +346,7 @@ footer {
 .links-nextprev {
 	display: flex;
 	justify-content: space-between;
-	gap: .5em 1em;
+	gap: 0.5em 1em;
 	list-style: "";
 	border-top: 1px dashed var(--color-gray-20);
 	padding: 1em 0;
@@ -328,16 +369,22 @@ table th {
 pre,
 code {
 	font-family: var(--font-family-monospace) !important;
-	font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+	font-variation-settings:
+		"ital" 0,
+		"wdth" 100,
+		"wght" 400;
 	padding: 0.25rem;
-	background-color: var(--background-color-overlay);
 	color: var(--text-color-code);
 	transition: var(--subtle-transition);
 }
 
+pre {
+	background-color: var(--background-color-overlay);
+}
+
 pre:not([class*="language-"]) {
 	margin: 0.5em 0;
-	line-height: 140% !important;
+	/*line-height: 140% !important;*/
 	-moz-tab-size: var(--syntax-tab-size) !important;
 	-o-tab-size: var(--syntax-tab-size) !important;
 	tab-size: var(--syntax-tab-size) !important;
@@ -376,7 +423,10 @@ em {
 
 strong {
 	font-weight: 600;
-  font-variation-settings: "wdth" 150 , "ital" 0, "wght" 600;
+	font-variation-settings:
+		"wdth" 150,
+		"ital" 0,
+		"wght" 600;
 }
 
 /* Header */
@@ -499,13 +549,15 @@ header {
 	font-weight: bold;
 }
 
-.postlist-header, .postlist-description {
+.postlist-header,
+.postlist-description {
 	flex-basis: calc(100% - 1rem);
 	padding-left: 0.25em;
 	padding-right: 0.5em;
 }
 @media (max-width: 768px) {
-	.postlist-header, .postlist-description {
+	.postlist-header,
+	.postlist-description {
 		padding: 0;
 		flex-basis: 100%;
 	}
@@ -546,15 +598,20 @@ header {
 	margin-right: 0.25rem;
 }
 
-.post-metadata time, .postlist-item time, .postlist-item .postlist-separator, .post-metadata .post-metadata-separator {
+.post-metadata li:not(:has(.post-tag)),
+.postlist-item time,
+.postlist-item .postlist-readingtime,
+.postlist-item .postlist-separator,
+.post-metadata .post-metadata-separator {
 	margin-right: 0.5rem;
 }
 
-.post-metadata .post-metadata-separator:before, .postlist-separator:before {
+.post-metadata .post-metadata-separator:before,
+.postlist-separator:before {
 	content: "\2022";
 }
 
-.post-backlinks	{
+.post-backlinks {
 	margin-bottom: 2rem;
 }
 
@@ -602,7 +659,9 @@ section.intro p {
 }
 
 /* setting the legend text to center */
-dark-mode-toggle::part(legend) { margin: 0 auto; }
+dark-mode-toggle::part(legend) {
+	margin: 0 auto;
+}
 
 /* About Page */
 .chi-image {
@@ -615,8 +674,8 @@ dark-mode-toggle::part(legend) { margin: 0 auto; }
 /* Copied from https://github.com/maxboeck/eleventy-webmentions/blob/master/css/webmentions.css */
 
 .webmentions {
-    display:block;
-    text-align: left;
+	display: block;
+	text-align: left;
 }
 
 .webmentions__summary {
@@ -626,54 +685,54 @@ dark-mode-toggle::part(legend) { margin: 0 auto; }
 }
 
 .webmentions__facepile {
-    display:flex;
-    align-items: center;
-    flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .webmentions__face {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    object-fit: cover;
-    flex: none;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	object-fit: cover;
+	flex: none;
 }
 .webmentions__list {
-    list-style-type: none;
-    padding:0;
+	list-style-type: none;
+	padding: 0;
 }
 .webmentions__item {
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 /* Single Webmention */
 
 .webmention {
-    display:block;
+	display: block;
 }
 .webmention__meta,
 .webmention__author {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .webmention__meta {
-    margin-bottom:.5rem;
+	margin-bottom: 0.5rem;
 }
 .webmention__author {
-    margin-right:.25rem;
+	margin-right: 0.25rem;
 }
 .webmention__author__photo {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right:.5rem;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 0.5rem;
 }
 .webmention__pubdate {
 	margin-left: 0.25rem;
 }
 .webmention__pubdate:before {
-    content: "\2022";
+	content: "\2022";
 	margin-right: 0.5em;
 }
 
