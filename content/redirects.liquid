@@ -1,0 +1,9 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+{%- for page in collections.all -%}
+	{%- if page.url and page.data.redirectFrom -%}
+		rewrite ^/{{ page.data.redirectFrom }}/?$ /{{ page.url }}/ permanent;
+	{%- endif -%}
+{%- endfor -%}

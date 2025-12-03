@@ -1,0 +1,38 @@
+---js
+const pagination = {
+	data: "collections",
+	size: 1,
+	alias: "redirect",
+	filter: ["all"],
+	before: function (data) {
+		return data.reduce((redirects, page) => {
+			if (Array.isArray(data.redirectFrom)) {
+			for (let url of data.redirectFrom) {
+					redirects.push({ to: this.url, from: url });
+				}
+			} else if (typeof data.redirectFrom === 'string') {
+			redirects.push({ to: page.url, from: data.redirectFrom });
+			}
+
+			return redirects;
+		}, []);
+	},
+	addAllPagesToCollections: false,
+};
+
+const permalink = "{{ redirect.from }}/index.html";
+const eleventyExcludeFromCollections = true;
+---
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="utf-8" />
+  <title>Redirecting&hellip;</title>
+  <link rel="canonical" href="{{ redirect.to | url }}" />
+  <script>
+    location = '{{ redirect.to | url }}';
+  </script>
+  <meta http-equiv="refresh" content="0; url={{ redirect.to | url }}" />
+  <meta name="robots" content="noindex" />
+  <h1>Redirecting&hellip;</h1>
+  <a href="{{ redirect.to | url }}">Click here if you are not redirected.</a>
+</html>
