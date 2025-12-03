@@ -2,7 +2,7 @@
 title: "Dual-booted into Linux for my PC!"
 description: This is where I lay out my initial setup of my Linux dual boot, what I changed after the initial installation, what I plan to change in the future (so this post will be updated) and why I decided to do this now.
 date: 2025-12-02T10:45:32+00:00
-date_updated: 2025-12-02T16:24:44+00:00
+date_updated: 2025-12-03T15:42:13+00:00
 tags: 
 - writing
 - coding
@@ -98,7 +98,9 @@ I haven’t yet changed what the fonts are for my default usage and my monospace
 
 I also want to change the cursor, since I know I can also do that in the [niri config stuff](https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#cursor), but after my initial look through some of the custom cursors used elsewhere, I still haven’t settled on what design to get.
 
-### Current bug: some missing emojis 😭
+### Current bug: some missing emojis 😭 (fixed since 3 Dec 2025)
+
+> **Update 3 Dec 2025:** apparently, the way to fix this was to just… update `noctalia-shell`! 😆 At some point while I was troubleshooting this on my own, I noticed the Latest version in the About tab for Noctalia Shell’s settings turned from `v3.4.0` to `v3.5.0`.  Once I rebooted my setup, all the emojis I was looking for were there! Woohoo!
 
 I’m also still figuring out what may be a bug in my own setup of emojis on my Linux, as right now, when I try to open [noctalia-shell’s emoji selector](https://docs.noctalia.dev/getting-started/keybinds/#quick-access) and try to search for the 👀 `:eyes:` emoji, I only get this:
 
