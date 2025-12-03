@@ -1,10 +1,10 @@
 import { DateTime } from "luxon";
 
-export default function(eleventyConfig) {
+export default function (eleventyConfig) {
 	eleventyConfig.addFilter("readableDate", (dateObj) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		let d = new Date(dateObj);
-		return DateTime.fromJSDate(d, {zone: "UTC+8"}).toFormat("fff");
+		return DateTime.fromJSDate(d, { zone: "UTC+8" }).toFormat("ff ZZZZ");
 	});
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
@@ -19,10 +19,10 @@ export default function(eleventyConfig) {
 
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
-		if(!Array.isArray(array) || array.length === 0) {
+		if (!Array.isArray(array) || array.length === 0) {
 			return [];
 		}
-		if( n < 0 ) {
+		if (n < 0) {
 			return array.slice(n);
 		}
 
@@ -35,21 +35,23 @@ export default function(eleventyConfig) {
 	});
 
 	// Return the keys used in an object
-	eleventyConfig.addFilter("getKeys", target => {
+	eleventyConfig.addFilter("getKeys", (target) => {
 		return Object.keys(target);
 	});
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "posts"].indexOf(tag) === -1);
+		return (tags || []).filter((tag) => ["all", "posts"].indexOf(tag) === -1);
 	});
 
-	eleventyConfig.addFilter("sortAlphabetically", strings =>
-		(strings || []).sort((b, a) => b.localeCompare(a))
+	eleventyConfig.addFilter("sortAlphabetically", (strings) =>
+		(strings || []).sort((b, a) => b.localeCompare(a)),
 	);
 
 	// for Webmentions
 	eleventyConfig.addFilter("getWebmentionsForUrl", (webmentions, url) => {
-		return webmentions.children.filter(entry => entry['wm-target'] === url).sort((a,b) => new Date(b.published) - new Date(a.published));
+		return webmentions.children
+			.filter((entry) => entry["wm-target"] === url)
+			.sort((a, b) => new Date(b.published) - new Date(a.published));
 	});
 
 	eleventyConfig.addFilter("webmentionsSize", (mentions) => {
@@ -57,6 +59,6 @@ export default function(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("webmentionsByType", (mentions, mentionType) => {
-		return mentions.filter(entry => !!entry[mentionType]);
+		return mentions.filter((entry) => !!entry[mentionType]);
 	});
-};
+}
