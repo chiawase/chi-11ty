@@ -11,7 +11,7 @@ layout: layouts/base.njk
 	<data value="Chi Señires" class="p-name"></data>
 	<data value="chiawase" class="p-nickname"></data>
 	<data value="{{ metadata.url }}/img/chi.jpg" class="u-photo"></data>
-	<data value="mailto:hello@chisenires.design" class="u-email"></data>
+	<data value="hello@chisenires.design" class="u-email"></data>
 </div>
 {%- if title !== null %}
 {% include "postmetadata.njk" %}
@@ -49,4 +49,3 @@ layout: layouts/base.njk
 <!-- Webmentions -->
 {% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
 {% include "webmentions.njk" %}
-
