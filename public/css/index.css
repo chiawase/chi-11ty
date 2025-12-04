@@ -201,6 +201,12 @@ h6 {
 	letter-spacing: -0.1rem;
 }
 
+heading-anchors:not(:defined) :is(h2, h3, h4, h5, h6):after {
+	content: "#";
+	padding: 0 0.25em;
+	opacity: 0;
+}
+
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden:not(:focus):not(:active) {
 	clip: rect(0 0 0 0);
