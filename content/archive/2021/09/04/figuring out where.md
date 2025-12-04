@@ -3,6 +3,8 @@ title: "Figuring out where to go and listening to our inner selves"
 summary: "Some advice on what to do when feeling stuck and sharing some reflections on how I move forward"
 tags: ["cycling", "thoughts"]
 date: 2021-09-04T22:03:00+0800
+aliases:
+- /writing/25-things-i-learned-after-25-years-of-existing/
 ---
 
 I’ve been in the industry for around 5 years now. I’m at the point where I’m thinking about the next phase of my career and wonder how I should grow. I have enough experience, yet I still doubt if I’ve done enough. Other people even look up to me already since I help organize knowledge sharing sessions and workshops in the local tech and design community.
