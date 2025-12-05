@@ -296,7 +296,6 @@ a[href^="http"]:after {
 	height: var(--size-body-text);
 	margin-left: 0.25rem;
 	background-size: 100%;
-	filter: var(--text-color-link);
 	background-image: var(--svg-external-link-icon);
 	transform: translateY(0.5rem);
 }
