@@ -10,7 +10,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		let d = new Date(dateObj);
-		return DateTime.fromJSDate(d).toFormat("yyyy-LL-dd hh:mm a");
+		return DateTime.fromJSDate(d).toFormat("yyyy-LL-dd'T'TZZ");
 	});
 
 	eleventyConfig.addFilter("typeOf", (value) => {
