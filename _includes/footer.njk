@@ -9,8 +9,8 @@
         {%- for entry in collections.all | eleventyNavigation %}
             <li class="nav-item"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
         {%- endfor %}
-            {# add Feed to end of nav #}
-            <li class="nav-item"><a href="/feed.xml" target="_blank">RSS Feed</a></li>
+            <!-- RSS Feed managed via Subscribe Openly -->
+            <li class="nav-item"><a href="https://subscribeopenly.net/subscribe/?url=https://chisenires.design/feed.xml" target="_blank">RSS Feed</a></li>
         </ul>
     </nav>
 
