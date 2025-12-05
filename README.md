@@ -1,8 +1,8 @@
 # Chi's 11ty setup
 
-Chi's Digital Garden built with a Jekyll template and notes set up in [Obsidian](https://obsidian.md).
+Chi's Digital Garden built with notes set up in [Obsidian](https://obsidian.md). Initially forked from [11ty/eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
 
-Currently built with [Eleventy](https://www.11ty.dev/) site generator (using the [v3.1.1 release](https://github.com/11ty/eleventy/releases/tag/v3.1.1)).
+Currently built with [Eleventy](https://www.11ty.dev/) site generator.
 
 Will be housed in [chisenires.design](https://chisenires.design).
 
