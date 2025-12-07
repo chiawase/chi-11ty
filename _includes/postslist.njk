@@ -1,16 +1,18 @@
 <ol reversed class="postlist" style="--postslist-index: {{ (postslistCounter or postslist.length) + 1 }};">
 {% for post in postslist | reverse %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		{% if post.data.title !== null %}<a href="{{ post.url }}" class="postlist-link postlist-header">{{ post.data.title }}</a>{% endif %}
-		<p class="postlist-description">{% if post.data.description %}{{ post.data.description }}{% else %}{{ post.content | striptags | safe | truncate(280, false, "...") }}{% endif %}</p>
+	{% if post.data.title !== null %}<a href="{{ post.url }}" class="postlist-link postlist-header">{{ post.data.title }}</a>{% endif %}
+	<p class="postlist-description">{% if post.data.description %}{{ post.data.description }}{% else %}{{ post.content | striptags | safe | truncate(280, false, "...") }}{% endif %}</p>
+	<div class="post-metadata">
 		<a href="{{ post.url }}" class="postlist-link"><time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></a>
 		<span class="postlist-separator"></span><a class="postlist-readingtime">Reading time: {{ post.content | readingtime }}</a>
 		{% for tag in post.data.tags | filterTagList %}
-		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		{% if loop.first %}<span class="postlist-separator"></span>{% endif %}
-		<a href="{{ tagUrl }}" class="postlist-tag">{{ tag | lower }}</a>
+			{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+			{% if loop.first %}<span class="postlist-separator"></span>{% endif %}
+			<a href="{{ tagUrl }}" class="postlist-tag">{{ tag | lower }}</a>
 		{% endfor %}
 		{% if post.data.draft %}&nbsp;(draft){% endif %}
+	</div>
 	</li>
 {% endfor %}
 </ol>
