@@ -1,8 +1,8 @@
 ---
 title: Got my hobonichi 5-year planner!
-description: 
+description: Sharing my thoughts after getting my hobonichi 5-year planner delivered and reflecting on my intended use for it.
 date: 2025-12-07T08:22:20+00:00
-date_updated: 2025-12-07T11:01:58+00:00
+date_updated: 2025-12-07T11:25:06+00:00
 tags: 
 - writing
 - hobonichi
