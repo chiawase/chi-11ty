@@ -38,13 +38,6 @@
   </div>
   {%- endif %}
 
-  {%- if repliesSize > 0 %}
-  <div class="webmention-replies">
-    <h5>{{ repliesSize }} {%- if repliesSize == "1" %}Reply{% else %}Replies{%- endif %}</h5>
-    {%- for webmention in replies %}{% include "webmention.njk" %}{% endfor %}
-  </div>
-  {%- endif %}
-
   {%- if mentions | length %}
     <ol class="webmentions__list">
       {%- for webmention in mentions | reverse %}
