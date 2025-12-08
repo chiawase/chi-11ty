@@ -95,7 +95,6 @@ function readFromCache() {
 export default async function () {
   console.log(">>> Reading webmentions from cache...");
   const cache = readFromCache();
-  console.log(cache)
 
   // Clean existing cache so self-mentions disappear right away
   cache.children = filterSelfWebmentions(cache.children);
@@ -116,6 +115,7 @@ export default async function () {
       };
 
       writeToCache(webmentions);
+      console.log(webmentions)
       return webmentions;
     }
   }
