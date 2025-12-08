@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 4
 title: now
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-12-03T05:35:16+00:00
+date_updated: 2025-12-08T10:02:59+00:00
 ---
 
 # What I’m currently up to
@@ -14,24 +14,23 @@ date_updated: 2025-12-03T05:35:16+00:00
 ### Stuff on my mind
 
 - ~~I want to eventually put together my wishlist on my blog lol~~ too late, it’s already December and I end up buying all the things I want for myself anyways 😝 but maybe this can be a next year thing
-- still learning more about my new [Baseform Keyboard](https://posture.works/baseform/)
-- I’m thinking of getting [a hobonichi 5-year planner](https://shopee.ph/Hobonichi-5-Year-Planner-(2026-2030)-A6-and-A5-Sizes--i.1369393196.43966804861) for next year just because the idea of going thru a notebook 5 times and seeing my progress throughout the years sounds like a nice thing
-	- **update 3 Dec 2025:** I have bought this and I’m just waiting for it to arrive lolol
+- I just got my [hobonichi 5-year planner](https://shopee.ph/Hobonichi-5-Year-Planner-(2026-2030)-A6-and-A5-Sizes--i.1369393196.43966804861) and [posted about it](/blog/got-my-hobonichi-5-year-planner/) 😁 excited to use this next year!
 - I recently bought [a smart ring](https://shopee.ph/Aolon-Ring-Gen3-Smart-Ring-5ATM-Swimming-Diving-Sports-Health-Records-Control-Video-Photo-Shooting-i.728957216.25733122589) and been testing it out the past couple of days. I might write a post about it here aside from also posting it on social media for my friends to see 😆
 	- This is the highlight reel on my Instagram in case anyone was curious: [view Chi’s Instagram highlights for her Aolon ring experience](https://www.instagram.com/stories/highlights/18187289851344521/)
+	- Update: just noting here that I have yet to write a post about my experience with this, but just to add a note here: I’m still using it mostly for sleep tracking haha
 
 ### Ideas to get back to
 
+- **maybe I can just make a reading list that has those manga links below within them and I can have a place where I could dump my thoughts on them. Same with games lol** ← this is a priority!! 😤
 - setting up the Webring for [Tambayan 404](https://tambayan404.com) members too haha
 - I reaaally really want to make something like this but for my own life: [Life in Weeks](https://busterbenson.com/life-in-weeks)
-- maybe I can just make a reading list that has those manga links below within them and I can have a place where I could dump my thoughts on them. Same with games lol
 
 ### Games on my mind
 
-- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — still ongoing! Got to the True Ending already though 😁
 - [Clair Obscur: Expedition 33](https://www.expedition33.com/) — replaying this on the PS5 Pro for better graphics 😎 and so I get all the things i missed haha
 - [Ghost of Yotei](https://www.playstation.com/en-us/games/ghost-of-yotei/) — going through it again because of **New Game+** 😄
-- [Marvel’s Spider-Man: Miles Morales](https://www.playstation.com/en-ph/games/marvels-spider-man-miles-morales/) — continuing where I left off, which the game says I was 42% finished the last time I checked this haha
+- [Marvel’s Spider-Man: Miles Morales](https://www.playstation.com/en-ph/games/marvels-spider-man-miles-morales/) — continuing where I left off
+- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — still ongoing! Got to the True Ending already though 😁
 
 ### What I’m reading
 
@@ -72,6 +71,7 @@ date_updated: 2025-12-03T05:35:16+00:00
 > Now it’s at a more manageable number since we had to re-set up our homelab 😄 so now I can list these down from memory!
 
 - [Uma Musume: Cinderella Gray](https://myanimelist.net/anime/59636/Uma_Musume__Cinderella_Gray)
+- also [Uma Musume: Pretty Derby Season 1](https://myanimelist.net/anime/35249/Uma_Musume__Pretty_Derby) just to see how different this is from the other later seasons, and the *memes*
 - [SPY x FAMILY Season 3](https://myanimelist.net/anime/59027/Spy_x_Family_Season_3)
 - [Plur1bus](https://tv.apple.com/us/show/pluribus/umc.cmc.37axgovs2yozlyh3c2cmwzlza)
 
