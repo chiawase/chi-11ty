@@ -23,7 +23,7 @@
     </div>
 
     <p class="webmention__content p-content">
-        {{ webmention.content.text | truncate }}
+        {{ webmention.content.text | truncate(160) }}
         {%- if webmention.url %}
             <a href="{{ webmention.url }}" class="u-url" rel="noopener noreferrer" target="_blank">
                 source

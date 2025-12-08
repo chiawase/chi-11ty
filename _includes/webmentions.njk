@@ -45,10 +45,12 @@
   </div>
   {%- endif %}
 
-  {%- if mentionOfs | length %}
+  {%- if mentions | length %}
     <ol class="webmentions__list">
-      {%- for webmention in mentionOfs | reverse %}
-        <li class="webmentions__item">{% include "webmention.njk" %}</li>
+      {%- for webmention in mentions | reverse %}
+        {%- if webmention.content.text != null %}
+          <li class="webmentions__item">{% include "webmention.njk" %}</li>
+        {%- endif %}
       {%- endfor %}
     </ol>
   {%- else %}
