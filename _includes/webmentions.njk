@@ -23,12 +23,13 @@
 
 {# set mentionOfs as mentions that are `mention-of` #}
 {% set mentionOfs = mentions | webmentionsByType("mention-of") %}
-{# Count total number of replies #}
+
+{# Count total number of mentions #}
 {% set mentionOfSize = mentionOfs | webmentionsSize %}
 
 <section class="webmentions">
   <h4>Webmentions</h4>
-  {%- if mentionOfSize > 0 %}
+  {%- if mentions | length > 0 %}
   <div class="webmentions__summary">
       {%- if likesSize > 0 %}<span>💖 {{ likesSize }}</span>{%- endif %}
       {%- if repostsSize > 0 %}<span>🔁 {{ repostsSize }}</span>{%- endif %}
@@ -44,9 +45,9 @@
   </div>
   {%- endif %}
 
-  {%- if mentions | length %}
+  {%- if mentionOfs | length %}
     <ol class="webmentions__list">
-      {%- for webmention in mentions | reverse %}
+      {%- for webmention in mentionOfs | reverse %}
         <li class="webmentions__item">{% include "webmention.njk" %}</li>
       {%- endfor %}
     </ol>

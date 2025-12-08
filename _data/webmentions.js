@@ -6,6 +6,21 @@ import dotenv from "dotenv";
 
 const { domain } = metadata;
 
+const OWN_ORIGIN = `https://${domain}`;
+
+// A webmention is a self-mention if both source and target are on your own site
+function isSelfWebmention(entry) {
+  const source = entry["wm-source"] || "";
+  const target = entry["wm-target"] || "";
+
+  return source.startsWith(OWN_ORIGIN) && target.startsWith(OWN_ORIGIN);
+}
+
+function filterSelfWebmentions(children = []) {
+  return children.filter((entry) => !isSelfWebmention(entry));
+}
+
+
 // Load .env variables with dotenv
 dotenv.config();
 
@@ -30,20 +45,20 @@ async function fetchWebmentions(since, perPage = 10000) {
 
     let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}&per-page=${perPage}`;
     if (since) url += `&since=${since}`; // only fetch new mentions
-
+    
     const response = await fetch(url);
     if (response.ok) {
         const feed = await response.json();
         console.log(`>>> ${feed.children.length} new webmentions fetched from ${API}`);
         return feed;
     }
-
     return null;
 }
 
 // Merge fresh webmentions with cached entries, unique per ID
 function mergeWebmentions(a, b) {
-    return unionBy(a.children, b.children, "wm-id");
+    const merged = unionBy(a.children, b.children, "wm-id");
+    return filterSelfWebmentions(merged);
 }
 
 // save combined Webmentions in cache file
@@ -77,29 +92,33 @@ function readFromCache() {
     };
 }
 
-export default async function() {
-    console.log(">>> Reading webmentions from cache...");
+export default async function () {
+  console.log(">>> Reading webmentions from cache...");
+  const cache = readFromCache();
 
-    const cache = readFromCache();
+  // Clean existing cache so self-mentions disappear right away
+  cache.children = filterSelfWebmentions(cache.children);
 
-    if (cache.children.length) {
-        console.log(`>>> Found ${cache.children.length} webmentions loaded from cache`);
+  if (cache.children.length) {
+    console.log(`>>> ${cache.children.length} webmentions loaded from cache`);
+  }
+
+  // Only fetch new mentions in production
+  if (process.env.NODE_ENV === "production") {
+    console.log(">>> Checking for new webmentions...");
+    const feed = await fetchWebmentions(cache.lastFetched);
+
+    if (feed) {
+      const webmentions = {
+        lastFetched: new Date().toISOString(),
+        children: mergeWebmentions(cache, feed) // already filtered inside merge
+      };
+
+      writeToCache(webmentions);
+      return webmentions;
     }
+  }
 
-    // Only fetch new mentions in production
-    if (process.env.NODE_ENV === "production") {
-        console.log(">>> Checking for new webmentions...");
-        const feed = await fetchWebmentions(cache.lastFetched);
-        if (feed) {
-            const webmentions = {
-                lastFetched: new Date().toISOString(),
-                children: mergeWebmentions(cache, feed)
-            };
-
-            writeToCache(webmentions);
-            return webmentions;
-        }
-    }
-
-    return cache;
-};
+  // Even if we didn’t fetch, this is now self-mention-free
+  return cache;
+}
