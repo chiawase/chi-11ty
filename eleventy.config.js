@@ -83,6 +83,11 @@ export default async function (eleventyConfig) {
 	// Watch changes to njk files???
 	eleventyConfig.addWatchTarget("_includes/**.*", "_includes/*/**.*");
 
+	// Remove my Obsidian template from the build files
+	eleventyConfig.watchIgnores.add("content/_templates/post_template.md");
+	eleventyConfig.watchIgnores.delete("content/_templates/post_template.md");
+
+	// Windows specific thing
 	eleventyConfig.setChokidarConfig({
 		usePolling: true,
 		interval: 500,
