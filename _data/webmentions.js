@@ -115,7 +115,6 @@ export default async function () {
       };
 
       writeToCache(webmentions);
-      console.log(webmentions)
       return webmentions;
     }
   }
