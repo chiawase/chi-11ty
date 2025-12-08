@@ -56,7 +56,6 @@
 		Courier, monospace;
 }
 
-/* Theme colors */
 :root {
 	--color-gray-20: #6a6a6a;
 	--color-gray-50: #666;
@@ -84,6 +83,7 @@
 	--size-body-text: 18px;
 
 	--max-width: 50rem;
+	--max-viewport-width: 896px;
 
 	--height-header: 73px;
 
@@ -185,9 +185,9 @@ h6 {
 	font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 896px) {
 	h1 {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 }
 
@@ -259,6 +259,16 @@ p:has(+ .links-nextprev) {
 
 li {
 	line-height: 200%;
+}
+
+@media (max-width: 896px) {
+	li {
+		line-height: 160%;
+	}
+
+	li:not(:first-of-type) {
+		margin-top: 0.5rem;
+	}
 }
 
 /* add margin after the last item of every list, except for nav */
@@ -480,6 +490,7 @@ header {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	align-items: baseline;
 }
 .nav-item {
 	display: inline-block;
@@ -524,7 +535,7 @@ header {
 	text-align: right;
 	margin-left: -2.5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 896px) {
 	.postlist {
 		padding-left: 0;
 	}
@@ -560,7 +571,7 @@ header {
 	padding-left: 0.25em;
 	padding-right: 0.5em;
 }
-@media (max-width: 768px) {
+@media (max-width: 896px) {
 	.postlist-header,
 	.postlist-description {
 		padding: 0;
@@ -570,7 +581,7 @@ header {
 
 /* Tags */
 .post-tag {
-	display: inline-flex;
+	/* display: inline-flex; */
 	align-items: center;
 	justify-content: center;
 	font-weight: 400;
@@ -585,8 +596,16 @@ header {
 	font-size: 0.8rem;
 	display: inline-flex;
 	flex-wrap: wrap;
+	align-items: center;
 	list-style: none;
 	padding: 0;
+}
+
+.post-metadata .webmentions__summary {
+	display: inline-flex;
+	gap: 0.5rem;
+	padding-bottom: initial;
+	padding-right: 0.5rem;
 }
 
 .h-entry .post-metadata {
@@ -651,7 +670,7 @@ blockquote {
 	transition: var(--subtle-transition);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 896px) {
 	blockquote {
 		width: 100%;
 	}
@@ -665,6 +684,16 @@ section.intro {
 }
 section.intro p {
 	line-height: 160%;
+}
+
+@media (max-width: 896px) {
+	section.intro {
+		font-size: 1rem;
+	}
+
+	section.intro p {
+		margin-top: 0.5rem;
+	}
 }
 
 /* setting the legend text to center */
