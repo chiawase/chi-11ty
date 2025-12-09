@@ -4,7 +4,7 @@ eleventyNavigation:
   parent: "More"
 title: Blogroll
 date: 2025-09-19T06:35:25+00:00
-date_updated: 2025-11-21T06:02:32+00:00
+date_updated: 2025-12-09T09:02:13+00:00
 ---
 
 # Random list of websites I find cool
@@ -48,3 +48,5 @@ date_updated: 2025-11-21T06:02:32+00:00
 [https://www.trevorlasn.com/](https://www.trevorlasn.com/)
 
 [https://anhvn.com/](https://anhvn.com/)
+
+[https://www.nicchan.me/](https://www.nicchan.me/)
