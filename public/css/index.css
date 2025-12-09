@@ -285,6 +285,13 @@ article .e-content * > li {
 	margin-bottom: 1.25rem;
 }
 
+@media (max-width: 896px) {
+	ol,
+	ul {
+		padding-left: 1.5rem;
+	}
+}
+
 a[href] {
 	color: var(--text-color-link);
 }
@@ -330,6 +337,18 @@ h6:before,
 	height: var(--height-header);
 	visibility: hidden;
 	pointer-events: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	h2:before,
+	h3:before,
+	h4:before,
+	h5:before,
+	h6:before,
+	.footnote-item:before {
+		margin-top: initial;
+		height: initial;
+	}
 }
 
 main,
@@ -403,7 +422,6 @@ pre {
 
 pre:not([class*="language-"]) {
 	margin: 0.5em 0;
-	/*line-height: 140% !important;*/
 	-moz-tab-size: var(--syntax-tab-size) !important;
 	-o-tab-size: var(--syntax-tab-size) !important;
 	tab-size: var(--syntax-tab-size) !important;
