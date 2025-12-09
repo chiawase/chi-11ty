@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 4
 title: now
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-12-08T10:02:59+00:00
+date_updated: 2025-12-09T15:49:10+00:00
 ---
 
 # What I’m currently up to
@@ -31,6 +31,7 @@ date_updated: 2025-12-08T10:02:59+00:00
 - [Ghost of Yotei](https://www.playstation.com/en-us/games/ghost-of-yotei/) — going through it again because of **New Game+** 😄
 - [Marvel’s Spider-Man: Miles Morales](https://www.playstation.com/en-ph/games/marvels-spider-man-miles-morales/) — continuing where I left off
 - [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — still ongoing! Got to the True Ending already though 😁
+- [Umamusume: Pretty Derby](https://umamusume.com/) — I am back from time to time, but I’m not playing as daily as I used to
 
 ### What I’m reading
 
