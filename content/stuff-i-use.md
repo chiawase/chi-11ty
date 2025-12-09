@@ -5,7 +5,7 @@ eleventyNavigation:
   key: "Stuff I Use"
   parent: "More"
 date: 2025-08-18T07:34:56+00:00
-date_updated: 2025-12-02T16:24:19+00:00
+date_updated: 2025-12-09T09:58:16+00:00
 layout: "layouts/page.njk"
 ---
 
@@ -37,31 +37,29 @@ I eventually want to spiffy this up while getting some inspiration from these bl
 
 #### 📝 Notes
 
-- [Obsidian](https://obsidian.md) with the following plugins:
-	- [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
-	- [Natural Language Dates](https://github.com/argenos/nldates-obsidian)
-	- [Reading Time](https://github.com/avr/obsidian-reading-time)
-	- [Dataview](https://github.com/blacksmithgu/obsidian-dataview)
-	- [Meta Bind](https://github.com/mProjectsCode/obsidian-meta-bind-plugin)
-	- [Templater](https://github.com/SilentVoid13/Templater)
-	- [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks)
-	- [Map View](https://github.com/esm7/obsidian-map-view)
-	- [Heatmap Calendar](https://github.com/Richardsl/heatmap-calendar-obsidian)
-	- [Code Editor Shortcuts](https://github.com/timhor/obsidian-editor-shortcuts)
-	- [Tracker](https://github.com/pyrochlore/obsidian-tracker)
-	- [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin)
-	- [Numerals](https://github.com/gtg922r/obsidian-numerals)
-	- [Unicode Search](https://github.com/BambusControl/obsidian-unicode-search)
-	- [Automatic Table Of Contents](https://github.com/johansatge/obsidian-automatic-table-of-contents)
-	- [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes)
-	- [Better Word Count](https://github.com/lukeleppan/better-word-count)
-	- [Linter](https://github.com/platers/obsidian-linter)
-	- [Media DB](https://github.com/mProjectsCode/obsidian-media-db-plugin)
-		- though admittedly I'm still fixing my implementation of this
+- [Obsidian](https://obsidian.md) with a Sync subscription for the most convenient way to use my personal vault on Mac and Linux ([read more here](/blog/my-personal-obsidian-vault-setup/ "Read my blog post “My personal Obsidian vault setup”"))
+	- also using it with the following plugins:
+		- [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
+		- [Natural Language Dates](https://github.com/argenos/nldates-obsidian)
+		- [Reading Time](https://github.com/avr/obsidian-reading-time)
+		- [Dataview](https://github.com/blacksmithgu/obsidian-dataview)
+		- [Meta Bind](https://github.com/mProjectsCode/obsidian-meta-bind-plugin)
+		- [Templater](https://github.com/SilentVoid13/Templater)
+		- [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks)
+		- [Map View](https://github.com/esm7/obsidian-map-view)
+		- [Heatmap Calendar](https://github.com/Richardsl/heatmap-calendar-obsidian)
+		- [Code Editor Shortcuts](https://github.com/timhor/obsidian-editor-shortcuts)
+		- [Tracker](https://github.com/pyrochlore/obsidian-tracker)
+		- [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin)
+		- [Numerals](https://github.com/gtg922r/obsidian-numerals)
+		- [Unicode Search](https://github.com/BambusControl/obsidian-unicode-search)
+		- [Automatic Table Of Contents](https://github.com/johansatge/obsidian-automatic-table-of-contents)
+		- [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes)
+		- [Better Word Count](https://github.com/lukeleppan/better-word-count)
+		- [Linter](https://github.com/platers/obsidian-linter)
 
 #### ✅ To-Do
 
-- _technically_ also [Obsidian](https://obsidian.md) but I haven't really gotten back to using it properly... 😅
 - Tasks or making an Event in my personal Google Calendar
 
 #### 📷 iPhone Photo Shooting
@@ -85,8 +83,8 @@ I eventually want to spiffy this up while getting some inspiration from these bl
 
 #### 📖 RSS
 
-- I don't really consume RSS feeds at the moment for personal needs
-- I am subscribed to [Figma's Release Notes](https://www.figma.com/release-notes/) RSS Feed for [FoFPH](https://friends.figma.com/philippines) needs!
+- I recently downloaded [feeed](https://feeeed.nateparrott.com/) on my phone and [GFeeds](https://gfeeds.gabmus.org/) on my Linux!
+- I am subscribed to [Figma's Release Notes](https://www.figma.com/release-notes/) RSS Feed for [FoFPH](https://friends.figma.com/philippines) needs
 
 #### 🙍🏻‍♂️ Contacts
 
@@ -162,9 +160,9 @@ I eventually want to spiffy this up while getting some inspiration from these bl
 - Dual-booted PC with [CachyOS](https://cachyos.org/)+[niri](https://github.com/YaLTeR/niri/)+[Noctalia shell](https://github.com/noctalia-dev/noctalia-shell) (explained more [here](/blog/dual-boot-linux-pc)) and Windows 11
 - Terminal:
 	- on Mac and Linux: [Ghostty](https://ghostty.org/)
-	- on Windows: just plain old Terminal
+	- ~~on Windows: just plain old Terminal~~
 - Code Editor:
-	- on Mac and Windows: VS Code
+	- on Mac ~~and Windows~~: VS Code
 	- on Linux: [Zed](https://zed.dev/)
 - My main keyboard: [Baseform](https://posture.works/baseform/ "just released last September 2025!") with [Equalz Fruit Smoothie Switches](https://www.switchkeys.com.au/products/equalz-fruit-smoothie-switches-x10?_pos=8&_fid=1808135e3&_ss=c "special thanks to a friend based in AU who recoo’d this hehe")
 
