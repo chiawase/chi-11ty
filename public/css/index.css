@@ -230,6 +230,11 @@ img[src$=".svg"] {
 	height: auto;
 	max-width: none;
 }
+
+/**
+* TODO: implement something like this https://codepen.io/ongtiffany/pen/BoOeQV
+*/
+
 video,
 iframe {
 	width: 100%;
@@ -414,15 +419,7 @@ pre:not([class*="language-"]) {
 }
 
 pre:has(+ p) {
-	margin-left: -6rem !important;
-	width: calc(var(--max-width) + 12rem);
-}
-
-@media (max-width: 1000px) {
-	pre:has(+ p) {
-		margin-left: initial !important;
-		width: 100%;
-	}
+	width: 100%;
 }
 
 pre[class*="language-Plaintext"],
