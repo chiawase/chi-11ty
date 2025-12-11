@@ -39,8 +39,8 @@ Though if you'd like to chat, you may contact me through the following public ac
 
 While I do have a list of the communities I organize in my now page, I figured I should also just have a general list of which communities I participate in, regardless if I moderate / organize stuff there or I'm simply a member.
 
-- [Tambayan 404](https://tambayan404.com) (Co-founder and Admin)
 - [Friends of Figma, Philippines](https://friends.figma.com/philippines) (User Group Leader)
+- [Tambayan 404](https://tambayan404.com) (Co-founder and Admin)
 - [Pinay Bike Commuter Community](https://fb.com/groups/pinaybikecommutercommunity) (Co-founder, Moderator)
 - [UXPH](https://uxph.org "UX Philippines") (Core Volunteer)
 

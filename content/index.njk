@@ -4,14 +4,14 @@ const eleventyNavigation = {
 	order: 0
 };
 
-const numberOfLatestPostsToShow = 5;
+const numberOfLatestPostsToShow = 10;
 ---
 
 {# Introduction Section #}
 <section class="intro">
 	{% renderFile "./content/intro.md" %}
 	<p>
-		I share thoughts about a lot of stuff, with posts covering various topics, like: 
+		I share thoughts about a lot of stuff, with posts covering various topics, like:
 		{% for tag in collections | getKeys | filterTagList | sortAlphabetically %}
 		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 		{%- if loop.last == true %} and {% endif %}<a href="{{ tagUrl }}" class="post-tag">{{ tag | lower }}</a>{% if loop.last != true %}, {% else %}.{% endif %}{% endfor %}
