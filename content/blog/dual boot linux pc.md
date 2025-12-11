@@ -2,7 +2,7 @@
 title: "Dual-booted into Linux for my PC!"
 description: This is where I lay out my initial setup of my Linux dual boot, what I changed after the initial installation, what I plan to change in the future (so this post will be updated) and why I decided to do this now.
 date: 2025-12-02T10:45:32+00:00
-date_updated: 2025-12-03T15:42:13+00:00
+date_updated: 2025-12-11T07:43:45+00:00
 tags: 
 - writing
 - coding
@@ -97,6 +97,8 @@ I haven’t yet changed what the fonts are for my default usage and my monospace
 ### Display cursor
 
 I also want to change the cursor, since I know I can also do that in the [niri config stuff](https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#cursor), but after my initial look through some of the custom cursors used elsewhere, I still haven’t settled on what design to get.
+
+> **Update 11 Dec 2025**: I’ve customized my cursor theme! I wrote more about it here: [Gold Ship now lives in my Linux machine as a cursor](Gold%20Ship%20now%20lives%20in%20my%20Linux%20machine%20as%20a%20cursor.md) 
 
 ### Current bug: some missing emojis 😭 (fixed since 3 Dec 2025)
 

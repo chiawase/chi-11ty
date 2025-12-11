@@ -2,10 +2,11 @@
 title: I am so close to just setting up a Linux distro on my PC.
 description: "Long story short: my Windows setup is a doozy for code and it seems simpler to just have to deal with Linux shenanigans than... whatever I have now lol"
 date: 2025-11-28T16:29:26+00:00
-date_updated: 2025-11-28T16:58:21+00:00
+date_updated: 2025-12-11T08:08:32+00:00
 tags: 
 - writing
 - coding
+- linux
 post_language: 
 ---
 
@@ -36,3 +37,5 @@ So if I want to write in my blog, I open the Obsidian (Ubuntu) app… then if I 
 I’d also feel more comfy working on my website in an OS that understands that I just want to work on my personal website, no other fancy bells and whistles, just lets me install (and uninstall) things whenever I trigger them.
 
 Alright, I’ll end it here for now. I just wanted an excuse to write a blog in the Obsidian (Ubuntu) app lol
+
+> **Update 11 Dec 2025**: I’ve set up a dual-boot with my PC into Linux. I talk about it more here: [Dual-booted into Linux for my PC!](dual%20boot%20linux%20pc.md)
