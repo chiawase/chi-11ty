@@ -5,7 +5,7 @@ eleventyNavigation:
   key: "Stuff I Use"
   parent: "More"
 date: 2025-08-18T07:34:56+00:00
-date_updated: 2025-12-09T09:58:16+00:00
+date_updated: 2025-12-11T08:11:05+00:00
 layout: "layouts/page.njk"
 ---
 
@@ -83,7 +83,7 @@ I eventually want to spiffy this up while getting some inspiration from these bl
 
 #### 📖 RSS
 
-- I recently downloaded [feeed](https://feeeed.nateparrott.com/) on my phone and [GFeeds](https://gfeeds.gabmus.org/) on my Linux!
+- I recently downloaded [feeed](https://feeeed.nateparrott.com/) on my phone and [Liferea](https://github.com/lwindolf/liferea) on my Linux machine!
 - I am subscribed to [Figma's Release Notes](https://www.figma.com/release-notes/) RSS Feed for [FoFPH](https://friends.figma.com/philippines) needs
 
 #### 🙍🏻‍♂️ Contacts
@@ -157,7 +157,7 @@ I eventually want to spiffy this up while getting some inspiration from these bl
 
 #### 💻 Coding & Setup
 
-- Dual-booted PC with [CachyOS](https://cachyos.org/)+[niri](https://github.com/YaLTeR/niri/)+[Noctalia shell](https://github.com/noctalia-dev/noctalia-shell) (explained more [here](/blog/dual-boot-linux-pc)) and Windows 11
+- PC: Dual-boot with [CachyOS](https://cachyos.org/)+[niri](https://github.com/YaLTeR/niri/)+[Noctalia shell](https://github.com/noctalia-dev/noctalia-shell) (explained more [here](/blog/dual-boot-linux-pc)) and Windows 11 (that I haven’t touched since I set up Linux lol)
 - Terminal:
 	- on Mac and Linux: [Ghostty](https://ghostty.org/)
 	- ~~on Windows: just plain old Terminal~~
