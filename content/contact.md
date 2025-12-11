@@ -20,7 +20,7 @@ But to also just have them listed in my personal website, here they all are, in 
 - [@chi@social.lol on Mastodon](https://social.lol/@chi "I sometimes post private stuff here")
 - [@chisenires.design on BlueSky](https://bsky.app/profile/chisenires.design "I sometimes go here to chronologically go through topics")
 - [Connect with me on LinkedIn](https://linkedin.com/in/chisenires "mostly a lurker but occasionally posts random stuff I'm intereested in")
-- [@chiawase at DEV.to](https://dev.to/chiawase "I don’t really browse here much but it helps to have an account when I occasionally get links to DEV.to articles and I get to show suppor to the actual post")
+- [@chiawase at DEV.to](https://dev.to/chiawase "I don’t really browse here much but it helps to have an account when I occasionally get links to DEV.to articles and I get to show support to the actual post")
 - [@chisenires in Figma Community](https://figma.com/@chisenires)
 - [Designlab Mentor Profile](https://app.designlab.com/chisenires/)
 - [Chi's Strava Profile](https://www.strava.com/athletes/40002012 "rides occasionally now that I'm fully remote")
