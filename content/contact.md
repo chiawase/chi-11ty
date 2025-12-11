@@ -14,7 +14,7 @@ I have a grid version of my links laid out in [bento.me/chiawase](https://bento.
 But to also just have them listed in my personal website, here they all are, in no particular order:
 
 - [bento.me/chiawase](https://bento.me/chiawase "I occasionally update this with places I've visited")
-- [@chiawase on Matrix.org](https://matrix.to/#/@chiawase:matrix.org?client=im.fluffychat "Recently set this up, it would be cool to get chats here to test it out")
+- [@chiawase on Matrix.org](https://matrix.to/#/@chiawase:matrix.org "Recently set this up, it would be cool to get chats here to test it out")
 - [@\_chiawase on Threads](https://threads.com/@_chiawase "my new slop online")
 - [@\_chiawase on Instagram](https://instagram.com/@_chiawase "my public photo album of memories")
 - [@chi@social.lol on Mastodon](https://social.lol/@chi "I sometimes post private stuff here")
@@ -31,7 +31,4 @@ But to also just have them listed in my personal website, here they all are, in 
 
 ### Tips & Support
 
-> If you like my content or you'd just like to share a gift across the interwebs, you can do so through these platforms!
-
-- [Support on Ko-Fi](https://ko-fi.com/chiawase)
-- [Buy me a Coffee!](https://buymeacoffee.com/chiawase)
+If you like my content or you'd just like to share a gift across the interwebs, you can send them my way thru [Ko-Fi](https://ko-fi.com/chiawase)!
