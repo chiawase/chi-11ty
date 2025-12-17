@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 4
 title: now
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-12-09T15:49:10+00:00
+date_updated: 2025-12-17T03:11:03+00:00
 ---
 
 # What I’m currently up to
@@ -24,22 +24,18 @@ date_updated: 2025-12-09T15:49:10+00:00
 - **maybe I can just make a reading list that has those manga links below within them and I can have a place where I could dump my thoughts on them. Same with games lol** ← this is a priority!! 😤
 - setting up the Webring for [Tambayan 404](https://tambayan404.com) members too haha
 - I reaaally really want to make something like this but for my own life: [Life in Weeks](https://busterbenson.com/life-in-weeks)
+- maybe rebuilding this website in Astro and see how the experience is there? 🤔
 
-### Games on my mind
+### Games I’m thinking about
 
-- [Clair Obscur: Expedition 33](https://www.expedition33.com/) — replaying this on the PS5 Pro for better graphics 😎 and so I get all the things i missed haha
+- [Clair Obscur: Expedition 33](https://www.expedition33.com/) — replaying this on the PS5 Pro for better graphics 😎 and so I get all the things i missed haha already in Act 3!
 - [Ghost of Yotei](https://www.playstation.com/en-us/games/ghost-of-yotei/) — going through it again because of **New Game+** 😄
-- [Marvel’s Spider-Man: Miles Morales](https://www.playstation.com/en-ph/games/marvels-spider-man-miles-morales/) — continuing where I left off
-- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — still ongoing! Got to the True Ending already though 😁
-- [Umamusume: Pretty Derby](https://umamusume.com/) — I am back from time to time, but I’m not playing as daily as I used to
+- [Hades 2](https://store.steampowered.com/app/1145350/Hades_II/) — have yet to get back to this since I want to know what happens after the True Ending 😆
+- [Umamusume: Pretty Derby](https://umamusume.com/) — I just want to get a lot of A level Umas 🥹
 
 ### What I’m reading
 
 #### Manga
-
-##### Finished
-
-1. [Blooming Love](https://mangaplus.shueisha.co.jp/titles/100245) – it was a relatively short manga but so heartwarming nonetheless 🥹
 
 ##### Ongoing
 
@@ -71,7 +67,7 @@ date_updated: 2025-12-09T15:49:10+00:00
 
 > Now it’s at a more manageable number since we had to re-set up our homelab 😄 so now I can list these down from memory!
 
-- [Uma Musume: Cinderella Gray](https://myanimelist.net/anime/59636/Uma_Musume__Cinderella_Gray)
+- [Uma Musume: Cinderella Gray](https://myanimelist.net/anime/59636/Uma_Musume__Cinderella_Gray) (omg OGURI!!!!!!)
 - also [Uma Musume: Pretty Derby Season 1](https://myanimelist.net/anime/35249/Uma_Musume__Pretty_Derby) just to see how different this is from the other later seasons, and the *memes*
 - [SPY x FAMILY Season 3](https://myanimelist.net/anime/59027/Spy_x_Family_Season_3)
 - [Plur1bus](https://tv.apple.com/us/show/pluribus/umc.cmc.37axgovs2yozlyh3c2cmwzlza)
