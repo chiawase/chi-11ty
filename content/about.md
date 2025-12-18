@@ -3,6 +3,7 @@ eleventyNavigation:
   key: "About"
   order: 2
 title: "About Me"
+canonical: "about"
 ---
 
 # {{ title }}

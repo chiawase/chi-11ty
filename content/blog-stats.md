@@ -5,6 +5,7 @@ eleventyNavigation:
   parent: "More"
 date: 2025-11-10T15:12:16+00:00
 date_updated: 2025-11-10T15:27:35+00:00
+canonical: "blog-stats"
 ---
 
 ## Blog Stats

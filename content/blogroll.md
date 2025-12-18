@@ -5,6 +5,7 @@ eleventyNavigation:
 title: Blogroll
 date: 2025-09-19T06:35:25+00:00
 date_updated: 2025-12-09T09:02:13+00:00
+canonical: "blogroll"
 ---
 
 # Random list of websites I find cool

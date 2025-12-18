@@ -5,6 +5,7 @@ eleventyNavigation:
 title: "Colophon"
 date: 2025-09-26T09:08:31+00:00
 date_updated: 2025-11-10T14:46:59+00:00
+canonical: "colophon"
 ---
 
 > Following the guide from [IndieWeb](https://indieweb.org/colophon) for what a Colophon page includes, I’ll do my best to lay down how I’ve set up my side of the internet. Last updated {{ date_updated | readableDate }}.

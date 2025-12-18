@@ -5,6 +5,7 @@ eleventyNavigation:
 title: "Contact"
 date: 2025-11-30T06:39:33+00:00
 date_updated: 2025-12-02T16:37:14+00:00
+canonical: "contact"
 ---
 
 # Where to find me online

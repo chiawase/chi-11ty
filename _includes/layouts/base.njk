@@ -85,6 +85,10 @@
 	{# Include tracking links #}
 	{%- include "tracking.njk" %}
 
+	{% if canonical %}
+	<link rel="canonical" href="{{ metadata.url }}/{{ canonical }}/" />
+	{% endif %}
+
 	{# favicon #}
 	<link rel="icon" href="/img/favicon.png" type="image/png">
 </head>

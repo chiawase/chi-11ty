@@ -5,6 +5,7 @@ eleventyNavigation:
 title: now
 date: 2025-03-30T12:48:25+00:00
 date_updated: 2025-12-17T03:11:03+00:00
+canonical: "now"
 ---
 
 # What I’m currently up to

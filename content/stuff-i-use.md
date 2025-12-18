@@ -7,6 +7,7 @@ eleventyNavigation:
 date: 2025-08-18T07:34:56+00:00
 date_updated: 2025-12-11T08:11:05+00:00
 layout: "layouts/page.njk"
+canonical: "stuff-i-use"
 ---
 
 # Stuff I Use
