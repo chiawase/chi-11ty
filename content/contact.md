@@ -4,17 +4,14 @@ eleventyNavigation:
   order: 3
 title: "Contact"
 date: 2025-11-30T06:39:33+00:00
-date_updated: 2025-12-02T16:37:14+00:00
+date_updated: 2025-12-19T02:19:43+00:00
 canonical: "contact"
 ---
 
 # Where to find me online
 
-I have a grid version of my links laid out in [bento.me/chiawase](https://bento.me/chiawase). I also have a list of links in my [OMG.LOL page](https://chi.omg.lol).
+Here are all my social links, in no particular order:
 
-But to also just have them listed in my personal website, here they all are, in no particular order:
-
-- [bento.me/chiawase](https://bento.me/chiawase "I occasionally update this with places I've visited")
 - [@chiawase on Matrix.org](https://matrix.to/#/@chiawase:matrix.org "Recently set this up, it would be cool to get chats here to test it out")
 - [@\_chiawase on Threads](https://threads.com/@_chiawase "my new slop online")
 - [@\_chiawase on Instagram](https://instagram.com/@_chiawase "my public photo album of memories")
@@ -26,10 +23,12 @@ But to also just have them listed in my personal website, here they all are, in 
 - [Designlab Mentor Profile](https://app.designlab.com/chisenires/)
 - [Chi's Strava Profile](https://www.strava.com/athletes/40002012 "rides occasionally now that I'm fully remote")
 - Twitch Affiliate @ [ChiAwase](https://twitch.tv/ChiAwase "on indefinite hiatus") (indefinite hiatus)
-- [Arya Tsukino @ Meteor - Ramuh #FFXIV](https://na.finalfantasyxiv.com/lodestone/character/36591732/ "on indefinite hiatus") (currently on hiatus)
+- [Arya Tsukino @ Meteor - Ramuh #FFXIV](https://na.finalfantasyxiv.com/lodestone/character/36591732/ "on indefinite hiatus") (on hiatus)
 - [@ChiSenires on Twitter](https://twitter.com/ChiSenires "last used July 2023") (inactive)
 - [also @\_ChiAwase on Twitter](https://twitter.com/_ChiAwase "Also my Twitter, which I also do not use") (also inactive)
 
+I also have a list of links in my [OMG.LOL page](https://chi.omg.lol).
+
 ### Tips & Support
 
-If you like my content or you'd just like to share a gift across the interwebs, you can send them my way thru [Ko-Fi](https://ko-fi.com/chiawase)!
+If you like my content or you'd just like to share a gift across the interwebs, you can send them my way thru [Ko-Fi](https://ko-fi.com/chiawase) or [Wise](https://wise.com/pay/me/chiaraveronicas)!
