@@ -4,7 +4,7 @@ eleventyNavigation:
   order: 4
 title: now
 date: 2025-03-30T12:48:25+00:00
-date_updated: 2025-12-24T06:22:21+00:00
+date_updated: 2025-12-24T06:42:05+00:00
 canonical: "now"
 ---
 
@@ -71,7 +71,7 @@ canonical: "now"
 - [Uma Musume: Cinderella Gray](https://myanimelist.net/anime/59636/Uma_Musume__Cinderella_Gray) (omg OGURI!!!!!! 😭)
 - [SPY x FAMILY Season 3](https://myanimelist.net/anime/59027/Spy_x_Family_Season_3) — recently caught up to the latest episode HUUUU i’m so happy seeing the manga panels I read before now animated 🥹
 - [Plur1bus](https://tv.apple.com/us/show/pluribus/umc.cmc.37axgovs2yozlyh3c2cmwzlza)
-- Fallout Season 2
+- [Fallout Season 2](https://www.primevideo.com/detail/Fallout/0KBDY8OBBE3Y0RV5FOQH96H3N6)
 
 ### Communities I'm Moderating
 
